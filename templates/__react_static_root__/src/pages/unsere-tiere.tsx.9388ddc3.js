@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{65:function(e,n,t){"use strict";t.r(n);var r=t(0),a=t.n(r);n.default=function(){return a.a.createElement("main",null,a.a.createElement("h1",null,"Unsere Herde besteht aus drei Stuten und drei Wallachen. Jedes der Tiere hat einen einzigartigen Charakter. Wir möchten sie Euch vorstellen:"))}}}]);

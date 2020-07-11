@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{63:function(e,a,n){"use strict";n.r(a);var l=n(0),t=n.n(l);a.default=function(){return t.a.createElement("main",null,t.a.createElement("address",null,"Gumbauern-Alpakas Kleinberghausen 5 92342 Freystadt"),t.a.createElement("span",null," Tel. 01575-4205232"),t.a.createElement("span",null,"Gumbauern@alpakas.de"))}}}]);
