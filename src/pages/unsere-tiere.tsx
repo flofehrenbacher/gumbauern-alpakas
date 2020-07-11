@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export default () => (
   <main>
@@ -7,4 +7,4 @@ export default () => (
       hat einen einzigartigen Charakter. Wir möchten sie Euch vorstellen:
     </h1>
   </main>
-);
+)

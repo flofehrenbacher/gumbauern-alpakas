@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export default () => (
   <main>
@@ -6,4 +6,4 @@ export default () => (
     <span> Tel. 01575-4205232</span>
     <span>Gumbauern@alpakas.de</span>
   </main>
-);
+)

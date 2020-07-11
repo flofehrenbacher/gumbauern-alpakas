@@ -1,10 +1,10 @@
-import { Router } from "@reach/router";
-import { Navigation } from "components/navigation";
-import React from "react";
-import { Root, Routes } from "react-static";
-import { Global } from "@emotion/core";
-import css from "@emotion/css";
-import emotionReset from "emotion-reset";
+import { Router } from '@reach/router'
+import { Navigation } from 'components/navigation'
+import React from 'react'
+import { Root, Routes } from 'react-static'
+import { Global } from '@emotion/core'
+import css from '@emotion/css'
+import emotionReset from 'emotion-reset'
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
         </React.Suspense>
       </div>
     </Root>
-  );
+  )
 }
 
-export default App;
+export default App

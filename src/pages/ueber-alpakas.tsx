@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export default () => (
   <main>
@@ -16,4 +16,4 @@ export default () => (
       müssen in einer Herde leben.
     </p>
   </main>
-);
+)

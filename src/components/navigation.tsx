@@ -1,6 +1,6 @@
-import { Link } from "@reach/router";
-import { css } from "emotion";
-import React from "react";
+import { Link } from '@reach/router'
+import { css } from 'emotion'
+import React from 'react'
 
 const styles = {
   navigation: css`
@@ -12,7 +12,7 @@ const styles = {
     color: white;
     margin-right: 10px;
   `,
-};
+}
 
 export function Navigation() {
   return (
@@ -33,5 +33,5 @@ export function Navigation() {
         Kontakt
       </Link>
     </nav>
-  );
+  )
 }

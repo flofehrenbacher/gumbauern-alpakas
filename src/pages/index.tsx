@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "@reach/router";
-import { css } from "emotion";
-import { ResponsiveImage } from "components/responsive-image";
+import React from 'react'
+import { Link } from '@reach/router'
+import { css } from 'emotion'
+import { ResponsiveImage } from 'components/responsive-image'
 
 export default () => (
   <main>
@@ -20,7 +20,7 @@ export default () => (
       Über Alpakas
     </Link>
   </main>
-);
+)
 
 const styles = {
   link: css`
@@ -32,4 +32,4 @@ const styles = {
     display: grid;
     place-items: center;
   `,
-};
+}
