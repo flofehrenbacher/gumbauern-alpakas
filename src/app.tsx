@@ -12,8 +12,13 @@ function App() {
       <Global
         styles={css`
           ${emotionReset}
-
-          *, *::after, *::before {
+          @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+          html {
+            font-family: 'Handlee', cursive;
+          }
+          *,
+          *::after,
+          *::before {
             box-sizing: border-box;
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;

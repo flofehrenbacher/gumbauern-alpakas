@@ -9,7 +9,7 @@ export default () => (
       Herzlich Willkommen bei den Gumbauern-Alpakas im idyllischen
       Kleinberghausen
     </h1>
-    <ResponsiveImage lazy={false} src="/homepage-hero/800x474.jpg" />
+    <ResponsiveImage lazy={false} src="/img/homepage-hero/800x474.jpg" />
     <Link className={styles.link} to="/unsere-tiere">
       Unsere Tiere
     </Link>
