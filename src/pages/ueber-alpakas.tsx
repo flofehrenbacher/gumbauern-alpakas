@@ -1,9 +1,10 @@
 import React from 'react'
+import { layoutStyles } from './unsere-tiere'
 
 export default () => (
-  <main>
-    <h1>Über Alpakas</h1>
-    <p>
+  <main className={layoutStyles.mainContainer}>
+    <h1 className={layoutStyles.mainHeadline}>Über Alpakas</h1>
+    <p className={layoutStyles.pageDescription}>
       Alpakas stammen ursprünglich aus den Anden, wo sie von den Inkas schon vor
       tausenden Jahren wegen ihrer feinen Wolle domestiziert und gezüchtet
       wurden. Sie zählen zu den Paarhufern und sind sogenannte Neuweltkameliden,

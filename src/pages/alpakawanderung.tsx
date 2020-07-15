@@ -6,7 +6,7 @@ import { alpakaStyles } from 'components/alpaka'
 
 export default () => (
   <main className={layoutStyles.mainContainer}>
-    <h1 className={layoutStyles.headline}>Alpakawanderung</h1>
+    <h1 className={layoutStyles.mainHeadline}>Alpakawanderung</h1>
     <p className={layoutStyles.pageDescription}>
       Nehmt Euch eine kleine Auszeit und habt ein Erlebnis der besonderen Art
       mit Euren flauschigen Begleitern.

@@ -11,7 +11,7 @@ export type Alpaka = {
 
 export default () => (
   <main className={layoutStyles.mainContainer}>
-    <h1 className={layoutStyles.headline}>Unsere Tiere</h1>
+    <h1 className={layoutStyles.mainHeadline}>Unsere Tiere</h1>
     <p className={layoutStyles.pageDescription}>
       Unsere Herde besteht aus drei Stuten und drei Wallachen. Jedes der Tiere
       hat einen einzigartigen Charakter. Wir möchten sie Euch vorstellen:
@@ -29,7 +29,7 @@ export const layoutStyles = {
   secondaryHeadline: css`
     font-size: 20px;
   `,
-  headline: css`
+  mainHeadline: css`
     font-size: 24px;
     font-weight: 600;
   `,

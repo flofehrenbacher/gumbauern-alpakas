@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from '@reach/router'
 import { css } from 'emotion'
 import { ResponsiveImage } from 'components/responsive-image'
+import { Contact } from 'components/contact'
 
 export default () => (
   <main>
@@ -27,6 +28,7 @@ export default () => (
         Über Alpakas
       </Link>
     </div>
+    <Contact className={styles.contactLayout} as="h2" />
   </main>
 )
 
@@ -60,6 +62,9 @@ const styles = {
   linkContainer: css`
     display: flex;
     justify-content: space-between;
+    margin: 30px;
+  `,
+  contactLayout: css`
     margin: 30px;
   `,
 }

@@ -1,9 +1,9 @@
 import React from 'react'
+import { layoutStyles } from './unsere-tiere'
+import { Contact } from 'components/contact'
 
 export default () => (
-  <main>
-    <address>Gumbauern-Alpakas Kleinberghausen 5 92342 Freystadt</address>
-    <span> Tel. 01575-4205232</span>
-    <span>Gumbauern@alpakas.de</span>
+  <main className={layoutStyles.mainContainer}>
+    <Contact as="h1" />
   </main>
 )
