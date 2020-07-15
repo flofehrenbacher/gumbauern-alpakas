@@ -11,7 +11,7 @@ export function Navigation() {
       <Link className={styles.link} to="/unsere-tiere">
         Unsere Tiere
       </Link>
-      <Link className={styles.link} to="/alpakawanderung">
+      <Link className={styles.link} to="/alpakawandern">
         Alpakawanderung
       </Link>
       <Link className={styles.link} to="/ueber-alpakas">
