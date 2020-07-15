@@ -23,6 +23,14 @@ export default () => (
 )
 
 export const layoutStyles = {
+  appStyles: css`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  `,
+  contentStyles: css`
+    flex-grow: 1;
+  `,
   mainContainer: css`
     padding: 30px;
   `,

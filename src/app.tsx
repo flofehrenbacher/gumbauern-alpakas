@@ -6,6 +6,7 @@ import { Global } from '@emotion/core'
 import css from '@emotion/css'
 import emotionReset from 'emotion-reset'
 import { Footer } from 'components/footer'
+import { layoutStyles } from './pages/unsere-tiere'
 
 function App() {
   return (
@@ -27,15 +28,17 @@ function App() {
           }
         `}
       />
-      <Navigation />
-      <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
+      <div className={layoutStyles.appStyles}>
+        <Navigation />
+        <div className={layoutStyles.contentStyles}>
+          <React.Suspense fallback={<em>Loading...</em>}>
+            <Router>
+              <Routes path="*" />
+            </Router>
+          </React.Suspense>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </Root>
   )
 }
