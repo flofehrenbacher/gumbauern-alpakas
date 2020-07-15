@@ -5,6 +5,7 @@ import { Root, Routes } from 'react-static'
 import { Global } from '@emotion/core'
 import css from '@emotion/css'
 import emotionReset from 'emotion-reset'
+import { Footer } from 'components/footer'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           </Router>
         </React.Suspense>
       </div>
+      <Footer />
     </Root>
   )
 }
