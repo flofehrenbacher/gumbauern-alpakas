@@ -1,5 +1,6 @@
 import React from 'react'
 import { SingleAlpaka } from 'components/alpaka'
+import { css } from 'emotion'
 
 export type Alpaka = {
   name: string
@@ -9,16 +10,34 @@ export type Alpaka = {
 }
 
 export default () => (
-  <main>
-    <h1>
+  <main className={layoutStyles.mainContainer}>
+    <h1 className={layoutStyles.headline}>Unsere Tiere</h1>
+    <p className={layoutStyles.pageDescription}>
       Unsere Herde besteht aus drei Stuten und drei Wallachen. Jedes der Tiere
       hat einen einzigartigen Charakter. Wir möchten sie Euch vorstellen:
-    </h1>
+    </p>
     {alpakas.map((alpaka) => (
       <SingleAlpaka {...alpaka} />
     ))}
   </main>
 )
+
+export const layoutStyles = {
+  mainContainer: css`
+    padding: 30px;
+  `,
+  secondaryHeadline: css`
+    font-size: 20px;
+  `,
+  headline: css`
+    font-size: 24px;
+    font-weight: 600;
+  `,
+  pageDescription: css`
+    margin-top: 20px;
+    line-height: 1.4;
+  `,
+}
 
 const alpakas: Alpaka[] = [
   {

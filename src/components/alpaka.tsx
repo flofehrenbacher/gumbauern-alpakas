@@ -1,6 +1,6 @@
 import VisuallyHidden from '@reach/visually-hidden'
 import React from 'react'
-import type { Alpaka } from '../pages/unsere-tiere'
+import { Alpaka, layoutStyles } from '../pages/unsere-tiere'
 import { ResponsiveImage } from './responsive-image'
 import { css } from 'emotion'
 
@@ -11,38 +11,65 @@ export function SingleAlpaka({
   description,
 }: Alpaka) {
   return (
-    <dl>
-      <dt>
-        <VisuallyHidden>Name</VisuallyHidden>
-      </dt>
-      <dd>{name}</dd>
-      <dt>
-        <VisuallyHidden>Spitzname</VisuallyHidden>
-      </dt>
-      <dd>{nickname}</dd>
-      <dt>
-        <VisuallyHidden>geboren</VisuallyHidden>
-      </dt>
-      <dd>*{birthYear}</dd>
-      <dt>
-        <VisuallyHidden>Beschreibung</VisuallyHidden>
-      </dt>
-      <dd>{description}</dd>
-      <ResponsiveImage
-        className={style.img}
-        lazy={false}
-        src={`data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
+    <div className={alpakaStyles.container}>
+      <h2 className={layoutStyles.secondaryHeadline}>{name}</h2>
+      <div className={alpakaStyles.ratioContainer}>
+        <ResponsiveImage
+          className={alpakaStyles.img}
+          lazy={false}
+          src={`data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
 AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
     9TXL0Y4OHwAAAABJRU5ErkJggg==`}
-        alt={name}
-      />
-    </dl>
+          alt={name}
+        />
+      </div>
+      <dl>
+        <dt>
+          <VisuallyHidden>Spitzname</VisuallyHidden>
+        </dt>
+        <dd className={alpakaStyles.nickname}>{nickname}</dd>
+        <dt>
+          <VisuallyHidden>geboren</VisuallyHidden>
+        </dt>
+        <dd className={alpakaStyles.birthYear}>*{birthYear}</dd>
+        <dt>
+          <VisuallyHidden>Beschreibung</VisuallyHidden>
+        </dt>
+        <dd className={alpakaStyles.description}>{description}</dd>
+      </dl>
+    </div>
   )
 }
 
-const style = {
+export const alpakaStyles = {
+  container: css`
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `,
+  nickname: css`
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  `,
   img: css`
-    width: 100px;
+    width: 100%;
     height: auto;
+  `,
+  birthYear: css`
+    text-align: center;
+    margin-top: 20px;
+  `,
+  description: css`
+    margin-top: 20px;
+    line-height: 1.4;
+  `,
+  ratioContainer: css`
+    width: 320px;
+    max-width: 100vw;
+    height: 180px;
+    overflow: hidden;
+    margin-top: 20px;
   `,
 }
