@@ -122,5 +122,6 @@ const styles = {
     text-align: center;
     margin-top: 30px;
     font-size: 30px;
+    text-decoration: none;
   `,
 }
