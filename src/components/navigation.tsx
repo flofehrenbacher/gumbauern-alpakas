@@ -2,11 +2,13 @@ import { Link } from '@reach/router'
 import { css, cx } from 'emotion'
 import React from 'react'
 import { push as Menu } from 'react-burger-menu'
+import { Logo } from './logo'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = React.useState(() => false)
   return (
     <nav className={styles.navigation}>
+      <Logo height="100%" width="auto" />
       <Menu
         disableAutoFocus
         styles={menuStyles}
@@ -65,8 +67,8 @@ var menuStyles = {
     position: 'absolute',
     width: '36px',
     height: '30px',
-    right: '15px',
-    top: '15px',
+    right: '25px',
+    top: '25px',
   },
   bmBurgerBars: {
     background: 'black',
@@ -111,8 +113,9 @@ var menuStyles = {
 const styles = {
   navigation: css`
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: white;
+    display: flex;
   `,
   link: css`
     display: block;
