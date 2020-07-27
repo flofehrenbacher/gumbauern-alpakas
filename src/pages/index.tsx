@@ -22,7 +22,7 @@ export default () => (
         Unsere Tiere
       </Link>
       <Link className={styles.link} to="/alpakawanderung">
-        Alpakawanderung
+        Alpaka&shy;wanderung
       </Link>
       <Link className={styles.link} to="/ueber-alpakas">
         Über Alpakas
@@ -37,10 +37,12 @@ const styles = {
     font-size: 16px;
     border: 1px solid black;
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    display: grid;
-    place-items: center;
+    height: 85px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     text-decoration: none;
     color: black;
   `,
