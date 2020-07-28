@@ -3,6 +3,8 @@ import { Link } from '@reach/router'
 import { css } from 'emotion'
 import { ResponsiveImage } from 'components/responsive-image'
 import { Contact } from 'components/contact'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { CustomCarousel } from 'components/custom-carousel'
 
 export default () => (
   <main>
@@ -11,11 +13,23 @@ export default () => (
         Herzlich Willkommen bei den Gumbauern-Alpakas im idyllischen
         Kleinberghausen
       </h1>
-      <ResponsiveImage
-        className={styles.image}
-        lazy={false}
-        src="/img/homepage-hero/800x474.jpg"
-      />
+      <CustomCarousel>
+        <ResponsiveImage
+          className={styles.image}
+          lazy={false}
+          src="/img/titel/titel_1.jpg"
+        />
+        <ResponsiveImage
+          className={styles.image}
+          lazy={false}
+          src="/img/titel/titel_2.jpg"
+        />
+        <ResponsiveImage
+          className={styles.image}
+          lazy={false}
+          src="/img/titel/titel_3.jpg"
+        />
+      </CustomCarousel>
     </div>
     <div className={styles.linkContainer}>
       <Link className={styles.link} to="/unsere-tiere">
@@ -34,17 +48,21 @@ export default () => (
 
 const styles = {
   link: css`
+    color: #394e59;
     font-size: 16px;
-    border: 1px solid black;
-    border-radius: 50%;
-    height: 85px;
-    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     text-decoration: none;
-    color: black;
+    font-weight: bold;
+    padding: 15px;
+    &:not(:last-child) {
+      border-bottom: 2px solid #dfd3c3;
+    }
+    &:hover {
+      background-color: #dfd3c3;
+    }
   `,
   image: css`
     max-width: 100vw;
@@ -64,6 +82,7 @@ const styles = {
   linkContainer: css`
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin: 30px;
   `,
   contactLayout: css`

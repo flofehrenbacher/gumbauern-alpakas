@@ -27,6 +27,7 @@ export const layoutStyles = {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f0ece2;
   `,
   contentStyles: css`
     flex-grow: 1;

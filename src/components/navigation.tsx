@@ -90,7 +90,7 @@ var menuStyles = {
     height: '100%',
   },
   bmMenu: {
-    background: '#373a47',
+    background: '#596e79',
     padding: '2.5em 1.5em 0',
     fontSize: '1.15em',
     // width: '100vw',
@@ -114,7 +114,7 @@ const styles = {
   navigation: css`
     width: 100%;
     height: 80px;
-    background-color: white;
+    background-color: #dfd3c3;
     display: flex;
   `,
   link: css`

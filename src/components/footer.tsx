@@ -18,11 +18,17 @@ export function Footer() {
 const styles = {
   navigation: css`
     width: 100%;
-    background-color: black;
-    padding: 10px;
+    background-color: #dfd3c3;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   `,
   link: css`
-    color: white;
-    margin-right: 10px;
+    color: #394e59;
+    text-decoration: none;
+    &:first-child {
+      margin-right: 30px;
+    }
   `,
 }

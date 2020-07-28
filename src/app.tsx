@@ -7,6 +7,7 @@ import css from '@emotion/css'
 import emotionReset from 'emotion-reset'
 import { Footer } from 'components/footer'
 import { layoutStyles } from './pages/unsere-tiere'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
           html {
             font-family: 'Handlee', cursive;
+            color: #394e59;
+            font-weight: 500;
           }
           *,
           *::after,

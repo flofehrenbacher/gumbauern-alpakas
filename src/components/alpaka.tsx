@@ -3,6 +3,7 @@ import React from 'react'
 import { Alpaka, layoutStyles } from '../pages/unsere-tiere'
 import { ResponsiveImage } from './responsive-image'
 import { css } from 'emotion'
+import { CustomCarousel } from './custom-carousel'
 
 export function SingleAlpaka({
   name,
@@ -14,14 +15,26 @@ export function SingleAlpaka({
     <div className={alpakaStyles.container}>
       <h2 className={layoutStyles.secondaryHeadline}>{name}</h2>
       <div className={alpakaStyles.ratioContainer}>
-        <ResponsiveImage
-          className={alpakaStyles.img}
-          lazy={false}
-          src={`data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
-AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
-    9TXL0Y4OHwAAAABJRU5ErkJggg==`}
-          alt={name}
-        />
+        <CustomCarousel>
+          <ResponsiveImage
+            className={alpakaStyles.img}
+            lazy={false}
+            src={`/img/${name.toLowerCase()}/${name.toLowerCase()}_1.jpg`}
+            alt={name}
+          />
+          <ResponsiveImage
+            className={alpakaStyles.img}
+            lazy={false}
+            src={`/img/${name.toLowerCase()}/${name.toLowerCase()}_2.jpg`}
+            alt={name}
+          />
+          <ResponsiveImage
+            className={alpakaStyles.img}
+            lazy={false}
+            src={`/img/${name.toLowerCase()}/${name.toLowerCase()}_3.jpg`}
+            alt={name}
+          />
+        </CustomCarousel>
       </div>
       <dl>
         <dt>

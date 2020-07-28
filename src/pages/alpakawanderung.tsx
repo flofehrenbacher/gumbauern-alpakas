@@ -3,6 +3,7 @@ import { layoutStyles } from './unsere-tiere'
 import { css, cx } from 'emotion'
 import { ResponsiveImage } from 'components/responsive-image'
 import { alpakaStyles } from 'components/alpaka'
+import { CustomCarousel } from 'components/custom-carousel'
 
 export default () => (
   <main className={layoutStyles.mainContainer}>
@@ -11,20 +12,27 @@ export default () => (
       Nehmt Euch eine kleine Auszeit und habt ein Erlebnis der besonderen Art
       mit Euren flauschigen Begleitern.
     </p>
-    <div
-      className={cx([
-        alpakaStyles.ratioContainer,
-        internalStyles.imageContainer,
-      ])}
-    >
-      <ResponsiveImage
-        className={alpakaStyles.img}
-        lazy={false}
-        src={`data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
-AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
-    9TXL0Y4OHwAAAABJRU5ErkJggg==`}
-        alt={'Alpakas sind cool'}
-      />
+    <div className={alpakaStyles.ratioContainer}>
+      <CustomCarousel>
+        <ResponsiveImage
+          className={alpakaStyles.img}
+          lazy={false}
+          src={`img/wandern/wandern_1.jpg`}
+          alt={'Alpakas sind cool'}
+        />
+        <ResponsiveImage
+          className={alpakaStyles.img}
+          lazy={false}
+          src={`img/wandern/wandern_2.jpg`}
+          alt={'Alpakas sind cool'}
+        />
+        <ResponsiveImage
+          className={alpakaStyles.img}
+          lazy={false}
+          src={`img/wandern/wandern_3.jpg`}
+          alt={'Alpakas sind cool'}
+        />
+      </CustomCarousel>
     </div>
     <h2
       className={cx([
@@ -107,8 +115,5 @@ const internalStyles = {
     li {
       line-height: 1.4;
     }
-  `,
-  imageContainer: css`
-    margin: 30px auto;
   `,
 }
