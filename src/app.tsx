@@ -8,6 +8,7 @@ import emotionReset from 'emotion-reset'
 import { Footer } from 'components/footer'
 import { layoutStyles } from './pages/unsere-tiere'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import 'leaflet/dist/leaflet.css'
 
 function App() {
   return (

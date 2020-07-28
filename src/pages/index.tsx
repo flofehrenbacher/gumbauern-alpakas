@@ -1,18 +1,19 @@
 import React from 'react'
 import { Link } from '@reach/router'
-import { css } from 'emotion'
+import { css, cx } from 'emotion'
 import { ResponsiveImage } from 'components/responsive-image'
 import { Contact } from 'components/contact'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { CustomCarousel } from 'components/custom-carousel'
+import { alpakaStyles } from 'components/alpaka'
 
 export default () => (
-  <main>
-    <div className={styles.imageContainer}>
-      <h1 className={styles.headline}>
-        Herzlich Willkommen bei den Gumbauern-Alpakas im idyllischen
-        Kleinberghausen
-      </h1>
+  <main className={styles.carouselContainer}>
+    <h1 className={styles.headline}>
+      Herzlich Willkommen bei den Gumbauern-Alpakas im idyllischen
+      Kleinberghausen
+    </h1>
+    <div className={cx([alpakaStyles.ratioContainer])}>
       <CustomCarousel>
         <ResponsiveImage
           className={styles.image}
@@ -71,21 +72,25 @@ const styles = {
     position: relative;
   `,
   headline: css`
-    position: absolute;
-    color: white;
-    bottom: 50px;
-    left: 30px;
+    color: #394e59;
     margin-right: 30px;
     font-size: 20px;
     font-weight: 600;
+    margin: 30px 30px 0;
   `,
   linkContainer: css`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin: 30px;
+    margin: 30px 0;
+    width: 250px;
   `,
   contactLayout: css`
-    margin: 30px;
+    margin-bottom: 30px;
+  `,
+  carouselContainer: css`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   `,
 }

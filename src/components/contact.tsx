@@ -1,10 +1,18 @@
 import React, { HTMLAttributes } from 'react'
 import { css } from 'emotion'
 import { layoutStyles } from '../pages/unsere-tiere'
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import { LatLngTuple, Icon } from 'leaflet'
+
+const marker = new Icon({
+  iconUrl: '/img/location-marker.svg',
+  iconSize: [50, 50],
+})
 
 export function Contact(
   props: HTMLAttributes<HTMLDivElement> & { as: 'h1' | 'h2' }
 ) {
+  const position: LatLngTuple = [49.15636, 11.3629]
   return (
     <div {...props}>
       {props.as === 'h2' ? (
@@ -25,6 +33,19 @@ export function Contact(
       <a className={styles.addressLine} href="mailto:gumbauern@example.com">
         gumbauern@example.com
       </a>
+      <Map center={position} zoom={13} className={styles.map}>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        />
+        <Marker position={position} icon={marker}>
+          <Popup>
+            <a href="https://goo.gl/maps/xT88p5ppbEHf4EwYA">
+              Anfahrt über Google Maps
+            </a>
+          </Popup>
+        </Marker>
+      </Map>
     </div>
   )
 }
@@ -36,5 +57,11 @@ const styles = {
   `,
   phone: css`
     margin-left: 10px;
+  `,
+  map: css`
+    height: 300px;
+    width: 400px;
+    max-width: 100%;
+    margin: 20px 0;
   `,
 }

@@ -6,6 +6,7 @@ import { Logo } from './logo'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = React.useState(() => false)
+
   return (
     <nav className={styles.navigation}>
       <Logo height="100%" width="auto" />
@@ -71,7 +72,7 @@ var menuStyles = {
     top: '25px',
   },
   bmBurgerBars: {
-    background: 'black',
+    background: '#394e59',
   },
   bmBurgerBarsHover: {
     background: '#a90000',
@@ -96,10 +97,10 @@ var menuStyles = {
     // width: '100vw',
   },
   bmMorphShape: {
-    fill: '#373a47',
+    fill: '#394e59',
   },
   bmItemList: {
-    color: '#b8b7ad',
+    color: '#394e59',
     padding: '0.8em',
   },
   bmItem: {
