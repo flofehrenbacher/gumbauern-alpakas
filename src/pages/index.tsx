@@ -43,7 +43,9 @@ export default () => (
         Über Alpakas
       </Link>
     </div>
-    <Contact className={styles.contactLayout} as="h2" />
+    <div className={styles.contactLayout}>
+      <Contact as="h2" />
+    </div>
   </main>
 )
 
@@ -86,7 +88,8 @@ const styles = {
     width: 250px;
   `,
   contactLayout: css`
-    margin-bottom: 30px;
+    padding: 0 30px 30px;
+    max-width: 100%;
   `,
   carouselContainer: css`
     display: flex;

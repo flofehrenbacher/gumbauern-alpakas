@@ -45,9 +45,9 @@ export const layoutStyles = {
   mainHeadline: css`
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 20px;
   `,
   pageDescription: css`
-    margin-top: 20px;
     line-height: 1.4;
   `,
 }
