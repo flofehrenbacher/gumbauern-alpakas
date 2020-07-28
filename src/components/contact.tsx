@@ -1,8 +1,8 @@
-import React, { HTMLAttributes } from 'react'
 import { css } from 'emotion'
-import { layoutStyles } from '../pages/unsere-tiere'
+import { Icon, LatLngTuple } from 'leaflet'
+import React, { HTMLAttributes } from 'react'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
-import { LatLngTuple, Icon } from 'leaflet'
+import { layoutStyles } from '../pages/unsere-tiere'
 
 const marker = new Icon({
   iconUrl: '/img/location-marker.svg',
@@ -13,9 +13,11 @@ export function Contact(
   props: HTMLAttributes<HTMLDivElement> & { as: 'h1' | 'h2' }
 ) {
   const position: LatLngTuple = [49.15636, 11.3629]
+
+  const { as, ...rest } = props
   return (
-    <div {...props}>
-      {props.as === 'h2' ? (
+    <div {...rest}>
+      {as === 'h2' ? (
         <h2 className={layoutStyles.secondaryHeadline}>Kontakt</h2>
       ) : (
         <h1 className={layoutStyles.mainHeadline}>Kontakt</h1>

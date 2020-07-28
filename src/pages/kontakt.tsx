@@ -1,6 +1,6 @@
+import { Contact } from 'components/contact'
 import React from 'react'
 import { layoutStyles } from './unsere-tiere'
-import { Contact } from 'components/contact'
 
 export default () => (
   <main className={layoutStyles.mainContainer}>

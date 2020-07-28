@@ -33,7 +33,11 @@ export const layoutStyles = {
     flex-grow: 1;
   `,
   mainContainer: css`
+    max-width: 100%;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   `,
   secondaryHeadline: css`
     font-size: 20px;
