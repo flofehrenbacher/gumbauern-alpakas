@@ -56,7 +56,7 @@ export function SingleAlpaka({
 
 export const alpakaStyles = {
   container: css`
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
