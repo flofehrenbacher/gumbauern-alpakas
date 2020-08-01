@@ -40,6 +40,7 @@ export const layoutStyles = {
     align-items: center;
   `,
   secondaryHeadline: css`
+    font-weight: 600;
     font-size: 20px;
   `,
   mainHeadline: css`
