@@ -29,7 +29,7 @@ export function Contact(
       <span className={styles.addressLine}>
         Tel.
         <a className={styles.phone} href="tel:+49015754205232">
-          01575-4205232 (WhatsApp)
+          01575-4205232
         </a>
       </span>
       <a className={styles.addressLine} href="mailto:gumbauern-alpakas@posteo.de">
