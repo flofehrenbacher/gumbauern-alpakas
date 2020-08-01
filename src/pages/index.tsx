@@ -74,7 +74,7 @@ const styles = {
   `,
   headline: css`
     color: #394e59;
-    margin-right: 30px;
+    text-align: center;
     font-size: 20px;
     font-weight: 600;
     margin: 30px 30px 0;
