@@ -64,7 +64,6 @@ export const alpakaStyles = {
   nickname: css`
     font-size: 20px;
     text-align: center;
-    font-weight: 600;
     margin-top: 20px;
   `,
   img: css`
