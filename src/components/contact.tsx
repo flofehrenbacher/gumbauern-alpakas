@@ -24,7 +24,7 @@ export function Contact(
       )}
       <address className={styles.addressLine}>Gumbauern-Alpakas</address>
       <address className={styles.addressLine}>
-        Kleinberghausen 5 92342 Freystadt
+        Kleinberghausen 5  <br />  92342 Freystadt
       </address>
       <span className={styles.addressLine}>
         Tel.
