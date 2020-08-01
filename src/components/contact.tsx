@@ -24,10 +24,8 @@ export function Contact(
       )}
       <address className={styles.addressLine}>Gumbauern-Alpakas</address>
       <address className={styles.addressLine}>Familie Olbrich</address>
-      <address className={styles.addressLine}>
-        Kleinberghausen 5 </address>
+      <address className={styles.addressLine}>Kleinberghausen 5</address>
       <address className={styles.addressLine}>92342 Freystadt</address>
-      </address>
       <span className={styles.addressLine}>
         Tel.
         <a className={styles.phone} href="tel:+49015754205232">
