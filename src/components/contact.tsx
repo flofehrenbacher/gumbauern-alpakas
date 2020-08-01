@@ -32,8 +32,8 @@ export function Contact(
           01575-4205232
         </a>
       </span>
-      <a className={styles.addressLine} href="mailto:gumbauern@example.com">
-        gumbauern@example.com
+      <a className={styles.addressLine} href="mailto:gumbauern-alpakas@posteo.de">
+        gumbauern-alpakas@posteo.de
       </a>
       <Map center={position} zoom={13} className={styles.map}>
         <TileLayer
