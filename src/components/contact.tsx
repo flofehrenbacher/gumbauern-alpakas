@@ -25,8 +25,8 @@ export function Contact(
       <address className={styles.addressLine}>Gumbauern-Alpakas</address>
       <address className={styles.addressLine}>Familie Olbrich</address>
       <address className={styles.addressLine}>
-        Kleinberghausen 5
-       <address className={styles.addressLine}>92342 Freystadt</address>
+        Kleinberghausen 5 </address>
+      <address className={styles.addressLine}>92342 Freystadt</address>
       </address>
       <span className={styles.addressLine}>
         Tel.
@@ -56,7 +56,7 @@ export function Contact(
 
 const styles = {
   addressLine: css`
-    margin-top: 10px;
+    margin-top: 7px;
     display: flex;
   `,
   phone: css`
