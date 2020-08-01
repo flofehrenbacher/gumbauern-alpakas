@@ -10,8 +10,7 @@ import { alpakaStyles } from 'components/alpaka'
 export default () => (
   <main className={styles.carouselContainer}>
     <h1 className={styles.headline}>
-      Herzlich Willkommen bei den Gumbauern-Alpakas im idyllischen
-      Kleinberghausen
+      Herzlich Willkommen bei den Gumbauern-Alpakas
     </h1>
     <div className={cx([alpakaStyles.ratioContainer])}>
       <CustomCarousel>
