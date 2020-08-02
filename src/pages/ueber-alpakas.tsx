@@ -10,10 +10,10 @@ export default () => (
       wurden. Sie zählen zu den Paarhufern und sind sogenannte Neuweltkameliden,
       wobei ihre nächsten Verwandten die bekannten Lamas sind. Heute leben die
       meisten Alpakas immer noch in Peru, die Alpakazucht breitet sich aber auch
-      auf anderen Kontinenten aus. Alpakas sind neugierige und sehr
-      soziale Tiere. Deshalb können sie nicht alleine gehalten werden, sondern
-      müssen in einer Herde leben. Wenn Ihr mehr erfahren wollt, kommt doch einfach
-      für eine Wanderung vorbei!
+      auf anderen Kontinenten aus. <br>
+      Alpakas sind neugierige und sehr soziale Tiere. Deshalb können sie nicht 
+      alleine gehalten werden, sondern müssen in einer Herde leben. Wenn Ihr 
+      sie besser kennenlernen wollt, kommt doch einfach für eine Wanderung vorbei!
     </p>
   </main>
 )
