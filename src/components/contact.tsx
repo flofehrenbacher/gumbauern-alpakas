@@ -34,7 +34,7 @@ export function Contact(
       </span>
       <span className={styles.addressLine}>
         E-Mail:
-        <a className={styles.addressLine} href="mailto:gumbauern-alpakas@posteo.de">
+        <a className={styles.phone} href="mailto:gumbauern-alpakas@posteo.de">
         gumbauern-alpakas@posteo.de
       </a>
       </span>
