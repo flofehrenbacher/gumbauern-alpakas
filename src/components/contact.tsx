@@ -34,8 +34,8 @@ export function Contact(
       </span>
       <span className={styles.addressLine}>
         E-Mail:
-        <a className={styles.phone} href="mailto:gumbauern-alpakas@posteo.de">
-        gumbauern-alpakas@posteo.de
+        <a className={styles.phone} href="mailto:info@gumbauern-alpakas.de">
+        info@gumbauern-alpakas.de
       </a>
       </span>
       <Map center={position} zoom={13} className={styles.map}>
