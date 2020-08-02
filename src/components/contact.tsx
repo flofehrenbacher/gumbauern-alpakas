@@ -27,14 +27,17 @@ export function Contact(
       <address className={styles.addressLine}>Kleinberghausen 5</address>
       <address className={styles.addressLine}>92342 Freystadt</address>
       <span className={styles.addressLine}>
-        Tel.
+        Tel.:
         <a className={styles.phone} href="tel:+49015754205232">
           01575-4205232
         </a>
       </span>
-      <a className={styles.addressLine} href="mailto:gumbauern-alpakas@posteo.de">
+      <span className={styles.addressLine}>
+        E-Mail:
+        <a className={styles.addressLine} href="mailto:gumbauern-alpakas@posteo.de">
         gumbauern-alpakas@posteo.de
       </a>
+      </span>
       <Map center={position} zoom={13} className={styles.map}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
