@@ -107,6 +107,7 @@ export default () => (
         Bei Temperaturen ab 26° finden die Wanderungen in den Morgen- oder Abendstunden statt
       </li>
       <li>Hunde dürfen uns leider nicht begleiten</li>
+      <li>Eltern haften auf dem gesamten Hof und während der Wanderung für ihre Kinder</li>
     </ul>
   </main>
 )
