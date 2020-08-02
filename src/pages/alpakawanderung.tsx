@@ -81,10 +81,10 @@ export default () => (
       <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
       <li>
         Alpakas sind Herdentiere, deshalb sollte eine Wanderung mit mindestens
-        zwei Tieren gebucht werden.
+        zwei Tieren gebucht werden
       </li>
       <li>
-        Gerne könnt Ihr auch einen Geschenkgutschein erwerben.
+        Gerne könnt Ihr auch einen Geschenkgutschein erwerben
       </li>
     </ul>
     <h2
@@ -101,12 +101,12 @@ export default () => (
       </li>
       <li>
         Zum Wohl der Tiere behalten wir uns vor, den Termin bei Starkregen,
-        Gewitter, Sturm zu verschieben.
+        Gewitter, Sturm zu verschieben
       </li>
       <li> 
         Bei Temperaturen ab 26° finden die Wanderungen in den Morgen- oder Abendstunden statt
       </li>
-      <li>Hunde dürfen uns leider nicht begleiten.</li>
+      <li>Hunde dürfen uns leider nicht begleiten</li>
     </ul>
   </main>
 )
