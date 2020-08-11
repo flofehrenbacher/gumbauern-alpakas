@@ -1,34 +1,32 @@
 import React from 'react'
 import { SingleAlpaka } from 'components/alpaka'
 import { css } from 'emotion'
+import { H1, TextBlock } from 'components/shared'
 
 export type Alpaka = {
   name: string
   nickname: string
   birthYear: number
   description: string
+  isLast?: boolean
 }
 
 export default () => (
-  <main className={layoutStyles.mainContainer}>
-    <h1 className={layoutStyles.mainHeadline}>Unsere Tiere</h1>
-    <p className={layoutStyles.pageDescription}>
-      Unsere Herde besteht aus drei Stuten und drei Wallachen. Jedes der Tiere
-      hat einen einzigartigen Charakter. Wir möchten sie Euch vorstellen:
-    </p>
-    {alpakas.map((alpaka) => (
-      <SingleAlpaka {...alpaka} />
+  <>
+    <H1>Unsere Tiere</H1>
+    <TextBlock>
+      <p>
+        Unsere Herde besteht aus drei Stuten und drei Wallachen. Jedes der Tiere
+        hat einen einzigartigen Charakter. Wir möchten sie Euch vorstellen:
+      </p>
+    </TextBlock>
+    {alpakas.map((alpaka, i) => (
+      <SingleAlpaka isLast={i === alpakas.length - 1} {...alpaka} />
     ))}
-  </main>
+  </>
 )
 
 export const layoutStyles = {
-  appStyles: css`
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f0ece2;
-  `,
   contentStyles: css`
     flex-grow: 1;
   `,
@@ -47,9 +45,6 @@ export const layoutStyles = {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-  `,
-  pageDescription: css`
-    line-height: 1.4;
   `,
 }
 

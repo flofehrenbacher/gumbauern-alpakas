@@ -35,8 +35,8 @@ export function Contact(
       <span className={styles.addressLine}>
         E-Mail:
         <a className={styles.phone} href="mailto:info@gumbauern-alpakas.de">
-        info@gumbauern-alpakas.de
-      </a>
+          info@gumbauern-alpakas.de
+        </a>
       </span>
       <Map center={position} zoom={13} className={styles.map}>
         <TileLayer
@@ -65,7 +65,8 @@ const styles = {
   `,
   map: css`
     height: 300px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     max-width: 100%;
     margin: 20px 0;
   `,

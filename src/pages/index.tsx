@@ -1,52 +1,59 @@
-import React from 'react'
 import { Link } from '@reach/router'
-import { css, cx } from 'emotion'
-import { ResponsiveImage } from 'components/responsive-image'
 import { Contact } from 'components/contact'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { CustomCarousel } from 'components/custom-carousel'
-import { alpakaStyles } from 'components/alpaka'
+import { ResponsiveImage } from 'components/responsive-image'
+import { css } from 'emotion'
+import React from 'react'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { H1, ImageRatioContainer } from 'components/shared'
 
-export default () => (
-  <main className={styles.carouselContainer}>
-    <h1 className={styles.headline}>
-      Herzlich Willkommen bei den Gumbauern-Alpakas
-    </h1>
-    <div className={cx([alpakaStyles.ratioContainer])}>
-      <CustomCarousel>
-        <ResponsiveImage
-          className={styles.image}
-          lazy={false}
-          src="/img/titel/titel_1.jpg"
-        />
-        <ResponsiveImage
-          className={styles.image}
-          lazy={false}
-          src="/img/titel/titel_2.jpg"
-        />
-        <ResponsiveImage
-          className={styles.image}
-          lazy={false}
-          src="/img/titel/titel_3.jpg"
-        />
-      </CustomCarousel>
-    </div>
-    <div className={styles.linkContainer}>
-      <Link className={styles.link} to="/unsere-tiere">
-        Unsere Tiere
-      </Link>
-      <Link className={styles.link} to="/alpakawanderung">
-        Alpaka&shy;wanderung
-      </Link>
-      <Link className={styles.link} to="/ueber-alpakas">
-        Über Alpakas
-      </Link>
-    </div>
-    <div className={styles.contactLayout}>
-      <Contact as="h2" />
-    </div>
-  </main>
-)
+export default function () {
+  const links = [
+    { text: 'Unsere Tiere', to: '/unsere-tiere' },
+    { text: 'Alpakawanderung', to: '/alpakawanderung' },
+    { text: 'Über Alpakas', to: '/ueber-alpakas' },
+  ]
+
+  return (
+    <>
+      <H1>Herzlich Willkommen bei den Gumbauern-Alpakas</H1>
+      <ImageRatioContainer>
+        <CustomCarousel>
+          <ResponsiveImage
+            className={styles.image}
+            lazy={false}
+            src="/img/titel/titel_1.jpg"
+          />
+          <ResponsiveImage
+            className={styles.image}
+            lazy={false}
+            src="/img/titel/titel_2.jpg"
+          />
+          <ResponsiveImage
+            className={styles.image}
+            lazy={false}
+            src="/img/titel/titel_3.jpg"
+          />
+        </CustomCarousel>
+      </ImageRatioContainer>
+      <LinkContainer links={links} />
+      <Contact as="h2" className={styles.contactLayout} />
+    </>
+  )
+}
+
+type LinkType = { to: string; text: string }
+function LinkContainer({ links }: { links: LinkType[] }) {
+  return (
+    <ul className={styles.linkContainer}>
+      {links.map((link) => (
+        <Link className={styles.link} to={link.to}>
+          {link.text}
+        </Link>
+      ))}
+    </ul>
+  )
+}
 
 const styles = {
   link: css`
@@ -72,27 +79,15 @@ const styles = {
   imageContainer: css`
     position: relative;
   `,
-  headline: css`
-    color: #394e59;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 30px 30px 0;
-  `,
   linkContainer: css`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin: 30px 0;
+    margin: 30px auto 0;
     width: 250px;
   `,
   contactLayout: css`
-    padding: 0 30px 30px;
+    margin: 40px 30px 0;
     max-width: 100%;
-  `,
-  carouselContainer: css`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   `,
 }

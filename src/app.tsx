@@ -1,14 +1,14 @@
-import { Router } from '@reach/router'
-import { Navigation } from 'components/navigation'
-import React from 'react'
-import { Root, Routes } from 'react-static'
 import { Global } from '@emotion/core'
 import css from '@emotion/css'
-import emotionReset from 'emotion-reset'
+import { Router } from '@reach/router'
 import { Footer } from 'components/footer'
-import { layoutStyles } from './pages/unsere-tiere'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Navigation } from 'components/navigation'
+import { AppWrapper, ContentWrapper } from 'components/shared'
+import emotionReset from 'emotion-reset'
 import 'leaflet/dist/leaflet.css'
+import React from 'react'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Root, Routes } from 'react-static'
 
 function App() {
   return (
@@ -32,17 +32,17 @@ function App() {
           }
         `}
       />
-      <div className={layoutStyles.appStyles}>
+      <AppWrapper>
         <Navigation />
-        <div className={layoutStyles.contentStyles}>
-          <React.Suspense fallback={<em>Loading...</em>}>
+        <ContentWrapper>
+          <React.Suspense fallback={<em>Lädt...</em>}>
             <Router>
               <Routes path="*" />
             </Router>
           </React.Suspense>
-        </div>
+        </ContentWrapper>
         <Footer />
-      </div>
+      </AppWrapper>
     </Root>
   )
 }

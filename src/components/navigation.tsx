@@ -1,124 +1,129 @@
 import { Link } from '@reach/router'
-import { css, cx } from 'emotion'
+import { css as emotionCSS, cx } from 'emotion'
 import React from 'react'
 import { push as Menu } from 'react-burger-menu'
 import { Logo } from './logo'
+import { Global, css } from '@emotion/core'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = React.useState(() => false)
+  const links = [
+    { text: 'Home', id: 'home', to: '/' },
+    { text: 'Unsere Tiere', id: 'unsere-tiere', to: '/unsere-tiere' },
+    { text: 'Alpakawanderung', id: 'alpakawanderung', to: '/alpakawanderung' },
+    { text: 'Über Alpakas', id: 'ueber-alpakas', to: '/ueber-alpakas' },
+    { text: 'Kontakt', id: 'kontakt', to: '/kontakt' },
+  ]
 
   return (
     <nav className={styles.navigation}>
-      <Logo height="100%" width="auto" />
+      <Global styles={menuStylesGlobal} />
+      <Link to="/">
+        <Logo height="100%" width="auto" />
+      </Link>
       <Menu
         disableAutoFocus
-        styles={menuStyles}
         right
         width="100%"
         isOpen={isOpen}
         onStateChange={(state) => setIsOpen(state.isOpen)}
       >
-        <Link
-          onClick={() => setIsOpen(false)}
-          id="home"
-          className={cx(['menu-item', styles.link])}
-          to="/"
-        >
-          Home
-        </Link>
-        <Link
-          onClick={() => setIsOpen(false)}
-          id="unsere-tiere"
-          className={cx(['menu-item', styles.link])}
-          to="/unsere-tiere"
-        >
-          Unsere Tiere
-        </Link>
-        <Link
-          onClick={() => setIsOpen(false)}
-          id="alpakawanderung"
-          className={cx(['menu-item', styles.link])}
-          to="/alpakawanderung"
-        >
-          Alpakawanderung
-        </Link>
-        <Link
-          onClick={() => setIsOpen(false)}
-          id="ueber-alpakas"
-          className={cx(['menu-item', styles.link])}
-          to="/ueber-alpakas"
-        >
-          Über Alpakas
-        </Link>
-        <Link
-          onClick={() => setIsOpen(false)}
-          id="kontakt"
-          className={cx(['menu-item', styles.link])}
-          to="/kontakt"
-        >
-          Kontakt
-        </Link>
+        {links.map((link) => (
+          <Link
+            onClick={() => setIsOpen(false)}
+            id={link.id}
+            className={cx(['menu-item', styles.link])}
+            to={link.to}
+          >
+            {link.text}
+          </Link>
+        ))}
       </Menu>
     </nav>
   )
 }
 
-var menuStyles = {
-  bmBurgerButton: {
-    position: 'absolute',
-    width: '36px',
-    height: '30px',
-    right: '25px',
-    top: '25px',
-  },
-  bmBurgerBars: {
-    background: '#394e59',
-  },
-  bmBurgerBarsHover: {
-    background: '#a90000',
-  },
-  bmCrossButton: {
-    height: '24px',
-    width: '24px',
-    transform: 'scale(3)',
-    transformOrigin: 'right top',
-  },
-  bmCross: {
-    background: '#bdc3c7',
-  },
-  bmMenuWrap: {
-    position: 'fixed',
-    height: '100%',
-  },
-  bmMenu: {
-    background: '#596e79',
-    padding: '2.5em 1.5em 0',
-    fontSize: '1.15em',
-    // width: '100vw',
-  },
-  bmMorphShape: {
-    fill: '#394e59',
-  },
-  bmItemList: {
-    color: '#394e59',
-    padding: '0.8em',
-  },
-  bmItem: {
-    display: 'inline-block',
-  },
-  bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)',
-  },
-}
+const menuStylesGlobal = css`
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 25px;
+    top: 25px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    transform: scale(3);
+    transform-origin: right top;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+  .bm-menu-wrap {
+    position: absolute;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #596e79;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #394e59;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #394e59;
+    padding: 0.8em;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    display: none;
+  }
+`
 
 const styles = {
-  navigation: css`
+  navigation: emotionCSS`
     width: 100%;
     height: 80px;
     background-color: #dfd3c3;
     display: flex;
   `,
-  link: css`
+  link: emotionCSS`
     display: block;
     width: 100%;
     color: white;

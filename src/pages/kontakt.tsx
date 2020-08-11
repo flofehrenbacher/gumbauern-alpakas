@@ -1,16 +1,16 @@
 import { Contact } from 'components/contact'
-import React from 'react'
-import { layoutStyles } from './unsere-tiere'
 import { css } from 'emotion'
+import React from 'react'
 
 export default () => (
-  <main className={layoutStyles.mainContainer}>
+  <>
     <div className={styles}>
       <Contact as="h1" />
     </div>
-  </main>
+  </>
 )
 
 const styles = css`
-  max-width: 100%;
+  margin: 30px 30px 0;
+  width: 100%;
 `
