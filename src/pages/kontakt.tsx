@@ -1,16 +1,12 @@
 import { Contact } from 'components/contact'
-import { css } from 'emotion'
 import React from 'react'
+import { css } from 'emotion'
 
 export default () => (
-  <>
-    <div className={styles}>
-      <Contact as="h1" />
-    </div>
-  </>
+  <Contact
+    as="h1"
+    className={css`
+      margin-top: 30px;
+    `}
+  />
 )
-
-const styles = css`
-  margin: 30px 30px 0;
-  width: 100%;
-`

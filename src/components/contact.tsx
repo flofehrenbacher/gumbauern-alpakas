@@ -65,9 +65,6 @@ const styles = {
   `,
   map: css`
     height: 300px;
-    width: 100%;
-    max-width: 400px;
-    max-width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
   `,
 }

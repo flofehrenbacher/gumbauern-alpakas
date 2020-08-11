@@ -18,7 +18,7 @@ export function Navigation() {
   return (
     <nav className={styles.navigation}>
       <Global styles={menuStylesGlobal} />
-      <Link to="/">
+      <Link to="/" className={styles.logo}>
         <Logo height="100%" width="auto" />
       </Link>
       <Menu
@@ -39,6 +39,13 @@ export function Navigation() {
           </Link>
         ))}
       </Menu>
+      <div className={styles.desktopLinks}>
+        {links.map((link) => (
+          <Link className={styles.desktopLink} to={link.to}>
+            {link.text}
+          </Link>
+        ))}
+      </div>
     </nav>
   )
 }
@@ -51,6 +58,10 @@ const menuStylesGlobal = css`
     height: 30px;
     right: 25px;
     top: 25px;
+
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
   }
 
   /* Color/shape of burger icon bars */
@@ -122,6 +133,7 @@ const styles = {
     height: 80px;
     background-color: #dfd3c3;
     display: flex;
+    justify-content: space-between;
   `,
   link: emotionCSS`
     display: block;
@@ -132,5 +144,26 @@ const styles = {
     margin-top: 30px;
     font-size: 30px;
     text-decoration: none;
+  `,
+  desktopLink: emotionCSS`
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    &:hover {
+      color: #373a47;
+    }
+  `,
+  desktopLinks: emotionCSS`
+    display: none;
+
+    @media screen and (min-width: 800px) {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+  `,
+  logo: emotionCSS`
+    max-width: 80px;
   `,
 }
