@@ -40,6 +40,7 @@ export const layoutStyles = {
     align-items: center;
   `,
   secondaryHeadline: css`
+    font-weight: 600;
     font-size: 20px;
   `,
   mainHeadline: css`
@@ -58,14 +59,14 @@ const alpakas: Alpaka[] = [
     nickname: 'Die Gelassene',
     birthYear: 2017,
     description:
-      'Gundi ist die unangefochtene Chefin der Herde. Eine Wanderung ohne sie ist unmöglich, die Tiere gehen keinen Schritt ohne Gundula. Sie hat beschlossen, das Schlusslicht zu sein, weil man da so schön trödeln kann.',
+      'Gundi ist die unangefochtene Chefin der Herde. Gleichzeitig ist sie auch unser neugierigstes Alpaka. Beim Wandern hat sie beschlossen das Schlusslicht zu sein, weil man da so schön trödeln kann.',
   },
   {
     name: 'Rosi',
     nickname: 'Die Sensible',
     birthYear: 2017,
     description:
-      'Für unsere schwarze Schönheit ist die Welt in Ordnung, wenn alle zusammen unterwegs sind und kein „gefährlicher Gegenverkehr“ in Sicht ist. Sie ist die Aufpasserin und immer darauf bedacht, dass alle beisammen sind.',
+      'Für unsere schwarze Schönheit ist die Welt in Ordnung, wenn alle zusammen unterwegs sind und kein „gefährlicher Gegenverkehr“ in Sicht ist. Sie ist die Aufpasserin und wartet bei den Wanderungen geduldig auf die Nachzügler.',
   },
   {
     name: 'Uschi',

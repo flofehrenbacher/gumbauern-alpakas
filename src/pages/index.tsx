@@ -10,8 +10,7 @@ import { alpakaStyles } from 'components/alpaka'
 export default () => (
   <main className={styles.carouselContainer}>
     <h1 className={styles.headline}>
-      Herzlich Willkommen bei den Gumbauern-Alpakas im idyllischen
-      Kleinberghausen
+      Herzlich Willkommen bei den Gumbauern-Alpakas
     </h1>
     <div className={cx([alpakaStyles.ratioContainer])}>
       <CustomCarousel>
@@ -75,7 +74,7 @@ const styles = {
   `,
   headline: css`
     color: #394e59;
-    margin-right: 30px;
+    text-align: center;
     font-size: 20px;
     font-weight: 600;
     margin: 30px 30px 0;

@@ -23,18 +23,21 @@ export function Contact(
         <h1 className={layoutStyles.mainHeadline}>Kontakt</h1>
       )}
       <address className={styles.addressLine}>Gumbauern-Alpakas</address>
-      <address className={styles.addressLine}>
-        Kleinberghausen 5 92342 Freystadt
-      </address>
+      <address className={styles.addressLine}>Familie Olbrich</address>
+      <address className={styles.addressLine}>Kleinberghausen 5</address>
+      <address className={styles.addressLine}>92342 Freystadt</address>
       <span className={styles.addressLine}>
-        Tel.
+        Tel.:
         <a className={styles.phone} href="tel:+49015754205232">
           01575-4205232
         </a>
       </span>
-      <a className={styles.addressLine} href="mailto:gumbauern@example.com">
-        gumbauern@example.com
+      <span className={styles.addressLine}>
+        E-Mail:
+        <a className={styles.phone} href="mailto:info@gumbauern-alpakas.de">
+        info@gumbauern-alpakas.de
       </a>
+      </span>
       <Map center={position} zoom={13} className={styles.map}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -54,7 +57,7 @@ export function Contact(
 
 const styles = {
   addressLine: css`
-    margin-top: 20px;
+    margin-top: 7px;
     display: flex;
   `,
   phone: css`
