@@ -5,6 +5,7 @@ import path from 'path'
 
 export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
+  siteRoot: 'https://gumbauern-alpakas.de',
   plugins: [
     'react-static-plugin-typescript',
     'react-static-plugin-emotion',
