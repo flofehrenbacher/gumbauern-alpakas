@@ -53,6 +53,7 @@ const styles = {
     margin: 0 auto;
   `,
   contentWrapper: css`
+    width: 100%;
     max-width: 600px;
     flex-grow: 1;
     margin: 0 auto;

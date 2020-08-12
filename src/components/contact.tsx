@@ -3,6 +3,7 @@ import { Icon, LatLngTuple } from 'leaflet'
 import React, { HTMLAttributes } from 'react'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import { layoutStyles } from '../pages/unsere-tiere'
+import { H1 } from './shared'
 
 const marker = new Icon({
   iconUrl: '/img/location-marker.svg',
@@ -20,24 +21,26 @@ export function Contact(
       {as === 'h2' ? (
         <h2 className={layoutStyles.secondaryHeadline}>Kontakt</h2>
       ) : (
-        <h1 className={layoutStyles.mainHeadline}>Kontakt</h1>
+        <H1>Kontakt</H1>
       )}
-      <address className={styles.addressLine}>Gumbauern-Alpakas</address>
-      <address className={styles.addressLine}>Familie Olbrich</address>
-      <address className={styles.addressLine}>Kleinberghausen 5</address>
-      <address className={styles.addressLine}>92342 Freystadt</address>
-      <span className={styles.addressLine}>
-        Tel.:
-        <a className={styles.phone} href="tel:+49015754205232">
-          01575-4205232
-        </a>
-      </span>
-      <span className={styles.addressLine}>
-        E-Mail:
-        <a className={styles.phone} href="mailto:info@gumbauern-alpakas.de">
-          info@gumbauern-alpakas.de
-        </a>
-      </span>
+      <div className={styles.addressContainer}>
+        <address className={styles.addressLine}>Gumbauern-Alpakas</address>
+        <address className={styles.addressLine}>Familie Olbrich</address>
+        <address className={styles.addressLine}>Kleinberghausen 5</address>
+        <address className={styles.addressLine}>92342 Freystadt</address>
+        <span className={styles.addressLine}>
+          Tel.:
+          <a className={styles.phone} href="tel:+49015754205232">
+            01575-4205232
+          </a>
+        </span>
+        <span className={styles.addressLine}>
+          E-Mail:
+          <a className={styles.phone} href="mailto:info@gumbauern-alpakas.de">
+            info@gumbauern-alpakas.de
+          </a>
+        </span>
+      </div>
       <Map center={position} zoom={13} className={styles.map}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -66,5 +69,8 @@ const styles = {
   map: css`
     height: 300px;
     margin: 20px auto;
+  `,
+  addressContainer: css`
+    margin-top: 30px;
   `,
 }

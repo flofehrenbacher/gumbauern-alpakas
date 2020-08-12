@@ -6,7 +6,7 @@ export default () => (
   <Contact
     as="h1"
     className={css`
-      margin-top: 30px;
+      margin: 30px;
     `}
   />
 )
