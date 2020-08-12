@@ -1,28 +1,24 @@
 import React, { ImgHTMLAttributes } from 'react'
-import { css } from 'emotion'
+import { css, cx } from 'emotion'
+import lozad from 'lozad'
 
 type ResponsiveImageProps = {
-  lazy: boolean
   baseSrc: string
 } & ImgHTMLAttributes<HTMLImageElement>
 
-export function ResponsiveImage({
-  lazy,
-  baseSrc,
-  ...props
-}: ResponsiveImageProps) {
+export function ResponsiveImage({ baseSrc, ...props }: ResponsiveImageProps) {
+  React.useEffect(() => {
+    const observer = lozad() // lazy loads elements with default selector as '.lozad'
+    observer.observe()
+  }, [])
+
   return (
-    <picture className={styles}>
+    <picture className={cx([styles, 'lozad'])} {...props}>
       <source
         type="image/webp"
         srcSet={`${baseSrc}_800.webp 800w, ${baseSrc}_1600.webp 1600w`}
       />
-      <img
-        src={`${baseSrc}_800.jpg`}
-        srcSet={`${baseSrc}_800.jpg 800w, ${baseSrc}_1600.jpg 1600w`}
-        loading="lazy"
-        {...props}
-      />
+      <source type="image/jpeg" srcSet={`${baseSrc}_800.jpg`} />
     </picture>
   )
 }

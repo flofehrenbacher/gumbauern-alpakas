@@ -1,6 +1,6 @@
+import { css } from 'emotion'
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
-import { css } from 'emotion'
 
 export function CustomCarousel({ children }: { children: React.ReactChild[] }) {
   return (
@@ -8,6 +8,7 @@ export function CustomCarousel({ children }: { children: React.ReactChild[] }) {
       showStatus={false}
       infiniteLoop
       swipeable
+      dynamicHeight
       className={css`
         margin-top: 30px;
       `}

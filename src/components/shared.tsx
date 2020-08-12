@@ -5,14 +5,6 @@ export function H1({ children }: { children: React.ReactNode }) {
   return <h1 className={styles.mainHeadline}>{children}</h1>
 }
 
-export function ImageRatioContainer({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return <div className={styles.imageRatioContainer}>{children}</div>
-}
-
 export function AppWrapper({ children }: { children: React.ReactNode }) {
   return <div className={styles.appStyles}>{children}</div>
 }
@@ -39,15 +31,6 @@ const styles = {
     font-weight: 600;
     margin: 30px ${marginLeftRight}px 0;
   `,
-  imageRatioContainer: css`
-    margin: 30px auto 0;
-    overflow: hidden;
-    height: 0;
-    overflow: hidden;
-    padding-top: ${(9 / 16) * 100}%;
-    background: red;
-    position: relative;
-  `,
   appStyles: css`
     display: flex;
     flex-direction: column;
@@ -73,11 +56,3 @@ const styles = {
     margin-top: 20px;
   `,
 }
-
-export const ratioChildStyles = css`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-`

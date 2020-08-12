@@ -18,21 +18,12 @@ export default function () {
     <>
       <H1>Herzlich Willkommen bei den Gumbauern-Alpakas</H1>
       <CustomCarousel>
+        <ResponsiveImage baseSrc="/img/titel/titel_1" alt="Alpaka Alfons" />
         <ResponsiveImage
-          baseSrc="/img/titel/titel_1"
-          className={styles.image}
-          lazy={false}
-          alt="Alpaka Alfons"
-        />
-        <ResponsiveImage
-          className={styles.image}
-          lazy={false}
           baseSrc="/img/titel/titel_2"
           alt="mehrere Alpakas auf der Wiese"
         />
         <ResponsiveImage
-          className={styles.image}
-          lazy={false}
           baseSrc="/img/titel/titel_3"
           alt="Alpakas beim Essen"
         />
@@ -48,7 +39,7 @@ function LinkContainer({ links }: { links: LinkType[] }) {
   return (
     <ul className={styles.linkContainer}>
       {links.map((link) => (
-        <Link className={styles.link} to={link.to}>
+        <Link className={styles.link} to={link.to} key={link.text}>
           {link.text}
         </Link>
       ))}

@@ -1,23 +1,15 @@
-import {
-  H1,
-  TextBlock,
-  ImageRatioContainer,
-  ratioChildStyles,
-} from 'components/shared'
-import React from 'react'
 import { ResponsiveImage } from 'components/responsive-image'
+import { H1, TextBlock } from 'components/shared'
+import React from 'react'
+import { CustomCarousel } from 'components/custom-carousel'
 
 export default () => (
   <>
     <H1>Über Alpakas</H1>
-    <ImageRatioContainer>
-      <ResponsiveImage
-        lazy={false}
-        baseSrc={`/img/wolle/wolle`}
-        alt={'Alpakawolle'}
-        className={ratioChildStyles}
-      />
-    </ImageRatioContainer>
+    <CustomCarousel>
+      <ResponsiveImage baseSrc={`/img/wolle/wolle`} alt={'Alpakawolle'} />
+      <ResponsiveImage baseSrc={`/img/wandern/wandern_1`} alt={'Alpakawolle'} />
+    </CustomCarousel>
     <TextBlock>
       <p>
         Alpakas stammen ursprünglich aus den Anden, wo sie von den Inkas schon

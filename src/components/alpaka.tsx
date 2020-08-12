@@ -18,17 +18,14 @@ export function SingleAlpaka({
       <SecondaryHeadline>{name}</SecondaryHeadline>
       <CustomCarousel>
         <ResponsiveImage
-          lazy={false}
           baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_1`}
           alt={name}
         />
         <ResponsiveImage
-          lazy={false}
           baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_2`}
           alt={name}
         />
         <ResponsiveImage
-          lazy={false}
           baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_3`}
           alt={name}
         />

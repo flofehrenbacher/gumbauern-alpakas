@@ -30,6 +30,7 @@ export function Navigation() {
       >
         {links.map((link) => (
           <Link
+            key={link.id}
             onClick={() => setIsOpen(false)}
             id={link.id}
             className={cx(['menu-item', styles.link])}
@@ -41,7 +42,7 @@ export function Navigation() {
       </Menu>
       <div className={styles.desktopLinks}>
         {links.map((link) => (
-          <Link className={styles.desktopLink} to={link.to}>
+          <Link className={styles.desktopLink} to={link.to} key={link.id}>
             {link.text}
           </Link>
         ))}
