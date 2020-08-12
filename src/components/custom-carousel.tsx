@@ -9,6 +9,7 @@ export function CustomCarousel({ children }: { children: React.ReactChild[] }) {
       infiniteLoop
       swipeable
       dynamicHeight
+      useKeyboardArrows
       className={css`
         margin-top: 30px;
       `}
