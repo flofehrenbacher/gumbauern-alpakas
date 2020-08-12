@@ -1,12 +1,6 @@
-import { alpakaStyles } from 'components/alpaka'
 import { CustomCarousel } from 'components/custom-carousel'
 import { ResponsiveImage } from 'components/responsive-image'
-import {
-  H1,
-  ImageRatioContainer,
-  TextBlock,
-  SecondaryHeadline,
-} from 'components/shared'
+import { H1, SecondaryHeadline, TextBlock } from 'components/shared'
 import { css, cx } from 'emotion'
 import React from 'react'
 
@@ -19,28 +13,23 @@ export default () => (
         mit Euren flauschigen Begleitern.
       </p>
     </TextBlock>
-    <ImageRatioContainer>
-      <CustomCarousel>
-        <ResponsiveImage
-          className={alpakaStyles.img}
-          lazy={false}
-          src={`img/wandern/wandern_1.jpg`}
-          alt={'Alpakas sind cool'}
-        />
-        <ResponsiveImage
-          className={alpakaStyles.img}
-          lazy={false}
-          src={`img/wandern/wandern_2.jpg`}
-          alt={'Alpakas sind cool'}
-        />
-        <ResponsiveImage
-          className={alpakaStyles.img}
-          lazy={false}
-          src={`img/wandern/wandern_3.jpg`}
-          alt={'Alpakas sind cool'}
-        />
-      </CustomCarousel>
-    </ImageRatioContainer>
+    <CustomCarousel>
+      <ResponsiveImage
+        lazy={false}
+        baseSrc={`img/wandern/wandern_1`}
+        alt={'Alpakawanderung im Winter'}
+      />
+      <ResponsiveImage
+        lazy={false}
+        baseSrc={`img/wandern/wandern_2`}
+        alt={'Alpakawanderung im Sommer'}
+      />
+      <ResponsiveImage
+        lazy={false}
+        baseSrc={`img/wandern/wandern_3`}
+        alt={'Alpakawanderung im Sommer'}
+      />
+    </CustomCarousel>
     <TextBlock>
       <SecondaryHeadline>Ablauf der Wanderung</SecondaryHeadline>
       <p className={internalStyles.textBelowHeadline}>

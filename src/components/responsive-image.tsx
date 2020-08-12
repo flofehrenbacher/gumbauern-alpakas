@@ -1,24 +1,33 @@
 import React, { ImgHTMLAttributes } from 'react'
+import { css } from 'emotion'
 
 type ResponsiveImageProps = {
   lazy: boolean
-  // webpSrcSet: string
-  // jpegSrcSet: string
-  // fallbackSrc: string
+  baseSrc: string
 } & ImgHTMLAttributes<HTMLImageElement>
 
 export function ResponsiveImage({
   lazy,
-  // webpSrcSet,
-  // jpegSrcSet,
-  // fallbackSrc,
+  baseSrc,
   ...props
 }: ResponsiveImageProps) {
   return (
-    // <picture>
-    //   <source type="image/webp" srcSet={webpSrcSet} {...props} />
-    //   <img src={fallbackSrc} srcSet={jpegSrcSet} {...props} />
-    // </picture>
-    <img {...props}></img>
+    <picture className={styles}>
+      <source
+        type="image/webp"
+        srcSet={`${baseSrc}_800.webp 800w, ${baseSrc}_1600.webp 1600w`}
+      />
+      <img
+        src={`${baseSrc}_800.jpg`}
+        srcSet={`${baseSrc}_800.jpg 800w, ${baseSrc}_1600.jpg 1600w`}
+        loading="lazy"
+        {...props}
+      />
+    </picture>
   )
 }
+
+const styles = css`
+  width: 100%;
+  height: auto;
+`

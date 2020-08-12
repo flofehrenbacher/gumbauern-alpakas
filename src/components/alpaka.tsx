@@ -4,11 +4,7 @@ import React from 'react'
 import { Alpaka } from '../pages/unsere-tiere'
 import { CustomCarousel } from './custom-carousel'
 import { ResponsiveImage } from './responsive-image'
-import {
-  ImageRatioContainer,
-  marginLeftRight,
-  SecondaryHeadline,
-} from './shared'
+import { marginLeftRight, SecondaryHeadline } from './shared'
 
 export function SingleAlpaka({
   name,
@@ -20,28 +16,23 @@ export function SingleAlpaka({
   return (
     <div className={alpakaStyles.container}>
       <SecondaryHeadline>{name}</SecondaryHeadline>
-      <ImageRatioContainer>
-        <CustomCarousel>
-          <ResponsiveImage
-            className={alpakaStyles.img}
-            lazy={false}
-            src={`/img/${name.toLowerCase()}/${name.toLowerCase()}_1.jpg`}
-            alt={name}
-          />
-          <ResponsiveImage
-            className={alpakaStyles.img}
-            lazy={false}
-            src={`/img/${name.toLowerCase()}/${name.toLowerCase()}_2.jpg`}
-            alt={name}
-          />
-          <ResponsiveImage
-            className={alpakaStyles.img}
-            lazy={false}
-            src={`/img/${name.toLowerCase()}/${name.toLowerCase()}_3.jpg`}
-            alt={name}
-          />
-        </CustomCarousel>
-      </ImageRatioContainer>
+      <CustomCarousel>
+        <ResponsiveImage
+          lazy={false}
+          baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_1`}
+          alt={name}
+        />
+        <ResponsiveImage
+          lazy={false}
+          baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_2`}
+          alt={name}
+        />
+        <ResponsiveImage
+          lazy={false}
+          baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_3`}
+          alt={name}
+        />
+      </CustomCarousel>
       <dl className={alpakaStyles.aboutContainer}>
         <dt>
           <VisuallyHidden>Spitzname</VisuallyHidden>
@@ -75,10 +66,6 @@ export const alpakaStyles = {
     font-size: 20px;
     text-align: center;
     margin-top: 0;
-  `,
-  img: css`
-    width: 100%;
-    height: auto;
   `,
   birthYear: css`
     text-align: center;

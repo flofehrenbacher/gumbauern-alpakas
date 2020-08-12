@@ -2,10 +2,10 @@ import { Link } from '@reach/router'
 import { Contact } from 'components/contact'
 import { CustomCarousel } from 'components/custom-carousel'
 import { ResponsiveImage } from 'components/responsive-image'
+import { H1 } from 'components/shared'
 import { css } from 'emotion'
 import React from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { H1, ImageRatioContainer } from 'components/shared'
 
 export default function () {
   const links = [
@@ -17,25 +17,26 @@ export default function () {
   return (
     <>
       <H1>Herzlich Willkommen bei den Gumbauern-Alpakas</H1>
-      <ImageRatioContainer>
-        <CustomCarousel>
-          <ResponsiveImage
-            className={styles.image}
-            lazy={false}
-            src="/img/titel/titel_1.jpg"
-          />
-          <ResponsiveImage
-            className={styles.image}
-            lazy={false}
-            src="/img/titel/titel_2.jpg"
-          />
-          <ResponsiveImage
-            className={styles.image}
-            lazy={false}
-            src="/img/titel/titel_3.jpg"
-          />
-        </CustomCarousel>
-      </ImageRatioContainer>
+      <CustomCarousel>
+        <ResponsiveImage
+          baseSrc="/img/titel/titel_1"
+          className={styles.image}
+          lazy={false}
+          alt="Alpaka Alfons"
+        />
+        <ResponsiveImage
+          className={styles.image}
+          lazy={false}
+          baseSrc="/img/titel/titel_2"
+          alt="mehrere Alpakas auf der Wiese"
+        />
+        <ResponsiveImage
+          className={styles.image}
+          lazy={false}
+          baseSrc="/img/titel/titel_3"
+          alt="Alpakas beim Essen"
+        />
+      </CustomCarousel>
       <LinkContainer links={links} />
       <Contact as="h2" className={styles.contactLayout} />
     </>

@@ -40,9 +40,13 @@ const styles = {
     margin: 30px ${marginLeftRight}px 0;
   `,
   imageRatioContainer: css`
-    width: 100%;
-    overflow: hidden;
     margin: 30px auto 0;
+    overflow: hidden;
+    height: 0;
+    overflow: hidden;
+    padding-top: ${(9 / 16) * 100}%;
+    background: red;
+    position: relative;
   `,
   appStyles: css`
     display: flex;
@@ -69,3 +73,11 @@ const styles = {
     margin-top: 20px;
   `,
 }
+
+export const ratioChildStyles = css`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`

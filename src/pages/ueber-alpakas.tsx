@@ -1,9 +1,23 @@
-import { H1, TextBlock } from 'components/shared'
+import {
+  H1,
+  TextBlock,
+  ImageRatioContainer,
+  ratioChildStyles,
+} from 'components/shared'
 import React from 'react'
+import { ResponsiveImage } from 'components/responsive-image'
 
 export default () => (
   <>
     <H1>Über Alpakas</H1>
+    <ImageRatioContainer>
+      <ResponsiveImage
+        lazy={false}
+        baseSrc={`/img/wolle/wolle`}
+        alt={'Alpakawolle'}
+        className={ratioChildStyles}
+      />
+    </ImageRatioContainer>
     <TextBlock>
       <p>
         Alpakas stammen ursprünglich aus den Anden, wo sie von den Inkas schon
