@@ -8,7 +8,7 @@ import emotionReset from 'emotion-reset'
 import 'leaflet/dist/leaflet.css'
 import React from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Root, Routes } from 'react-static'
+import { Root, Routes, Head } from 'react-static'
 
 function App() {
   return (
@@ -32,6 +32,13 @@ function App() {
           }
         `}
       />
+      <Head>
+        <meta charSet="UTF-8" />
+        <title>
+          Alpakawandern im schönen Kleinberghausen - Alpakawanderung in der
+          Oberpfalz
+        </title>
+      </Head>
       <AppWrapper>
         <Navigation />
         <ContentWrapper>
