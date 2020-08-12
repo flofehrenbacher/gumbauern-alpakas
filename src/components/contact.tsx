@@ -30,8 +30,8 @@ export function Contact(
         <address className={styles.addressLine}>92342 Freystadt</address>
         <span className={styles.addressLine}>
           Tel.:
-          <a className={styles.phone} href="tel:+49015754205232">
-            01575-4205232
+          <a className={styles.phone} href="tel:084622638">
+            08462-2638
           </a>
         </span>
         <span className={styles.addressLine}>
