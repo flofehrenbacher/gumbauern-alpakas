@@ -36,7 +36,7 @@ function App() {
         <Navigation />
         <ContentWrapper>
           <React.Suspense fallback={<em>Lädt...</em>}>
-            <Router>
+            <Router basepath="/">
               <Routes path="*" />
             </Router>
           </React.Suspense>
