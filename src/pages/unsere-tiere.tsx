@@ -25,6 +25,7 @@ export default () => (
       <SingleAlpaka
         isLast={i === alpakas.length - 1}
         isFirst={i === 0}
+        key={alpaka.name}
         {...alpaka}
       />
     ))}

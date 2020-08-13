@@ -14,7 +14,7 @@ export function ResponsiveImage({
 }: ResponsiveImageProps) {
   React.useEffect(() => {
     const observer = lozad('.lozad', {
-      rootMargin: '100px 0px',
+      rootMargin: '200px 0px',
     }) // lazy loads elements with default selector as '.lozad'
     observer.observe()
   }, [])

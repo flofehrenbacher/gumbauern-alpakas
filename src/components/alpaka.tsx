@@ -26,10 +26,12 @@ export function SingleAlpaka({
         <ResponsiveImage
           baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_2`}
           alt={name}
+          lazy
         />
         <ResponsiveImage
           baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_3`}
           alt={name}
+          lazy
         />
       </CustomCarousel>
       <dl className={alpakaStyles.aboutContainer}>
