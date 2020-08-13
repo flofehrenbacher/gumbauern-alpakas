@@ -9,6 +9,7 @@ export type Alpaka = {
   birthYear: number
   description: string
   isLast?: boolean
+  isFirst?: boolean
 }
 
 export default () => (
@@ -21,7 +22,11 @@ export default () => (
       </p>
     </TextBlock>
     {alpakas.map((alpaka, i) => (
-      <SingleAlpaka isLast={i === alpakas.length - 1} {...alpaka} />
+      <SingleAlpaka
+        isLast={i === alpakas.length - 1}
+        isFirst={i === 0}
+        {...alpaka}
+      />
     ))}
   </>
 )

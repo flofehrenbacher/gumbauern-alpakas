@@ -15,6 +15,7 @@ export default () => (
     </TextBlock>
     <CustomCarousel>
       <ResponsiveImage
+        lazy={false}
         baseSrc={`img/wandern/wandern_1`}
         alt={'Alpakawanderung im Winter'}
       />

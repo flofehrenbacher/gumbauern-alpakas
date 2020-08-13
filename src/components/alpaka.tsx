@@ -12,6 +12,7 @@ export function SingleAlpaka({
   birthYear,
   description,
   isLast,
+  isFirst,
 }: Alpaka) {
   return (
     <div className={alpakaStyles.container}>
@@ -20,6 +21,7 @@ export function SingleAlpaka({
         <ResponsiveImage
           baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_1`}
           alt={name}
+          lazy={!isFirst}
         />
         <ResponsiveImage
           baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_2`}

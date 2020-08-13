@@ -18,7 +18,7 @@ export function Navigation() {
   return (
     <nav className={styles.navigation}>
       <Global styles={menuStylesGlobal} />
-      <Link to="/" className={styles.logo}>
+      <Link to="/">
         <Logo height="100%" width="auto" />
       </Link>
       <Menu
@@ -147,12 +147,19 @@ const styles = {
     text-decoration: none;
   `,
   desktopLink: emotionCSS`
-    color: white;
-    margin-right: 20px;
-    font-size: 20px;
-    text-decoration: none;
-    &:hover {
-      color: #373a47;
+    display: none;
+
+    @media screen and (min-width: 800px) {
+      color: white;
+      margin-right: 20px;
+      font-size: 20px;
+      text-decoration: none;
+      display: flex;
+      white-space: nowrap;
+
+      &:hover {
+        color: #373a47;
+      }
     }
   `,
   desktopLinks: emotionCSS`
@@ -163,8 +170,5 @@ const styles = {
       height: 100%;
       align-items: center;
     }
-  `,
-  logo: emotionCSS`
-    max-width: 80px;
   `,
 }

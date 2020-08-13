@@ -18,7 +18,11 @@ export default function () {
     <>
       <H1>Herzlich Willkommen bei den Gumbauern-Alpakas</H1>
       <CustomCarousel>
-        <ResponsiveImage baseSrc="/img/titel/titel_1" alt="Alpaka Alfons" />
+        <ResponsiveImage
+          lazy={false}
+          baseSrc="/img/titel/titel_1"
+          alt="Alpaka Alfons"
+        />
         <ResponsiveImage
           baseSrc="/img/titel/titel_2"
           alt="mehrere Alpakas auf der Wiese"
