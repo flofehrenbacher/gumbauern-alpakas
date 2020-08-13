@@ -1,6 +1,6 @@
 import { Global } from '@emotion/core'
 import css from '@emotion/css'
-import { Router } from '@reach/router'
+import { Router, useLocation } from '@reach/router'
 import { Footer } from 'components/footer'
 import { Navigation } from 'components/navigation'
 import { AppWrapper, ContentWrapper } from 'components/shared'
@@ -8,7 +8,7 @@ import emotionReset from 'emotion-reset'
 import 'leaflet/dist/leaflet.css'
 import React from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Root, Routes, Head } from 'react-static'
+import { Head, Root, Routes } from 'react-static'
 
 function App() {
   return (
@@ -43,8 +43,10 @@ function App() {
         <Navigation />
         <ContentWrapper>
           <React.Suspense fallback={<em>Lädt...</em>}>
-            <Router basepath="/">
-              <Routes path="*" />
+            <Router basepath="/" primary={false}>
+              <ScrollToTop path="/">
+                <Routes path="*" />
+              </ScrollToTop>
             </Router>
           </React.Suspense>
         </ContentWrapper>
@@ -52,6 +54,18 @@ function App() {
       </AppWrapper>
     </Root>
   )
+}
+
+export const ScrollToTop = ({
+  children,
+}: {
+  children: JSX.Element
+  path: string
+}) => {
+  const location = useLocation()
+
+  React.useEffect(() => window.scrollTo(0, 0), [location.pathname])
+  return children
 }
 
 export default App

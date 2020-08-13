@@ -31,7 +31,13 @@ export function Contact(
         <span className={styles.addressLine}>
           Tel.:
           <a className={styles.phone} href="tel:084622638">
-            08462-2638
+            08462 2638
+          </a>
+        </span>
+        <span className={styles.addressLine}>
+          Mobil:
+          <a className={styles.phone} href="tel:+49 1575 4205232">
+            01575 4205232
           </a>
         </span>
         <span className={styles.addressLine}>

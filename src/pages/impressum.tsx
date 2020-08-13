@@ -1,11 +1,22 @@
-import React from 'react'
 import { H1 } from 'components/shared'
+import { css } from 'emotion'
+import React from 'react'
 
 export default () => (
   <>
-    <div className="impressum">
+    <div
+      className={css`
+        margin: 30px;
+      `}
+    >
       <H1>Impressum</H1>
-      <p>Angaben gemäß § 5 TMG</p>
+      <p
+        className={css`
+          margin-top: 30px;
+        `}
+      >
+        Angaben gemäß § 5 TMG
+      </p>
       <p>
         Andreas Olbrich <br />
         Finkenweg 9<br />
