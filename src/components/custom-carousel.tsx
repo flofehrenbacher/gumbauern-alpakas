@@ -12,6 +12,7 @@ export function CustomCarousel({ children }: { children: React.ReactChild[] }) {
       useKeyboardArrows
       className={css`
         margin-top: 30px;
+        width: 100%;
       `}
     >
       {children}
