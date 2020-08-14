@@ -1,6 +1,6 @@
 import { Global } from '@emotion/core'
 import css from '@emotion/css'
-import { Router, useLocation } from '@reach/router'
+import { useLocation, Router } from '@reach/router'
 import { Footer } from 'components/footer'
 import { Navigation } from 'components/navigation'
 import { AppWrapper, ContentWrapper } from 'components/shared'
@@ -8,7 +8,8 @@ import emotionReset from 'emotion-reset'
 import 'leaflet/dist/leaflet.css'
 import React from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Head, Root, Routes } from 'react-static'
+import { Root, Routes } from 'react-static'
+import { Spinner } from 'components/spinner'
 
 function App() {
   return (
@@ -32,17 +33,10 @@ function App() {
           }
         `}
       />
-      <Head>
-        <meta charSet="UTF-8" />
-        <title>
-          Alpakawandern im schönen Kleinberghausen - Alpakawanderung in der
-          Oberpfalz
-        </title>
-      </Head>
       <AppWrapper>
         <Navigation />
         <ContentWrapper>
-          <React.Suspense fallback={<em>Lädt...</em>}>
+          <React.Suspense fallback={<Spinner />}>
             <Router basepath="/" primary={false}>
               <ScrollToTop path="/">
                 <Routes path="*" />
