@@ -55,7 +55,7 @@ export default () => (
       >
         <li>pro AlpakaführerIn 18€</li>
         <li>pro Begleitperson 8€</li>
-        <li>Kinder bis sechs Jahre sind frei</li>
+        <li>Kinder bis 11 Jahre sind frei</li>
         <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
         <li>
           Alpakas sind Herdentiere, deshalb sollte eine Wanderung mit mindestens
