@@ -19,7 +19,7 @@ export function Navigation() {
     <nav className={styles.navigation}>
       <Global styles={menuStylesGlobal} />
       <Link to="/">
-        <Logo height="100%" width="auto" />
+        <Logo height="80px" width="80px" />
       </Link>
       <Menu
         disableAutoFocus
