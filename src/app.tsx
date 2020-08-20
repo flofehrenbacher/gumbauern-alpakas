@@ -31,6 +31,10 @@ function App() {
             -webkit-font-smoothing: antialiased;
             font-smoothing: antialiased;
           }
+          /* Hot fix for carousel background */
+          .carousel .slide {
+            background: none !important;
+          }
         `}
       />
       <AppWrapper>

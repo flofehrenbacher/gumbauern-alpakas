@@ -61,7 +61,7 @@ export const alpakaStyles = {
     align-items: center;
   `,
   aboutContainer: css`
-    margin: 0 ${marginLeftRight}px;
+    margin: 30px ${marginLeftRight}px 0;
   `,
   nickname: css`
     font-size: 20px;
