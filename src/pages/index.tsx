@@ -6,6 +6,7 @@ import { H1 } from 'components/shared'
 import { css } from 'emotion'
 import React from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { SocialIcons } from 'components/social'
 
 export default function () {
   const links = [
@@ -33,6 +34,7 @@ export default function () {
         />
       </CustomCarousel>
       <LinkContainer links={links} />
+      <SocialIcons />
       <Contact as="h2" className={styles.contactLayout} />
     </>
   )

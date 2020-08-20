@@ -4,6 +4,7 @@ import React, { HTMLAttributes } from 'react'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import { layoutStyles } from '../pages/unsere-tiere'
 import { H1 } from './shared'
+import { SocialIcons } from './social'
 
 const marker = new Icon({
   iconUrl: '/img/location-marker.svg',
@@ -23,6 +24,7 @@ export function Contact(
       ) : (
         <H1>Kontakt</H1>
       )}
+      {as === 'h1' ? <SocialIcons /> : null}
       <div className={styles.addressContainer}>
         <address className={styles.addressLine}>Gumbauern-Alpakas</address>
         <address className={styles.addressLine}>Familie Olbrich</address>
@@ -42,8 +44,8 @@ export function Contact(
         </span>
         <span className={styles.addressLine}>
           E-Mail:
-          <a className={styles.phone} href="mailto:gumbauern-alpakas@posteo.de">
-            gumbauern-alpakas@posteo.de
+          <a className={styles.phone} href="mailto:info@gumbauern-alpakas.de">
+            info@gumbauern-alpakas.de
           </a>
         </span>
       </div>

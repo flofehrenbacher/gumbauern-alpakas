@@ -1,9 +1,10 @@
+import { css, Global } from '@emotion/core'
 import { Link } from '@reach/router'
 import { css as emotionCSS, cx } from 'emotion'
 import React from 'react'
 import { push as Menu } from 'react-burger-menu'
 import { Logo } from './logo'
-import { Global, css } from '@emotion/core'
+import { SocialIcons } from './social'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = React.useState(() => false)
@@ -39,6 +40,7 @@ export function Navigation() {
             {link.text}
           </Link>
         ))}
+        <SocialIcons />
       </Menu>
       <div className={styles.desktopLinks}>
         {links.map((link) => (
