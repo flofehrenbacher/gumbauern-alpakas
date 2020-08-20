@@ -10,6 +10,7 @@ export function CustomCarousel({ children }: { children: React.ReactChild[] }) {
       swipeable
       dynamicHeight
       useKeyboardArrows
+      showThumbs={false}
       className={css`
         margin-top: 30px;
         width: 100%;
