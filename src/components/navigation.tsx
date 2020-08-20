@@ -20,7 +20,13 @@ export function Navigation() {
     <nav className={styles.navigation}>
       <Global styles={menuStylesGlobal} />
       <Link to="/">
-        <Logo height="80px" width="80px" />
+        <Logo
+          className={emotionCSS`
+            height: 80px;
+            width: 80px;
+            margin-left: 5px;
+        `}
+        />
       </Link>
       <Menu
         disableAutoFocus
