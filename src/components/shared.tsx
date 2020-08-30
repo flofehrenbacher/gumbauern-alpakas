@@ -36,7 +36,6 @@ const styles = {
     flex-direction: column;
     min-height: 100vh;
     background-color: #f0ece2;
-    max-width: 800px;
     margin: 0 auto;
   `,
   contentWrapper: css`

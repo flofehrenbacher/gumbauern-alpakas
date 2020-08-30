@@ -17,45 +17,54 @@ export function Navigation() {
   ]
 
   return (
-    <nav className={styles.navigation}>
-      <Global styles={menuStylesGlobal} />
-      <Link to="/">
-        <Logo
-          className={emotionCSS`
+    <div
+      className={emotionCSS`
+        background-color: #dfd3c3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      `}
+    >
+      <nav className={styles.navigation}>
+        <Global styles={menuStylesGlobal} />
+        <Link to="/">
+          <Logo
+            className={emotionCSS`
             height: 80px;
             width: 80px;
             margin-left: 5px;
         `}
-        />
-      </Link>
-      <Menu
-        disableAutoFocus
-        right
-        width="100%"
-        isOpen={isOpen}
-        onStateChange={(state) => setIsOpen(state.isOpen)}
-      >
-        {links.map((link) => (
-          <Link
-            key={link.id}
-            onClick={() => setIsOpen(false)}
-            id={link.id}
-            className={cx(['menu-item', styles.link])}
-            to={link.to}
-          >
-            {link.text}
-          </Link>
-        ))}
-        <SocialIcons />
-      </Menu>
-      <div className={styles.desktopLinks}>
-        {links.map((link) => (
-          <Link className={styles.desktopLink} to={link.to} key={link.id}>
-            {link.text}
-          </Link>
-        ))}
-      </div>
-    </nav>
+          />
+        </Link>
+        <Menu
+          disableAutoFocus
+          right
+          width="100%"
+          isOpen={isOpen}
+          onStateChange={(state) => setIsOpen(state.isOpen)}
+        >
+          {links.map((link) => (
+            <Link
+              key={link.id}
+              onClick={() => setIsOpen(false)}
+              id={link.id}
+              className={cx(['menu-item', styles.link])}
+              to={link.to}
+            >
+              {link.text}
+            </Link>
+          ))}
+          <SocialIcons />
+        </Menu>
+        <div className={styles.desktopLinks}>
+          {links.map((link) => (
+            <Link className={styles.desktopLink} to={link.to} key={link.id}>
+              {link.text}
+            </Link>
+          ))}
+        </div>
+      </nav>
+    </div>
   )
 }
 
@@ -143,6 +152,7 @@ const styles = {
     background-color: #dfd3c3;
     display: flex;
     justify-content: space-between;
+    max-width: 800px;
   `,
   link: emotionCSS`
     display: block;
