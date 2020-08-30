@@ -22,15 +22,15 @@ export default function () {
         <ResponsiveImage
           lazy={false}
           baseSrc="/img/titel/titel_1"
-          alt="Alpaka Alfons"
+          alt="Alpakawanderungen"
         />
         <ResponsiveImage
           baseSrc="/img/titel/titel_2"
-          alt="Alpaka Berti"
+          alt="Alpakatouren"
         />
         <ResponsiveImage
           baseSrc="/img/titel/titel_3"
-          alt="Alpaka Rosi und Alpaka Berti"
+          alt="Alpakatrekking"
         />
       </CustomCarousel>
       <LinkContainer links={links} />
