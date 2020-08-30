@@ -12,7 +12,7 @@ export default {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
-          Alpakawandern im schönen Kleinberghausen - Alpakawanderung in der
+          Alpakawandern im idyllischen Kleinberghausen - Alpakawanderung in der
           Oberpfalz
         </title>
       </Head>
