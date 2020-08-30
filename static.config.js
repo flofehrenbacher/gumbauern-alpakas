@@ -12,8 +12,7 @@ export default {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
-          Alpakawandern im idyllischen Kleinberghausen - Alpakawanderung in der
-          Oberpfalz
+          Gumbauern-Alpakas - Alpakawanderung im Landkreis Neumarkt
         </title>
       </Head>
       <Body>{children}</Body>
