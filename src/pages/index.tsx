@@ -26,11 +26,11 @@ export default function () {
         />
         <ResponsiveImage
           baseSrc="/img/titel/titel_2"
-          alt="mehrere Alpakas auf der Wiese"
+          alt="Alpaka Berti"
         />
         <ResponsiveImage
           baseSrc="/img/titel/titel_3"
-          alt="Alpakas beim Essen"
+          alt="Alpaka Rosi und Alpaka Berti"
         />
       </CustomCarousel>
       <LinkContainer links={links} />
