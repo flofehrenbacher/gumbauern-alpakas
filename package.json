@@ -10,6 +10,7 @@
     "serve": "serve dist -p 3000 -s"
   },
   "dependencies": {
+    "bl": ">=2.2.1",
     "@emotion/core": "^10.0.28",
     "@emotion/css": "^10.0.27",
     "@reach/router": "^1.2.1",
