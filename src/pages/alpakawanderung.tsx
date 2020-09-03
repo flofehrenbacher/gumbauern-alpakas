@@ -17,15 +17,15 @@ export default () => (
       <ResponsiveImage
         lazy={false}
         baseSrc={`img/wandern/wandern_1`}
-        alt={'Alpakawanderung im Winter'}
+        alt={'Alpakawanderung in Kleinberghausen'}
       />
       <ResponsiveImage
         baseSrc={`img/wandern/wandern_2`}
-        alt={'Alpakawanderung im Sommer'}
+        alt={'Alpakawanderung in Freystadt'}
       />
       <ResponsiveImage
         baseSrc={`img/wandern/wandern_3`}
-        alt={'Alpakawanderung im Sommer'}
+        alt={'Alpakawanderung in Neumarkt'}
       />
     </CustomCarousel>
     <TextBlock>
