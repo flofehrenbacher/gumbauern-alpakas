@@ -38,9 +38,9 @@ export function Contact(
           </a>
         </span>
         <span className={styles.addressLine}>
-          Mobil:
+          Mobil (gerne per WhatsApp):
           <a className={styles.phone} href="tel:+49 1575 4205232">
-            01575 4205232 (gerne per WhatsApp)
+            01575 4205232
           </a>
         </span>
         <span className={styles.addressLine}>
