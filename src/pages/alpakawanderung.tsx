@@ -57,10 +57,6 @@ export default () => (
         <li>pro Begleitperson 8€</li>
         <li>Kinder bis 11 Jahre sind frei</li>
         <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
-        <li>
-          Alpakas sind Herdentiere, deshalb sollte eine Wanderung mit mindestens
-          zwei Tieren gebucht werden
-        </li>
         <li>Gerne könnt Ihr auch einen Geschenkgutschein erwerben</li>
       </ul>
       <SecondaryHeadline>Zu beachten</SecondaryHeadline>
