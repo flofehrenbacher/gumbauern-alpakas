@@ -54,7 +54,7 @@ export default () => (
         className={cx([internalStyles.list, internalStyles.textBelowHeadline])}
       >
         <li>pro AlpakaführerIn 18€</li>
-        <li>pro Begleitperson 8€ ohne Alpaka</li>
+        <li>pro Begleitperson ohne Alpaka 8€</li>
         <li>Kinder bis 11 Jahre sind frei</li>
         <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
         <li>Gerne könnt Ihr auch einen Geschenkgutschein erwerben</li>
