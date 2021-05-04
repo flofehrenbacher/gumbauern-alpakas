@@ -57,7 +57,7 @@ export default () => (
         <li>pro Begleitperson ohne Alpaka 8€</li>
         <li>Kinder bis 11 Jahre sind frei</li>
         <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
-        <li>Leider können wir im Moment keine Gutscheine mehr ausstellen </li>
+        <li>Leider können wir im Moment keine Gutscheine mehr ausstellen, da sich sonst zu lange Wartezeiten auf einen Termin ergeben </li>
       </ul>
       <SecondaryHeadline>Zu beachten</SecondaryHeadline>
       <ul
