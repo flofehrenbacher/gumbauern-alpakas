@@ -1,6 +1,6 @@
 import React from 'react'
 import { SingleAlpaka } from 'components/alpaka'
-import { css } from 'emotion'
+import { css } from '@emotion/react'
 import { H1, TextBlock } from 'components/shared'
 
 export type Alpaka = {
@@ -12,25 +12,28 @@ export type Alpaka = {
   isFirst?: boolean
 }
 
-export default () => (
-  <>
-    <H1>Unsere Tiere</H1>
-    <TextBlock>
-      <p>
-        Unsere Herde besteht aus drei Stuten und drei Wallachen. Jedes der Tiere
-        hat einen einzigartigen Charakter. Wir möchten sie Euch vorstellen:
-      </p>
-    </TextBlock>
-    {alpakas.map((alpaka, i) => (
-      <SingleAlpaka
-        isLast={i === alpakas.length - 1}
-        isFirst={i === 0}
-        key={alpaka.name}
-        {...alpaka}
-      />
-    ))}
-  </>
-)
+export default function OurAnimals() {
+  return (
+    <>
+      <H1>Unsere Tiere</H1>
+      <TextBlock>
+        <p>
+          Unsere Herde besteht aus drei Stuten und drei Wallachen. Jedes der
+          Tiere hat einen einzigartigen Charakter. Wir möchten sie Euch
+          vorstellen:
+        </p>
+      </TextBlock>
+      {alpakas.map((alpaka, i) => (
+        <SingleAlpaka
+          isLast={i === alpakas.length - 1}
+          isFirst={i === 0}
+          key={alpaka.name}
+          {...alpaka}
+        />
+      ))}
+    </>
+  )
+}
 
 export const layoutStyles = {
   contentStyles: css`

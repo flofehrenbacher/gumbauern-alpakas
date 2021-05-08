@@ -16,8 +16,8 @@ export function Logo(props: SVGAttributes<SVGElement>) {
           <g id="g73" transform="matrix(.26458 0 0 .26458 69.758 49.944)">
             <circle
               id="circle12"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
               stroke="#000"
               fill="none"
               r="55.61"
@@ -107,7 +107,7 @@ export function Logo(props: SVGAttributes<SVGElement>) {
             id="path77"
             transform="scale(.26458)"
             fill="#fff"
-            stroke-width=".35"
+            strokeWidth=".35"
           />
         </g>
       </g>

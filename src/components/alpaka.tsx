@@ -1,5 +1,5 @@
 import VisuallyHidden from '@reach/visually-hidden'
-import { css } from 'emotion'
+import { css } from '@emotion/react'
 import React from 'react'
 import { Alpaka } from '../pages/unsere-tiere'
 import { CustomCarousel } from './custom-carousel'
@@ -15,7 +15,7 @@ export function SingleAlpaka({
   isFirst,
 }: Alpaka) {
   return (
-    <div className={alpakaStyles.container}>
+    <div css={alpakaStyles.container}>
       <SecondaryHeadline>{name}</SecondaryHeadline>
       <CustomCarousel>
         <ResponsiveImage
@@ -34,21 +34,21 @@ export function SingleAlpaka({
           lazy
         />
       </CustomCarousel>
-      <dl className={alpakaStyles.aboutContainer}>
+      <dl css={alpakaStyles.aboutContainer}>
         <dt>
           <VisuallyHidden>Spitzname</VisuallyHidden>
         </dt>
-        <dd className={alpakaStyles.nickname}>{nickname}</dd>
+        <dd css={alpakaStyles.nickname}>{nickname}</dd>
         <dt>
           <VisuallyHidden>geboren</VisuallyHidden>
         </dt>
-        <dd className={alpakaStyles.birthYear}>*{birthYear}</dd>
+        <dd css={alpakaStyles.birthYear}>*{birthYear}</dd>
         <dt>
           <VisuallyHidden>Beschreibung</VisuallyHidden>
         </dt>
-        <dd className={alpakaStyles.description}>{description}</dd>
+        <dd css={alpakaStyles.description}>{description}</dd>
       </dl>
-      {isLast ? null : <tr className={alpakaStyles.trenner} />}
+      {isLast ? null : <tr css={alpakaStyles.trenner} />}
     </div>
   )
 }

@@ -1,15 +1,15 @@
-import { Link } from '@reach/router'
-import { css } from 'emotion'
+import Link from 'next/link'
+import { css } from '@emotion/react'
 import React from 'react'
 
 export function Footer() {
   return (
-    <div className={styles.navigation}>
-      <Link className={styles.link} to="/impressum">
-        Impressum
+    <div css={styles.navigation}>
+      <Link href="/impressum" passHref>
+        <a css={styles.link}>Impressum</a>
       </Link>
-      <Link className={styles.link} to="/datenschutz">
-        Datenschutz
+      <Link href="/datenschutz" passHref>
+        <a css={styles.link}>Datenschutz</a>
       </Link>
     </div>
   )
@@ -27,7 +27,7 @@ const styles = {
   link: css`
     color: #394e59;
     text-decoration: none;
-    &:first-child {
+    &:first-of-type {
       margin-right: 30px;
     }
   `,

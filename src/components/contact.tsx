@@ -1,68 +1,52 @@
-import { css } from 'emotion'
-import { Icon, LatLngTuple } from 'leaflet'
+import { css } from '@emotion/react'
 import React, { HTMLAttributes } from 'react'
-import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import { layoutStyles } from '../pages/unsere-tiere'
 import { H1 } from './shared'
 import { SocialIcons } from './social'
-
-const marker = new Icon({
-  iconUrl: '/img/location-marker.svg',
-  iconSize: [50, 50],
-})
+import dynamic from 'next/dynamic'
 
 export function Contact(
   props: HTMLAttributes<HTMLDivElement> & { as: 'h1' | 'h2' }
 ) {
-  const position: LatLngTuple = [49.15636, 11.3629]
-
   const { as, ...rest } = props
+  const Map = dynamic(() => import('components/map'), { ssr: false })
+
   return (
     <div {...rest}>
       {as === 'h2' ? (
-        <h2 className={layoutStyles.secondaryHeadline}>Kontakt</h2>
+        <h2 css={layoutStyles.secondaryHeadline}>Kontakt</h2>
       ) : (
         <H1>Kontakt</H1>
       )}
       {as === 'h1' ? <SocialIcons /> : null}
-      <div className={styles.addressContainer}>
-        <address className={styles.addressLine}>Gumbauern-Alpakas</address>
-        <address className={styles.addressLine}>Familie Olbrich</address>
-        <address className={styles.addressLine}>Kleinberghausen 5</address>
-        <address className={styles.addressLine}>92342 Freystadt</address>
-        <address className={styles.addressLine}>Landkreis Neumarkt in der Oberpfalz</address>
-        <span className={styles.addressLine}>
+      <div css={styles.addressContainer}>
+        <address css={styles.addressLine}>Gumbauern-Alpakas</address>
+        <address css={styles.addressLine}>Familie Olbrich</address>
+        <address css={styles.addressLine}>Kleinberghausen 5</address>
+        <address css={styles.addressLine}>92342 Freystadt</address>
+        <address css={styles.addressLine}>
+          Landkreis Neumarkt in der Oberpfalz
+        </address>
+        <span css={styles.addressLine}>
           Tel.:
-          <a className={styles.phone} href="tel:084622638">
+          <a css={styles.phone} href="tel:084622638">
             08462 2638
           </a>
         </span>
-        <span className={styles.addressLine}>
+        <span css={styles.addressLine}>
           Mobil (WhatsApp):
-          <a className={styles.phone} href="tel:+49 1575 4205232">
+          <a css={styles.phone} href="tel:+49 1575 4205232">
             01575 4205232
           </a>
         </span>
-        <span className={styles.addressLine}>
+        <span css={styles.addressLine}>
           E-Mail:
-          <a className={styles.phone} href="mailto:info@gumbauern-alpakas.de">
+          <a css={styles.phone} href="mailto:info@gumbauern-alpakas.de">
             info@gumbauern-alpakas.de
           </a>
         </span>
       </div>
-      <Map center={position} zoom={13} className={styles.map}>
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        />
-        <Marker position={position} icon={marker}>
-          <Popup>
-            <a href="https://goo.gl/maps/xT88p5ppbEHf4EwYA">
-              Anfahrt über Google Maps
-            </a>
-          </Popup>
-        </Marker>
-      </Map>
+      <Map />
     </div>
   )
 }
@@ -74,10 +58,6 @@ const styles = {
   `,
   phone: css`
     margin-left: 10px;
-  `,
-  map: css`
-    height: 300px;
-    margin: 20px auto;
   `,
   addressContainer: css`
     margin-top: 30px;

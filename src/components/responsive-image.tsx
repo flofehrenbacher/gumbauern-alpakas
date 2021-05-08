@@ -1,5 +1,5 @@
 import React, { ImgHTMLAttributes } from 'react'
-import { css, cx } from 'emotion'
+import { css } from '@emotion/react'
 import lozad from 'lozad'
 
 type ResponsiveImageProps = {
@@ -20,8 +20,8 @@ export function ResponsiveImage({
   }, [])
 
   return (
-    <div className={imageRatioContainerStyles}>
-      <picture className={cx([styles, lazy && 'lozad'])} {...props}>
+    <div css={imageRatioContainerStyles}>
+      <picture css={styles} className="lozad" {...props}>
         <source
           type="image/webp"
           srcSet={`${baseSrc}_800.webp 800w, ${baseSrc}_1600.webp 1600w`}
@@ -29,8 +29,9 @@ export function ResponsiveImage({
         <source type="image/jpeg" srcSet={`${baseSrc}_800.jpg`} />
         {lazy ? null : (
           <img
+            alt=""
             src={`${baseSrc}_800.jpg`}
-            className={css`
+            css={css`
               max-width: 100%;
             `}
             {...props}

@@ -1,12 +1,12 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from '@emotion/react'
 import { FacebookIcon } from './facebook'
 import { InstagramIcon } from './instagram'
 
 export function SocialIcons() {
   return (
     <div
-      className={css`
+      css={css`
         display: flex;
         justify-content: center;
         align-items: center;
