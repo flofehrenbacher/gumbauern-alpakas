@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/react-burger-menu": "2.8.0",
-    "@babel/core": "7.14.2",
+    "@babel/core": "7.14.3",
     "@emotion/babel-preset-css-prop": "11.2.0",
     "@types/lozad": "1.9.0",
     "@types/node": "15.3.0",
