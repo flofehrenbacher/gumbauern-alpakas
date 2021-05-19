@@ -59,6 +59,10 @@ export default function Alpakawanderung() {
             Leider können wir im Moment keine Gutscheine mehr ausstellen, da
             sich sonst zu lange Wartezeiten auf einen Termin ergeben{' '}
           </li>
+          <li>
+            Für eine separate Wanderung sollten mindestens drei Alpakas gebucht
+            werden. Ansonsten legen wir kleine Gruppen zusammen.
+          </li>
         </ul>
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
         <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
