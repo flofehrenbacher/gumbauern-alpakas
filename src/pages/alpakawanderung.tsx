@@ -30,6 +30,20 @@ export default function Alpakawanderung() {
         />
       </CustomCarousel>
       <TextBlock>
+        <SecondaryHeadline>Es gibt gute Neuigkeiten, wir dürfen wieder wandern!</SecondaryHeadline>
+          <p css={internalStyles.textBelowHeadline}>
+          Allerdings müssen folgende Kontaktbeschränkungen eingehalten werden:
+        </p>
+        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+          <li>Wanderung mit höchstens zwei Hausständen</li>
+          <li>Höchstens fünf Personen</li>
+          <li>Kinder unter 14 bleiben außer Betracht</li>
+          <li>Genesene und vollständig Geimpfte bleiben außer Betracht</li>
+        </ul>
+        <p css={internalStyles.textBelowHeadline}>
+          Bitte habt Verständnis, dass es aktuell zu längeren Wartezeiten für 
+          einen Termin kommen kann.
+        </p>
         <SecondaryHeadline>Ablauf der Wanderung</SecondaryHeadline>
         <p css={internalStyles.textBelowHeadline}>
           Wir begrüßen Euch im Stall, wo Ihr erste Bekanntschaft mit den Alpakas
