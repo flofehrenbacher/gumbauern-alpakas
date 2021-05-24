@@ -1,6 +1,7 @@
-import { css, Global } from '@emotion/core'
-import { Link } from '@reach/router'
-import { css as emotionCSS, cx } from 'emotion'
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import { css, Global } from '@emotion/react'
+import Link from 'next/link'
 import React from 'react'
 import { push as Menu } from 'react-burger-menu'
 import { Logo } from './logo'
@@ -18,23 +19,25 @@ export function Navigation() {
 
   return (
     <div
-      className={emotionCSS`
+      css={css`
         background-color: #dfd3c3;
         display: flex;
         justify-content: center;
         align-items: center;
       `}
     >
-      <nav className={styles.navigation}>
+      <nav css={styles.navigation}>
         <Global styles={menuStylesGlobal} />
-        <Link to="/">
-          <Logo
-            className={emotionCSS`
-            height: 80px;
-            width: 80px;
-            margin-left: 5px;
-        `}
-          />
+        <Link href="/" passHref>
+          <a>
+            <Logo
+              css={css`
+                height: 80px;
+                width: 80px;
+                margin-left: 5px;
+              `}
+            />
+          </a>
         </Link>
         <Menu
           disableAutoFocus
@@ -44,22 +47,23 @@ export function Navigation() {
           onStateChange={(state) => setIsOpen(state.isOpen)}
         >
           {links.map((link) => (
-            <Link
-              key={link.id}
-              onClick={() => setIsOpen(false)}
-              id={link.id}
-              className={cx(['menu-item', styles.link])}
-              to={link.to}
-            >
-              {link.text}
+            <Link key={link.id} href={link.to} passHref>
+              <a
+                className="menu-item"
+                css={styles.link}
+                key={link.id}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.text}
+              </a>
             </Link>
           ))}
           <SocialIcons />
         </Menu>
-        <div className={styles.desktopLinks}>
+        <div css={styles.desktopLinks}>
           {links.map((link) => (
-            <Link className={styles.desktopLink} to={link.to} key={link.id}>
-              {link.text}
+            <Link key={link.id} href={link.to} passHref>
+              <a css={styles.desktopLink}>{link.text}</a>
             </Link>
           ))}
         </div>
@@ -146,7 +150,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 `
 
 const styles = {
-  navigation: emotionCSS`
+  navigation: css`
     width: 100%;
     height: 80px;
     background-color: #dfd3c3;
@@ -154,7 +158,7 @@ const styles = {
     justify-content: space-between;
     max-width: 800px;
   `,
-  link: emotionCSS`
+  link: css`
     display: block;
     width: 100%;
     color: white;
@@ -164,7 +168,7 @@ const styles = {
     font-size: 30px;
     text-decoration: none;
   `,
-  desktopLink: emotionCSS`
+  desktopLink: css`
     display: none;
 
     @media screen and (min-width: 800px) {
@@ -180,7 +184,7 @@ const styles = {
       }
     }
   `,
-  desktopLinks: emotionCSS`
+  desktopLinks: css`
     display: none;
 
     @media screen and (min-width: 800px) {

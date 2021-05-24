@@ -1,24 +1,24 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from '@emotion/react'
 
 export function H1({ children }: { children: React.ReactNode }) {
-  return <h1 className={styles.mainHeadline}>{children}</h1>
+  return <h1 css={styles.mainHeadline}>{children}</h1>
 }
 
 export function AppWrapper({ children }: { children: React.ReactNode }) {
-  return <div className={styles.appStyles}>{children}</div>
+  return <div css={styles.appStyles}>{children}</div>
 }
 
 export function ContentWrapper({ children }: { children: React.ReactNode }) {
-  return <main className={styles.contentWrapper}>{children}</main>
+  return <main css={styles.contentWrapper}>{children}</main>
 }
 
 export function TextBlock({ children }: { children: React.ReactNode }) {
-  return <div className={styles.textBlock}>{children}</div>
+  return <div css={styles.textBlock}>{children}</div>
 }
 
 export function SecondaryHeadline({ children }: { children: React.ReactNode }) {
-  return <h2 className={styles.secondaryHeadline}>{children}</h2>
+  return <h2 css={styles.secondaryHeadline}>{children}</h2>
 }
 
 export const marginLeftRight = 30

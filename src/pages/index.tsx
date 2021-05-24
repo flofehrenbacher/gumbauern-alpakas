@@ -1,14 +1,14 @@
-import { Link } from '@reach/router'
+import Link from 'next/link'
 import { Contact } from 'components/contact'
 import { CustomCarousel } from 'components/custom-carousel'
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1 } from 'components/shared'
-import { css } from 'emotion'
+import { css } from '@emotion/react'
 import React from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { SocialIcons } from 'components/social'
 
-export default function () {
+export default function HomePage() {
   const links = [
     { text: 'Unsere Tiere', to: '/unsere-tiere' },
     { text: 'Alpakawanderung', to: '/alpakawanderung' },
@@ -24,18 +24,12 @@ export default function () {
           baseSrc="/img/titel/titel_1"
           alt="Alpakawanderungen"
         />
-        <ResponsiveImage
-          baseSrc="/img/titel/titel_2"
-          alt="Alpakatouren"
-        />
-        <ResponsiveImage
-          baseSrc="/img/titel/titel_3"
-          alt="Alpakatrekking"
-        />
+        <ResponsiveImage baseSrc="/img/titel/titel_2" alt="Alpakatouren" />
+        <ResponsiveImage baseSrc="/img/titel/titel_3" alt="Alpakatrekking" />
       </CustomCarousel>
       <LinkContainer links={links} />
       <SocialIcons />
-      <Contact as="h2" className={styles.contactLayout} />
+      <Contact as="h2" css={styles.contactLayout} />
     </>
   )
 }
@@ -43,10 +37,10 @@ export default function () {
 type LinkType = { to: string; text: string }
 function LinkContainer({ links }: { links: LinkType[] }) {
   return (
-    <ul className={styles.linkContainer}>
+    <ul css={styles.linkContainer}>
       {links.map((link) => (
-        <Link className={styles.link} to={link.to} key={link.text}>
-          {link.text}
+        <Link key={link.to} href={link.to} passHref>
+          <a css={styles.link}>{link.text}</a>
         </Link>
       ))}
     </ul>

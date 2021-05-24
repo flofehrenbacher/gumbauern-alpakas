@@ -1,4 +1,4 @@
-import { css } from 'emotion'
+import { css } from '@emotion/react'
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 
@@ -11,7 +11,7 @@ export function CustomCarousel({ children }: { children: React.ReactChild[] }) {
       dynamicHeight
       useKeyboardArrows
       showThumbs={false}
-      className={css`
+      css={css`
         margin-top: 30px;
         width: 100%;
       `}
