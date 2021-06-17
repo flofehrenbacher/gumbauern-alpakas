@@ -56,8 +56,7 @@ export default function Alpakawanderung() {
           <li>Kinder bis 11 Jahre sind frei</li>
           <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
           <li>
-            Leider können wir im Moment keine Gutscheine mehr ausstellen, da
-            sich sonst zu lange Wartezeiten auf einen Termin ergeben{' '}
+            Gerne könnt Ihr auch einen Geschenkgutschein erwerben
           </li>
           <li>
             Für eine separate Wanderung sollten mindestens drei Alpakas gebucht
