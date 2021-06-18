@@ -59,7 +59,7 @@ export default function Alpakawanderung() {
             Gerne könnt Ihr auch einen Geschenkgutschein erwerben
           </li>
           <li>
-            Für eine separate Wanderung sollten mindestens drei Alpakas gebucht
+            Für eine separate Wanderung sollten mindestens vier Alpakas gebucht
             werden. Ansonsten legen wir kleine Gruppen zusammen.
           </li>
         </ul>
