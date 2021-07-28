@@ -41,12 +41,15 @@ export default function Alpakawanderung() {
           Wanderung noch gemütlich ausklingen und entlassen die Alpakas nach
           einer kleinen Belohnung auf die Weide.
         </p>
-        <SecondaryHeadline>Dauer</SecondaryHeadline>
+        <SecondaryHeadline>Dauer & Termine</SecondaryHeadline>
         <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
           <li>Gesamtdauer: ca. 1,5 Std.</li>
           <li>
             Dauer der Wanderung: ca. 1 Stunde, je nach Lust und Laune der
             Alpakas
+          </li>
+          <li>
+            Termine: Samstag/Sonntag 14 Uhr, nach Absprache auch an anderen Tagen
           </li>
         </ul>
         <SecondaryHeadline>Preise</SecondaryHeadline>
@@ -62,7 +65,7 @@ export default function Alpakawanderung() {
             Kleinere Gruppen werden zusammengelegt
           </li>
           <li>
-            Separate Wanderungen nur nach Absprache
+            Separate Wanderungen nach Absprache
           </li>
         </ul>
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
