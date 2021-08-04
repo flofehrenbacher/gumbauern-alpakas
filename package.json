@@ -22,7 +22,7 @@
     "react-responsive-carousel": "3.2.20"
   },
   "devDependencies": {
-    "@babel/core": "7.14.8",
+    "@babel/core": "7.15.0",
     "@emotion/babel-preset-css-prop": "11.2.0",
     "@types/lozad": "1.16.1",
     "@types/node": "15.3.1",
