@@ -8,6 +8,10 @@
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
+    },
+    {
+      "matchPackageNames": ["next"],
+      "allowedVersions": "11.0.0"
     }
   ]
 }

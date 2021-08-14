@@ -30,20 +30,6 @@ export default function Alpakawanderung() {
         />
       </CustomCarousel>
       <TextBlock>
-        <SecondaryHeadline>Es gibt gute Neuigkeiten, wir dürfen wieder wandern!</SecondaryHeadline>
-          <p css={internalStyles.textBelowHeadline}>
-          Allerdings müssen folgende Kontaktbeschränkungen eingehalten werden:
-        </p>
-        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
-          <li>Wanderung mit höchstens zwei Hausständen</li>
-          <li>Höchstens fünf Personen</li>
-          <li>Kinder unter 14 bleiben außer Betracht</li>
-          <li>Genesene und vollständig Geimpfte bleiben außer Betracht</li>
-        </ul>
-        <p css={internalStyles.textBelowHeadline}>
-          Bitte habt Verständnis, dass es aktuell zu längeren Wartezeiten für 
-          einen Termin kommen kann.
-        </p>
         <SecondaryHeadline>Ablauf der Wanderung</SecondaryHeadline>
         <p css={internalStyles.textBelowHeadline}>
           Wir begrüßen Euch im Stall, wo Ihr erste Bekanntschaft mit den Alpakas
@@ -55,12 +41,15 @@ export default function Alpakawanderung() {
           Wanderung noch gemütlich ausklingen und entlassen die Alpakas nach
           einer kleinen Belohnung auf die Weide.
         </p>
-        <SecondaryHeadline>Dauer</SecondaryHeadline>
+        <SecondaryHeadline>Dauer & Termine</SecondaryHeadline>
         <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
           <li>Gesamtdauer: ca. 1,5 Std.</li>
           <li>
             Dauer der Wanderung: ca. 1 Stunde, je nach Lust und Laune der
             Alpakas
+          </li>
+          <li>
+            Termine: Samstag/Sonntag 14 Uhr, nach Absprache auch an anderen Tagen
           </li>
         </ul>
         <SecondaryHeadline>Preise</SecondaryHeadline>
@@ -70,12 +59,13 @@ export default function Alpakawanderung() {
           <li>Kinder bis 11 Jahre sind frei</li>
           <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
           <li>
-            Leider können wir im Moment keine Gutscheine mehr ausstellen, da
-            sich sonst zu lange Wartezeiten auf einen Termin ergeben{' '}
+            Gerne könnt Ihr auch einen Geschenkgutschein erwerben
           </li>
           <li>
-            Für eine separate Wanderung sollten mindestens drei Alpakas gebucht
-            werden. Ansonsten legen wir kleine Gruppen zusammen.
+            Kleinere Gruppen werden zusammengelegt
+          </li>
+          <li>
+            Separate Wanderungen nach Absprache
           </li>
         </ul>
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
