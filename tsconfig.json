@@ -16,6 +16,6 @@
     "baseUrl": "./src",
     "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "emotion-css-prop.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

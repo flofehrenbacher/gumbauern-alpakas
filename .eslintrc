@@ -13,7 +13,8 @@
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
+    "plugin:@next/next/recommended"
   ],
   "rules": {
     "jsx-a11y/anchor-is-valid": "off", // This rule is not compatible with Next.js"s <Link /> components
