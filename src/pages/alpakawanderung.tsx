@@ -71,7 +71,7 @@ export default function Alpakawanderung() {
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
         <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
           <li>
-            Bitte denkt an wetterfeste Kleidung und Schuhe (keine Regenschirme), wir gehen auch bei Nieselregen
+            Bitte denkt an wetterfeste Kleidung und Schuhe (keine Regenschirme)
           </li>
           <li>
             Zum Wohl der Tiere behalten wir uns vor, den Termin bei Starkregen,
