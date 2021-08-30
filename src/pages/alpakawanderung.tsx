@@ -52,7 +52,7 @@ export default function Alpakawanderung() {
             Termine: Samstag/Sonntag 14 Uhr, nach Absprache auch an anderen Tagen
           </li>
           <li>
-            Um unseren Tieren den Spaß an den Spazoergängen zu erhalten, wandern wir nur zwei- bis dreimal pro Woche
+            Um unseren Tieren den Spaß an den Spaziergängen zu erhalten, wandern wir nur zwei- bis dreimal pro Woche
           </li>
         </ul>
         <SecondaryHeadline>Preise</SecondaryHeadline>
