@@ -10,7 +10,7 @@
     "@emotion/react": "11.5.0",
     "@reach/visually-hidden": "0.16.0",
     "@sentry/nextjs": "6.13.3",
-    "axios": "0.21.4",
+    "axios": "0.23.0",
     "emotion-reset": "3.0.1",
     "leaflet": "1.7.1",
     "lozad": "1.16.0",
