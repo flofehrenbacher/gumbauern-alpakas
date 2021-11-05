@@ -18,7 +18,7 @@ export default function OurAnimals() {
       <H1>Unsere Tiere</H1>
       <TextBlock>
         <p>
-          Unsere Herde besteht aus drei Stuten und drei Wallachen. Jedes der
+          Unsere Herde besteht aus drei Stuten und fünf Wallachen. Jedes der
           Tiere hat einen einzigartigen Charakter. Wir möchten sie Euch
           vorstellen:
         </p>
@@ -59,6 +59,20 @@ export const layoutStyles = {
 
 const alpakas: Alpaka[] = [
   {
+    name: 'Franzl',
+    nickname: 'Der Genießer',
+    birthYear: 2020,
+    description:
+      'Unser süßer "Kleiner" marschiert bis ans Ende der Welt, solange er nur einen Schritt hinter seinem Freund Ferdl laufen kann. Der ist allerdings abgeschrieben, sobald Franz einen Leckerbissen am Wegesrand entdeckt, da vergisst er einfach alles um sich herum.',
+  },
+    {
+    name: 'Ferdl',
+    nickname: 'Der Unerschrockene',
+    birthYear: 2020,
+    description:
+      'Under Jüngster ist sehr mutig und wagt es sogar, sich "Onkel Karl" entgegenzustellen. Ferdl hat immer seinen Freund Franz im Schlepptau, der aber manchmal ganz schön auf die Nerven geht. ',
+  },
+  {
     name: 'Gundula',
     nickname: 'Die Gelassene',
     birthYear: 2017,
@@ -77,7 +91,7 @@ const alpakas: Alpaka[] = [
     nickname: 'Die Stolze',
     birthYear: 2011,
     description:
-      'Uschi, alter Hase und unser neuestes Herdenmitglied, zeigt den „jungen Wilden“ wo es lang geht. Sie führt die Wanderungen an und kann es absolut nicht leiden, von ihrem Gefolge überholt zu werden.',
+      'Uschi, Grande Dame der Herde, zeigt den „jungen Wilden“ wo es lang geht. Sie führt die Wanderungen an und kann es absolut nicht leiden, von ihrem Gefolge überholt zu werden.',
   },
   {
     name: 'Alfons',
