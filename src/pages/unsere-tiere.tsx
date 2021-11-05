@@ -59,20 +59,6 @@ export const layoutStyles = {
 
 const alpakas: Alpaka[] = [
   {
-    name: 'Franzl',
-    nickname: 'Der Genießer',
-    birthYear: 2020,
-    description:
-      'Unser süßer „Kleiner“ marschiert bis ans Ende der Welt, solange er nur einen Schritt hinter seinem Freund Ferdl laufen kann. Der ist allerdings abgeschrieben, sobald Franz einen Leckerbissen am Wegesrand entdeckt, da vergisst er einfach alles um sich herum.',
-  },
-    {
-    name: 'Ferdl',
-    nickname: 'Der Unerschrockene',
-    birthYear: 2020,
-    description:
-      'Unser Jüngster ist sehr mutig und wagt es sogar, sich „Onkel Karl“ entgegenzustellen. Ferdl hat immer seinen Freund Franz im Schlepptau, der aber manchmal ganz schön auf die Nerven geht. ',
-  },
-  {
     name: 'Gundula',
     nickname: 'Die Gelassene',
     birthYear: 2017,
@@ -113,5 +99,19 @@ const alpakas: Alpaka[] = [
     birthYear: 2018,
     description:
       'Unser lieber Berti ist manchmal sehr verpeilt. Es kann schon mal passieren, dass er in die entgegengesetzte Richtung der anderen Tiere läuft, oder den Weideneingang nicht findet. Sein verwirrter Blick bringt uns einfach immer zum Lachen.',
+  },
+  {
+    name: 'Franzl',
+    nickname: 'Der Genießer',
+    birthYear: 2020,
+    description:
+      'Unser süßer „Kleiner“ marschiert bis ans Ende der Welt, solange er nur einen Schritt hinter seinem Freund Ferdl laufen kann. Der ist allerdings abgeschrieben, sobald Franz einen Leckerbissen am Wegesrand entdeckt, da vergisst er einfach alles um sich herum.',
+  },
+  {
+    name: 'Ferdl',
+    nickname: 'Der Unerschrockene',
+    birthYear: 2020,
+    description:
+      'Unser Jüngster ist sehr mutig und wagt es sogar, sich „Onkel Karl“ entgegenzustellen. Ferdl hat immer seinen Freund Franz im Schlepptau, der ihm aber manchmal ganz schön auf die Nerven geht. ',
   },
 ]
