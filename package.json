@@ -7,7 +7,7 @@
     "export": "next export -o dist"
   },
   "dependencies": {
-    "@emotion/react": "11.6.0",
+    "@emotion/react": "11.7.0",
     "@reach/visually-hidden": "0.16.0",
     "@sentry/nextjs": "6.15.0",
     "axios": "0.24.0",
