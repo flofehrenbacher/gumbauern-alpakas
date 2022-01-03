@@ -20,7 +20,7 @@ export default function AboutAlpakas() {
       </div>
       <TextBlock>
         <p>
-          Alpakas stammen ursprünglich aus den Anden, wo sie von den Inkas schon
+          Alpakas stammen ursprünglich aus den Anden, wo sie schon
           vor tausenden Jahren wegen ihrer feinen Wolle domestiziert und
           gezüchtet wurden. Sie zählen zu den Paarhufern und sind sogenannte
           Neuweltkameliden, wobei ihre nächsten Verwandten die bekannten Lamas
