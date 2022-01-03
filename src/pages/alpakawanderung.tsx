@@ -74,6 +74,9 @@ export default function Alpakawanderung() {
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
         <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
           <li>
+            Im Moment gilt laut Verordnung die 2G-Regel
+          </li>
+          <li>
             Bitte denkt an wetterfeste Kleidung und Schuhe (keine Regenschirme)
           </li>
           <li>
