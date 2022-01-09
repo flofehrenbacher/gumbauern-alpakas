@@ -99,7 +99,7 @@ export default function Alpakawanderung() {
           Wir freuen uns, dass sich Gerlinde und Richard Weidinger von der
           Grünkraft-Kräuterschule mit uns auf den Weg machen.
           Sie bringen uns eine Kräuter-Brotzeit mit, die wir uns im Anschluss
-          an die Wanderung im "Gumbauern-Stüberl" schmecken lassen.
+          an die Wanderung im Gumbauern-Stüberl schmecken lassen.
           Dauer: ca. 2.5 Std.
           Kosten: pro AlpakaführerIn 35€, pro Begleitperson ohne Alpaka 26€
         </p>
