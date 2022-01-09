@@ -96,10 +96,10 @@ export default function Alpakawanderung() {
         <SecondaryHeadline> Alpaka-Kräuterwanderung am 22.04.2022, 16 Uhr</SecondaryHeadline>
         <p css={internalStyles.textBelowHeadline}>
           Wir freuen uns, dass sich Gerlinde und Richard Weidinger von der
-          Grünkraft-Kräuterschule mit uns auf den Weg machen. <br>
+          Grünkraft-Kräuterschule mit uns auf den Weg machen. <br/>
           Sie bringen uns eine Kräuter-Brotzeit mit, die wir uns im Anschluss
-          an die Wanderung im Gumbauern-Stüberl schmecken lassen. <br>
-          Dauer: ca. 2.5 Std. <br>
+          an die Wanderung im Gumbauern-Stüberl schmecken lassen. <br/>
+          Dauer: ca. 2.5 Std. <br/>
           Kosten (inkl. Brotzeit und Getränk): pro AlpakaführerIn 35€, pro Begleitperson ohne Alpaka 26€
         </p>
       </TextBlock>
