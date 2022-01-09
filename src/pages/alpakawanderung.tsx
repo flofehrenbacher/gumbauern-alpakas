@@ -101,7 +101,7 @@ export default function Alpakawanderung() {
           an die Wanderung im Gumbauern-Stüberl schmecken lassen. <br/>
           Dauer: ca. 2.5 Std. <br/>
           Kosten (inkl. Brotzeit und Getränk): <br/>
-          - pro AlpakaführerIn 35€ <br/>
+          - pro AlpakaführerIn 38€ <br/>
           - pro Begleitperson ohne Alpaka 26€
         </p>
       </TextBlock>
