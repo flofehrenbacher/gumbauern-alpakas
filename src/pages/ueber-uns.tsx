@@ -56,14 +56,15 @@ export default function AboutUs() {
             Coach für lama-/alpakagestützte Aktivitäten auf der Orenda-Ranc
           </li>
           <li>
-            Alpaka Sachkundenachweis nach § 11 Abs. 2 Nr. 1 TierSchG bei den
+            Alpaka-Sachkundenachweis nach § 11 Abs. 2 Nr. 1 TierSchG bei den
             Alpakas vom Silberberg
           </li>
-          <li>
-            Selbstverständlich wurde unsere Alpakahaltung vom zuständigen
-            Veterinäramt abgenommen.
-          </li>
         </ul>
+        <br />
+        <p>
+          Selbstverständlich wurde unsere Alpakahaltung vom zuständigen
+            Veterinäramt abgenommen.
+        </p>
       </TextBlock>
     </>
   )
