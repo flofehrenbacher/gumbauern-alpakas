@@ -14,6 +14,7 @@ export function Navigation() {
     { text: 'Unsere Tiere', id: 'unsere-tiere', to: '/unsere-tiere' },
     { text: 'Alpakawanderung', id: 'alpakawanderung', to: '/alpakawanderung' },
     { text: 'Über Alpakas', id: 'ueber-alpakas', to: '/ueber-alpakas' },
+    { text: 'Über uns', id: 'ueber-uns', to: '/ueber-uns' },
     { text: 'Kontakt', id: 'kontakt', to: '/kontakt' },
   ]
 
@@ -172,7 +173,7 @@ const styles = {
     display: none;
 
     @media screen and (min-width: 800px) {
-      color: white;
+      color: #373a47;
       margin-right: 20px;
       font-size: 20px;
       text-decoration: none;
@@ -180,7 +181,7 @@ const styles = {
       white-space: nowrap;
 
       &:hover {
-        color: #373a47;
+        color: #373a4790;
       }
     }
   `,

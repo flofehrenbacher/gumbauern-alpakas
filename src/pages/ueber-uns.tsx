@@ -13,29 +13,70 @@ export default function AboutUs() {
         `}
       >
         <ResponsiveImage
-          baseSrc={`/img/uns/uns`}
+          baseSrc={`/img/ueber_uns/ueber_uns`}
           alt={'Über uns'}
           lazy={false}
         />
       </div>
       <TextBlock>
-        <p>Wir (Andreas, Ingrid, Kilian, Sophie, Lukas und Johannes) haben im Jahr 2018 beschlossen, den Gumbauern-Hof neu zu beleben.</p>
-        <p>Aus einer „Schnapsidee“ wurde ernst und nach eingehender Recherche, Besuchen bei Züchtern und zahlreichen Seminaren sind die ersten fünf Alpakas bei uns eingezogen.</p>
-        <p>Obwohl wir in der Landwirtschaft groß geworden sind, haben uns die Tiere von Anfang an immer wieder überrascht und herausgefordert. Nach einiger Zeit waren wir aber ein eingespieltes Team und in ersten gemeinsamen Erkundungstouren konnten wir bald unser Dorf und die Umgebung unsicher machen. </p>
-        <p>Die Spaziergänge mit den Alpakas bereiten uns viel Freude, wobei natürlich das Wohlbefinden der Tiere im Vordergrund steht. Gundula & Co. Sind ein nicht mehr wegzudenkender Bestandteil unserer Familie geworden und wir können und möchten uns ein Leben ohne sie nicht mehr vorstellen.</p> 
-        
         <p>
-        Folgende Seminare und Kurse haben wir besucht: <br/>
-        -	Alpaka-Einsteigerkurs bei den Lindforst-Alpakas <br/>
-        -	AELAS, Kurs A <br/>
-        -	Alpakaseminar für Einsteiger und Tiermedizin bei den Tölzer Land Alpakas <br/>
-        -	Camelidynamics mit Sibylle Klasing-Mann bei den Saar-Alpakas <br/>
-        -	Coach für lama-/alpakagestützte Aktivitäten auf der Orenda-Ranch <br/>
-        -	Alpaka Sachkundenachweis nach § 11 Abs. 2 Nr. 1 TierSchG bei den Alpakas vom Silberberg <br/>
-        Selbstverständlich wurde unsere Alpakahaltung vom zuständigen Veterinäramt abgenommen. <br/>
-        </p> 
-        
+          Wir (Andreas, Ingrid, Kilian, Sophie, Lukas und Johannes) haben im
+          Jahr 2018 beschlossen, den Gumbauern-Hof neu zu beleben.
+        </p>
+        <p>
+          Aus einer „Schnapsidee“ wurde ernst und nach eingehender Recherche,
+          Besuchen bei Züchtern und zahlreichen Seminaren sind die ersten fünf
+          Alpakas bei uns eingezogen.
+        </p>
+        <p>
+          Obwohl wir in der Landwirtschaft groß geworden sind, haben uns die
+          Tiere von Anfang an immer wieder überrascht und herausgefordert. Nach
+          einiger Zeit waren wir aber ein eingespieltes Team und in ersten
+          gemeinsamen Erkundungstouren konnten wir bald unser Dorf und die
+          Umgebung unsicher machen.
+        </p>
+        <p>
+          Die Spaziergänge mit den Alpakas bereiten uns viel Freude, wobei
+          natürlich das Wohlbefinden der Tiere im Vordergrund steht. Gundula &
+          Co. sind ein nicht mehr wegzudenkender Bestandteil unserer Familie
+          geworden und wir können und möchten uns ein Leben ohne sie nicht mehr
+          vorstellen.
+        </p>
+        <br />
+        <p>Folgende Seminare und Kurse haben wir besucht:</p>
+        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+          <li>Alpaka-Einsteigerkurs bei den Lindforst-Alpakas</li>
+          <li>AELAS, Kurs A</li>
+          <li>
+            Alpakaseminar für Einsteiger und Tiermedizin bei den Tölzer Land
+            Alpakas
+          </li>
+          <li>Camelidynamics mit Sibylle Klasing-Mann bei den Saar-Alpakas</li>
+          <li>
+            Coach für lama-/alpakagestützte Aktivitäten auf der Orenda-Ranc
+          </li>
+          <li>
+            Alpaka Sachkundenachweis nach § 11 Abs. 2 Nr. 1 TierSchG bei den
+            Alpakas vom Silberberg
+          </li>
+          <li>
+            Selbstverständlich wurde unsere Alpakahaltung vom zuständigen
+            Veterinäramt abgenommen.
+          </li>
+        </ul>
       </TextBlock>
     </>
   )
+}
+
+const internalStyles = {
+  list: css`
+    list-style: circle;
+    li {
+      line-height: 1.4;
+    }
+  `,
+  textBelowHeadline: css`
+    margin-top: 10px;
+  `,
 }

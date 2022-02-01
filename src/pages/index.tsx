@@ -13,6 +13,7 @@ export default function HomePage() {
     { text: 'Unsere Tiere', to: '/unsere-tiere' },
     { text: 'Alpakawanderung', to: '/alpakawanderung' },
     { text: 'Über Alpakas', to: '/ueber-alpakas' },
+    { text: 'Über uns', to: '/ueber-uns' },
   ]
 
   return (
