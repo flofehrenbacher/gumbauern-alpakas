@@ -53,7 +53,7 @@ export default function AboutUs() {
           </li>
           <li>Camelidynamics mit Sibylle Klasing-Mann bei den Saar-Alpakas</li>
           <li>
-            Coach für lama-/alpakagestützte Aktivitäten auf der Orenda-Ranc
+            Coach für lama-/alpakagestützte Aktivitäten auf der Orenda-Ranch
           </li>
           <li>
             Alpaka-Sachkundenachweis nach § 11 Abs. 2 Nr. 1 TierSchG bei den
