@@ -31,14 +31,10 @@ export default function AboutUs() {
         <p>
           Obwohl wir in der Landwirtschaft groß geworden sind, haben uns die
           Tiere von Anfang an immer wieder überrascht und herausgefordert. Nach
-          einiger Zeit waren wir aber ein eingespieltes Team und in ersten
-          gemeinsamen Erkundungstouren konnten wir bald unser Dorf und die
-          Umgebung unsicher machen.
+          einiger Zeit waren wir aber ein eingespieltes Team. 
         </p>
         <p>
-          Die Spaziergänge mit den Alpakas bereiten uns viel Freude, wobei
-          natürlich das Wohlbefinden der Tiere im Vordergrund steht. Gundula &
-          Co. sind ein nicht mehr wegzudenkender Bestandteil unserer Familie
+          Gundula & Co. sind ein nicht mehr wegzudenkender Bestandteil unserer Familie
           geworden und wir können und möchten uns ein Leben ohne sie nicht mehr
           vorstellen.
         </p>
