@@ -29,7 +29,7 @@
     "@next/eslint-plugin-next": "12.1.5",
     "@types/lozad": "1.16.1",
     "@types/node": "16.11.27",
-    "@types/react": "18.0.5",
+    "@types/react": "18.0.6",
     "@types/react-burger-menu": "2.8.3",
     "@types/react-dom": "18.0.1",
     "@types/react-hot-loader": "4.1.0",
