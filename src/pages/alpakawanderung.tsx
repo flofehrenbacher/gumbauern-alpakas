@@ -100,7 +100,7 @@ export default function Alpakawanderung() {
           Kosten (inkl. Brotzeit und Getränk): <br/>
           - pro AlpakaführerIn 38€ <br/>
           - pro Begleitperson ohne Alpaka 26€ <br/>
-          <b>Separate Termine für Alpaka-Kräuterwanderungen nach Absprache ab acht Teilnehmern </b>
+          <strong> Separate Termine für Alpaka-Kräuterwanderungen nach Absprache ab acht Teilnehmern </strong>
         </p>
       </TextBlock>
     </>
