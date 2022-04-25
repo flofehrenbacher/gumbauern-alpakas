@@ -77,7 +77,7 @@ export default function Alpakawanderung() {
             Bitte denkt an wetterfeste Kleidung und Schuhe (keine Regenschirme)
           </li>
           <li>
-            Zum Wohl der Tiere behalten wir uns vor, den Termin bei Starkregen,
+            Zum Wohl der Tiere behalten wir uns vor, den Termin bei Regen,
             Gewitter, Sturm zu verschieben
           </li>
           <li>
@@ -100,7 +100,7 @@ export default function Alpakawanderung() {
           Kosten (inkl. Brotzeit und Getränk): <br/>
           - pro AlpakaführerIn 38€ <br/>
           - pro Begleitperson ohne Alpaka 26€ <br/>
-          Separate Termine für Alpaka-Kräuterwanderungen nach Absprache ab acht Teilnehmern
+          <b>Separate Termine für Alpaka-Kräuterwanderungen nach Absprache ab acht Teilnehmern </b>
         </p>
       </TextBlock>
     </>
