@@ -74,9 +74,6 @@ export default function Alpakawanderung() {
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
         <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
           <li>
-            Im Moment gilt laut Verordnung die 2G-Regel
-          </li>
-          <li>
             Bitte denkt an wetterfeste Kleidung und Schuhe (keine Regenschirme)
           </li>
           <li>
@@ -93,7 +90,7 @@ export default function Alpakawanderung() {
             ihre Kinder
           </li>
         </ul>
-        <SecondaryHeadline> Alpaka-Kräuterwanderung am 22.04.2022, 16 Uhr</SecondaryHeadline>
+        <SecondaryHeadline> Alpaka-Kräuterwanderung am 12.08.2022</SecondaryHeadline>
         <p css={internalStyles.textBelowHeadline}>
           Wir freuen uns, dass sich Gerlinde und Richard Weidinger von der
           Grünkraft-Kräuterschule mit uns auf den Weg machen. <br/>
@@ -102,7 +99,8 @@ export default function Alpakawanderung() {
           Dauer: ca. 2.5 Std. <br/>
           Kosten (inkl. Brotzeit und Getränk): <br/>
           - pro AlpakaführerIn 38€ <br/>
-          - pro Begleitperson ohne Alpaka 26€
+          - pro Begleitperson ohne Alpaka 26€ <br/>
+          Separate Termine für Alpaka-Kräuterwanderungen nach Absprache ab acht Teilnehmern
         </p>
       </TextBlock>
     </>
