@@ -17,7 +17,7 @@
     "next": "12.1.6",
     "postcss": "8.4.14",
     "react": "18.1.0",
-    "react-burger-menu": "3.0.6",
+    "react-burger-menu": "3.0.8",
     "react-dom": "18.1.0",
     "react-error-boundary": "3.1.4",
     "react-leaflet": "3.2.5",
