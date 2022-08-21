@@ -49,7 +49,7 @@ export default function Alpakawanderung() {
             Alpakas
           </li>
           <li>
-            Termine: Samstag/Sonntag 14 Uhr, nach Absprache auch an anderen Tagen
+            Termine: Samstag/Sonntag 14 Uhr, für separate Gruppen (mindestens 6 Tiere) nach Absprache auch an anderen Tagen
           </li>
           <li>
             Um unseren Tieren den Spaß an den Spaziergängen zu erhalten, wandern wir nur zwei- bis dreimal pro Woche
@@ -68,7 +68,7 @@ export default function Alpakawanderung() {
             Kleinere Gruppen werden zusammengelegt
           </li>
           <li>
-            Separate Wanderungen nach Absprache
+            Separate Wanderungen ab einer Buchung von sechs Alpakas
           </li>
         </ul>
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
