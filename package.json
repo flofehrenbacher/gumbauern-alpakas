@@ -35,7 +35,7 @@
     "@types/react-hot-loader": "4.1.0",
     "@types/react-leaflet": "2.8.2",
     "@types/webpack-env": "1.18.0",
-    "eslint": "8.22.0",
+    "eslint": "8.23.0",
     "@typescript-eslint/eslint-plugin": "5.35.1",
     "@typescript-eslint/parser": "5.35.1",
     "eslint-config-next": "12.2.5",
