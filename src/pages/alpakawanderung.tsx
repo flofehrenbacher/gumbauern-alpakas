@@ -90,7 +90,7 @@ export default function Alpakawanderung() {
             ihre Kinder
           </li>
         </ul>
-        <SecondaryHeadline> Alpaka-Kräuterwanderungen</SecondaryHeadline>
+        <SecondaryHeadline> Alpaka-Kräuterwanderung am 21.04.2023</SecondaryHeadline>
         <p css={internalStyles.textBelowHeadline}>
           Wir freuen uns, dass sich Gerlinde und Richard Weidinger von der
           Grünkraft-Kräuterschule mit uns auf den Weg machen. <br/>
