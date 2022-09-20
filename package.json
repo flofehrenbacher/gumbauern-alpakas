@@ -14,7 +14,7 @@
     "emotion-reset": "3.0.1",
     "leaflet": "1.8.0",
     "lozad": "1.16.0",
-    "next": "12.3.0",
+    "next": "12.3.1",
     "postcss": "8.4.16",
     "react": "18.2.0",
     "react-burger-menu": "3.0.8",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@babel/core": "7.19.1",
     "@emotion/babel-preset-css-prop": "11.10.0",
-    "@next/eslint-plugin-next": "12.3.0",
+    "@next/eslint-plugin-next": "12.3.1",
     "@types/lozad": "1.16.1",
     "@types/node": "16.11.59",
     "@types/react": "18.0.20",
@@ -36,7 +36,7 @@
     "@types/react-leaflet": "2.8.2",
     "@types/webpack-env": "1.18.0",
     "eslint": "8.23.1",
-    "eslint-config-next": "12.3.0",
+    "eslint-config-next": "12.3.1",
     "typescript": "4.8.3"
   },
   "volta": {
