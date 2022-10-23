@@ -1,4 +1,4 @@
-import VisuallyHidden from '@reach/visually-hidden'
+import { VisuallyHidden } from '@reach/visually-hidden'
 import { css } from '@emotion/react'
 import React from 'react'
 import { Alpaka } from '../pages/unsere-tiere'

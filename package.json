@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export -o dist"
+    "export": "next export -o dist",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@emotion/react": "11.10.4",
