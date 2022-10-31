@@ -5,11 +5,11 @@ import React from 'react'
 export function Footer() {
   return (
     <div css={styles.navigation}>
-      <Link href="/impressum" passHref>
-        <a css={styles.link}>Impressum</a>
+      <Link href="/impressum" css={styles.link} passHref>
+        Impressum
       </Link>
-      <Link href="/datenschutz" passHref>
-        <a css={styles.link}>Datenschutz</a>
+      <Link href="/datenschutz" css={styles.link} passHref>
+        Datenschutz
       </Link>
     </div>
   )

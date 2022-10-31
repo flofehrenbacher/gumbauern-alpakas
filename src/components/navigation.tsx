@@ -30,15 +30,13 @@ export function Navigation() {
       <nav css={styles.navigation}>
         <Global styles={menuStylesGlobal} />
         <Link href="/" passHref>
-          <a>
-            <Logo
-              css={css`
-                height: 80px;
-                width: 80px;
-                margin-left: 5px;
-              `}
-            />
-          </a>
+          <Logo
+            css={css`
+              height: 80px;
+              width: 80px;
+              margin-left: 5px;
+            `}
+          />
         </Link>
         <Menu
           disableAutoFocus
@@ -48,23 +46,28 @@ export function Navigation() {
           onStateChange={(state) => setIsOpen(state.isOpen)}
         >
           {links.map((link) => (
-            <Link key={link.id} href={link.to} passHref>
-              <a
-                className="menu-item"
-                css={styles.link}
-                key={link.id}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.text}
-              </a>
+            <Link
+              key={link.id}
+              href={link.to}
+              className="menu-item"
+              css={styles.link}
+              onClick={() => setIsOpen(false)}
+              passHref
+            >
+              {link.text}
             </Link>
           ))}
           <SocialIcons />
         </Menu>
         <div css={styles.desktopLinks}>
           {links.map((link) => (
-            <Link key={link.id} href={link.to} passHref>
-              <a css={styles.desktopLink}>{link.text}</a>
+            <Link
+              key={link.id}
+              css={styles.desktopLink}
+              href={link.to}
+              passHref
+            >
+              {link.text}
             </Link>
           ))}
         </div>
