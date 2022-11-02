@@ -57,8 +57,8 @@ export default function Alpakawanderung() {
         </ul>
         <SecondaryHeadline>Preise</SecondaryHeadline>
         <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
-          <li>pro AlpakaführerIn 20€</li>
-          <li>pro Begleitperson ohne Alpaka 8€</li>
+          <li>pro AlpakaführerIn 23€</li>
+          <li>pro Begleitperson ohne Alpaka 10€</li>
           <li>Kinder bis 11 Jahre sind frei</li>
           <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
           <li>
