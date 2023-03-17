@@ -91,7 +91,7 @@ const alpakas: Alpaka[] = [
     nickname: 'Der Macho',
     birthYear: 2018,
     description:
-      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er ist ein kleiner Raufbold und macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels.',
+      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels.',
   },
   {
     name: 'Berti',
