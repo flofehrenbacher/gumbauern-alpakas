@@ -8,7 +8,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@emotion/react": "11.10.8",
+    "@emotion/react": "11.11.0",
     "@sentry/nextjs": "7.51.0",
     "axios": "1.4.0",
     "@reach/visually-hidden": "0.18.0",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.21.8",
-    "@emotion/babel-preset-css-prop": "11.10.0",
+    "@emotion/babel-preset-css-prop": "11.11.0",
     "@next/eslint-plugin-next": "12.3.4",
     "@types/lozad": "1.16.1",
     "@types/node": "18.16.5",
