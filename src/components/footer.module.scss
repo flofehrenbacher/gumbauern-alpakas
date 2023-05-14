@@ -1,0 +1,17 @@
+.navigation {
+  width: 100%;
+  background-color: #dfd3c3;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: #394e59;
+  text-decoration: none;
+  
+  &:first-of-type {
+    margin-right: 30px;
+  }
+}

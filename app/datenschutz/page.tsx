@@ -1,11 +1,8 @@
-import React from 'react'
-import { layoutStyles } from './unsere-tiere'
 import { H1 } from 'components/shared'
-import { css } from '@emotion/react'
 
 export default function DataProtection() {
   return (
-    <main css={layoutStyles.mainContainer}>
+    <main>
       <H1>Datenschutzerklärung</H1>
       <TextBlock>
         <p>
@@ -240,13 +237,5 @@ export default function DataProtection() {
 }
 
 function TextBlock({ children }: { children: React.ReactNode }) {
-  return (
-    <div
-      css={css`
-        margin-top: 20px;
-      `}
-    >
-      {children}
-    </div>
-  )
+  return <div style={{ marginTop: 20 }}>{children}</div>
 }

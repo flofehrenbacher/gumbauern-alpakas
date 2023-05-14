@@ -1,10 +1,9 @@
 import { VisuallyHidden } from '@reach/visually-hidden'
-import { css } from '@emotion/react'
-import React from 'react'
-import { Alpaka } from '../pages/unsere-tiere'
+import { Alpaka } from '../../app/unsere-tiere/page'
 import { CustomCarousel } from './custom-carousel'
 import { ResponsiveImage } from './responsive-image'
-import { marginLeftRight, SecondaryHeadline } from './shared'
+import alpakaStyles from './alpaka.module.css'
+import { SecondaryHeadline } from './shared'
 
 export function SingleAlpaka({
   name,
@@ -15,7 +14,7 @@ export function SingleAlpaka({
   isFirst,
 }: Alpaka) {
   return (
-    <div css={alpakaStyles.container}>
+    <div className={alpakaStyles.container}>
       <SecondaryHeadline>{name}</SecondaryHeadline>
       <CustomCarousel>
         <ResponsiveImage
@@ -34,52 +33,21 @@ export function SingleAlpaka({
           lazy
         />
       </CustomCarousel>
-      <dl css={alpakaStyles.aboutContainer}>
+      <dl className={alpakaStyles['about-container']}>
         <dt>
           <VisuallyHidden>Spitzname</VisuallyHidden>
         </dt>
-        <dd css={alpakaStyles.nickname}>{nickname}</dd>
+        <dd className={alpakaStyles.nickname}>{nickname}</dd>
         <dt>
           <VisuallyHidden>geboren</VisuallyHidden>
         </dt>
-        <dd css={alpakaStyles.birthYear}>*{birthYear}</dd>
+        <dd className={alpakaStyles['birth-year']}>*{birthYear}</dd>
         <dt>
           <VisuallyHidden>Beschreibung</VisuallyHidden>
         </dt>
-        <dd css={alpakaStyles.description}>{description}</dd>
+        <dd className={alpakaStyles.description}>{description}</dd>
       </dl>
-      {isLast ? null : <tr css={alpakaStyles.trenner} />}
+      {isLast ? null : <tr className={alpakaStyles.trenner} />}
     </div>
   )
-}
-
-export const alpakaStyles = {
-  container: css`
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  `,
-  aboutContainer: css`
-    margin: 30px ${marginLeftRight}px 0;
-  `,
-  nickname: css`
-    font-size: 20px;
-    text-align: center;
-    margin-top: 0;
-  `,
-  birthYear: css`
-    text-align: center;
-    margin-top: 20px;
-  `,
-  description: css`
-    margin-top: 20px;
-    line-height: 1.4;
-  `,
-  trenner: css`
-    width: 60%;
-    margin-top: 50px;
-    border-bottom: 1px solid #373a47;
-    opacity: 0.5;
-  `,
 }

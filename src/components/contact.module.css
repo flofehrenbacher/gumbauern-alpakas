@@ -1,0 +1,12 @@
+.address-line {
+  margin-top: 7px;
+  display: flex;
+}
+
+.phone {
+  margin-left: 10px;
+}
+
+.address-container {
+  margin-top: 30px;
+}

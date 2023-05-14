@@ -1,8 +1,7 @@
 import { CustomCarousel } from 'components/custom-carousel'
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1, SecondaryHeadline, TextBlock } from 'components/shared'
-import { css } from '@emotion/react'
-import React from 'react'
+import internalStyles from './page.module.scss'
 
 export default function Alpakawanderung() {
   return (
@@ -17,21 +16,21 @@ export default function Alpakawanderung() {
       <CustomCarousel>
         <ResponsiveImage
           lazy={false}
-          baseSrc={`img/wandern/wandern_1`}
+          baseSrc={`/img/wandern/wandern_1`}
           alt={'Alpakawanderung in Kleinberghausen'}
         />
         <ResponsiveImage
-          baseSrc={`img/wandern/wandern_2`}
+          baseSrc={`/img/wandern/wandern_2`}
           alt={'Alpakawanderung in Freystadt'}
         />
         <ResponsiveImage
-          baseSrc={`img/wandern/wandern_3`}
+          baseSrc={`/img/wandern/wandern_3`}
           alt={'Alpakawanderung in Neumarkt'}
         />
       </CustomCarousel>
       <TextBlock>
         <SecondaryHeadline>Ablauf der Wanderung</SecondaryHeadline>
-        <p css={internalStyles.textBelowHeadline}>
+        <p className={internalStyles.textBelowHeadline}>
           Wir begrüßen Euch im Stall, wo Ihr erste Bekanntschaft mit den Alpakas
           schließt. Dazu gibt es Wissenswertes rund um ihre Herkunft und ihre
           Bedürfnisse. Anschließend werden die Tiere gehalftert und wir wandern
@@ -42,37 +41,34 @@ export default function Alpakawanderung() {
           einer kleinen Belohnung auf die Weide.
         </p>
         <SecondaryHeadline>Dauer & Termine</SecondaryHeadline>
-        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+        <ul className={internalStyles.textBelowHeadline}>
           <li>Gesamtdauer: ca. 1,5 Std.</li>
           <li>
             Dauer der Wanderung: ca. 1 Stunde, je nach Lust und Laune der
             Alpakas
           </li>
           <li>
-            Termine: Samstag/Sonntag 14 Uhr (Anmeldung erforderlich), für separate Gruppen (mindestens 6 Tiere) nach Absprache auch an anderen Tagen
+            Termine: Samstag/Sonntag 14 Uhr (Anmeldung erforderlich), für
+            separate Gruppen (mindestens 6 Tiere) nach Absprache auch an anderen
+            Tagen
           </li>
           <li>
-            Um unseren Tieren den Spaß an den Spaziergängen zu erhalten, wandern wir nur zwei- bis dreimal pro Woche
+            Um unseren Tieren den Spaß an den Spaziergängen zu erhalten, wandern
+            wir nur zwei- bis dreimal pro Woche
           </li>
         </ul>
         <SecondaryHeadline>Preise</SecondaryHeadline>
-        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+        <ul className={internalStyles.textBelowHeadline}>
           <li>pro AlpakaführerIn 20€</li>
           <li>pro Begleitperson ohne Alpaka 8€</li>
           <li>Kinder bis 11 Jahre sind frei</li>
           <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
-          <li>
-            Gerne könnt Ihr auch einen Geschenkgutschein erwerben
-          </li>
-          <li>
-            Kleinere Gruppen werden zusammengelegt
-          </li>
-          <li>
-            Separate Wanderungen ab einer Buchung von sechs Alpakas
-          </li>
+          <li>Gerne könnt Ihr auch einen Geschenkgutschein erwerben</li>
+          <li>Kleinere Gruppen werden zusammengelegt</li>
+          <li>Separate Wanderungen ab einer Buchung von sechs Alpakas</li>
         </ul>
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
-        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+        <ul className={internalStyles.textBelowHeadline}>
           <li>
             Bitte denkt an wetterfeste Kleidung und Schuhe (keine Regenschirme)
           </li>
@@ -90,35 +86,26 @@ export default function Alpakawanderung() {
             ihre Kinder
           </li>
         </ul>
-        <SecondaryHeadline> Alpaka-Kräuterwanderung am 21.04.2023</SecondaryHeadline>
-        <p css={internalStyles.textBelowHeadline}>
+        <SecondaryHeadline>
+          {' '}
+          Alpaka-Kräuterwanderung am 21.04.2023
+        </SecondaryHeadline>
+        <p className={internalStyles.textBelowHeadline}>
           Wir freuen uns, dass sich Gerlinde und Richard Weidinger von der
-          Grünkraft-Kräuterschule mit uns auf den Weg machen. <br/>
-          Sie bringen uns eine Kräuter-Brotzeit mit, die wir uns im Anschluss
-          an die Wanderung im Gumbauern-Stüberl schmecken lassen. <br/>
-          Dauer: ca. 2.5 Std. <br/>
-          Kosten (inkl. Brotzeit und Getränk): <br/>
-          - pro AlpakaführerIn 40€ <br/>
-          - pro Begleitperson ohne Alpaka 28€ <br/>
-          <strong> Separate Termine für Alpaka-Kräuterwanderungen nach Absprache ab acht Teilnehmern </strong>
+          Grünkraft-Kräuterschule mit uns auf den Weg machen. <br />
+          Sie bringen uns eine Kräuter-Brotzeit mit, die wir uns im Anschluss an
+          die Wanderung im Gumbauern-Stüberl schmecken lassen. <br />
+          Dauer: ca. 2.5 Std. <br />
+          Kosten (inkl. Brotzeit und Getränk): <br />
+          - pro AlpakaführerIn 40€ <br />
+          - pro Begleitperson ohne Alpaka 28€ <br />
+          <strong>
+            {' '}
+            Separate Termine für Alpaka-Kräuterwanderungen nach Absprache ab
+            acht Teilnehmern{' '}
+          </strong>
         </p>
       </TextBlock>
     </>
   )
-}
-
-const internalStyles = {
-  secondaryHeadline: css`
-    margin-top: 20px;
-    margin-bottom: 20px;
-  `,
-  list: css`
-    list-style: circle;
-    li {
-      line-height: 1.4;
-    }
-  `,
-  textBelowHeadline: css`
-    margin-top: 10px;
-  `,
 }

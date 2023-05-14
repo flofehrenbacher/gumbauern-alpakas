@@ -1,20 +1,18 @@
 import { H1 } from 'components/shared'
-import { css } from '@emotion/react'
-import React from 'react'
 
 export default function Impressum() {
   return (
     <>
       <div
-        css={css`
-          margin: 30px;
-        `}
+        style={{
+          margin: 30,
+        }}
       >
         <H1>Impressum</H1>
         <p
-          css={css`
-            margin-top: 30px;
-          `}
+          style={{
+            marginTop: 30,
+          }}
         >
           Angaben gemäß § 5 TMG
         </p>

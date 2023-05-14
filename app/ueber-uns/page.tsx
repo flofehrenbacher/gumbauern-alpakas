@@ -1,17 +1,11 @@
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1, TextBlock } from 'components/shared'
-import React from 'react'
-import { css } from '@emotion/react'
 
 export default function AboutUs() {
   return (
     <>
       <H1>Über uns</H1>
-      <div
-        css={css`
-          margin-top: 30px;
-        `}
-      >
+      <div style={{ marginTop: 30 }}>
         <ResponsiveImage
           baseSrc={`/img/ueber_uns/ueber_uns`}
           alt={'Über uns'}
@@ -31,12 +25,12 @@ export default function AboutUs() {
         <p>
           Obwohl wir in der Landwirtschaft groß geworden sind, haben uns die
           Tiere von Anfang an immer wieder überrascht und herausgefordert. Nach
-          einiger Zeit waren wir aber ein eingespieltes Team. 
+          einiger Zeit waren wir aber ein eingespieltes Team.
         </p>
         <p>
-          Gundula & Co. sind ein nicht mehr wegzudenkender Bestandteil unserer Familie
-          geworden und wir können und möchten uns ein Leben ohne sie nicht mehr
-          vorstellen.
+          Gundula & Co. sind ein nicht mehr wegzudenkender Bestandteil unserer
+          Familie geworden und wir können und möchten uns ein Leben ohne sie
+          nicht mehr vorstellen.
         </p>
         <br />
         <p>Folgende Seminare und Kurse haben wir besucht:</p>
@@ -59,7 +53,7 @@ export default function AboutUs() {
         <br />
         <p>
           Selbstverständlich wurde unsere Alpakahaltung vom zuständigen
-            Veterinäramt abgenommen.
+          Veterinäramt abgenommen.
         </p>
       </TextBlock>
     </>

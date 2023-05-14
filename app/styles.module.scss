@@ -1,0 +1,40 @@
+.link {
+  color: #394e59;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid #dfd3c3;
+  }
+
+  &:hover {
+    background-color: #dfd3c3;
+  }
+}
+
+.image {
+  max-width: 100vw;
+}
+
+.image-container {
+  position: relative;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 30px auto 0;
+  width: 250px;
+}
+
+.contact-layout {
+  margin: 40px 30px 0;
+  max-width: 100%;
+}

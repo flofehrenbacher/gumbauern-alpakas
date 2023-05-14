@@ -1,5 +1,3 @@
-import React from 'react'
-
 export function InstagramIcon() {
   return (
     <svg width="50" height="50" viewBox="0 0 24 24">

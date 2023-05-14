@@ -1,5 +1,3 @@
-import React from 'react'
-
 export function FacebookIcon() {
   return (
     <svg width="50" height="50" viewBox="0 0 24 24" style={{ marginRight: 20 }}>
