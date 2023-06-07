@@ -8,7 +8,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@emotion/react": "11.11.0",
+    "@emotion/react": "11.11.1",
     "@sentry/nextjs": "7.54.0",
     "axios": "1.4.0",
     "@reach/visually-hidden": "0.18.0",
