@@ -18,7 +18,7 @@ export default function OurAnimals() {
       <H1>Unsere Tiere</H1>
       <TextBlock>
         <p>
-          Unsere Herde besteht aus drei Stuten und fünf Wallachen. Jedes der
+          Unsere Herde besteht aus vier Stuten und fünf Wallachen. Jedes der
           Tiere hat einen einzigartigen Charakter. Wir möchten sie Euch
           vorstellen:
         </p>
@@ -126,13 +126,13 @@ const alpakas: Alpaka[] = [
     nickname: 'Die Stolze',
     birthYear: 2011,
     description:
-      'Uschi, Grande Dame der Herde, zeigt den „jungen Wilden“ wo es lang geht. Sie führt die Wanderungen an und kann es absolut nicht leiden, von ihrem Gefolge überholt zu werden. Unsere liebe Uschi ist am 31.01.2023 im Stall bei ihrer Herde für immer eingeschlafen. Wir vermissen sie sehr!',
+      'Uschi, Grande Dame der Herde, zeigt den „jungen Wilden“ wo es lang geht. Sie führt die Wanderungen an und kann es absolut nicht leiden, von ihrem Gefolge überholt zu werden.  <br/> Unsere liebe Uschi ist am 31.01.2023 im Stall bei ihrer Herde für immer eingeschlafen. Wir vermissen sie sehr!',
   },
   {
     name: 'Karl',
     nickname: 'Der Macho',
     birthYear: 2018,
     description:
-      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels. Unser Raufbold Karl ist umgezogen. Wir waren schon lange auf der Suche nach einer großen Herde, wo sich unserem Quertreiber auch mal jemand entgegenstellt. Zum Glück konnten wir unseren Karl guten Gewissens auf den Winklhof bringen. Einen besseren Platz hätten wir uns nicht vorstellen können, auch wenn es uns sehr schwer gefallen ist. Karl hat sich super eingelebt und zeigt auch mal Respekt vor den stattlichen Lamas.',
+      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels.  <br/> Unser Raufbold Karl ist umgezogen. Wir waren schon lange auf der Suche nach einer großen Herde, wo sich unserem Quertreiber auch mal jemand entgegenstellt. Zum Glück konnten wir unseren Karl guten Gewissens auf den Winklhof bringen. Einen besseren Platz hätten wir uns nicht vorstellen können, auch wenn es uns sehr schwer gefallen ist. Karl hat sich super eingelebt und zeigt auch mal Respekt vor den stattlichen Lamas.',
   },
 ]
