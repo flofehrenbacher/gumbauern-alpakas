@@ -133,6 +133,6 @@ const alpakas: Alpaka[] = [
     nickname: 'Der Macho',
     birthYear: 2018,
     description:
-      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels.  <br/> Unser Raufbold Karl ist umgezogen. Wir waren schon lange auf der Suche nach einer großen Herde, wo sich unserem Quertreiber auch mal jemand entgegenstellt. Zum Glück konnten wir unseren Karl guten Gewissens auf den Winklhof bringen. Einen besseren Platz hätten wir uns nicht vorstellen können, auch wenn es uns sehr schwer gefallen ist. Karl hat sich super eingelebt und zeigt auch mal Respekt vor den stattlichen Lamas.',
+      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels.  \n Unser Raufbold Karl ist umgezogen. Wir waren schon lange auf der Suche nach einer großen Herde, wo sich unserem Quertreiber auch mal jemand entgegenstellt. Zum Glück konnten wir unseren Karl guten Gewissens auf den Winklhof bringen. Einen besseren Platz hätten wir uns nicht vorstellen können, auch wenn es uns sehr schwer gefallen ist. Karl hat sich super eingelebt und zeigt auch mal Respekt vor den stattlichen Lamas.',
   },
 ]
