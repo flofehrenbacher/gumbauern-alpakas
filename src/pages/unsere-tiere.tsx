@@ -98,7 +98,7 @@ const alpakas: Alpaka[] = [
     nickname: 'Der Unerschrockene',
     birthYear: 2020,
     description:
-      'Unser Jüngster ist sehr mutig und wagt es sogar, sich „Onkel Karl“ entgegenzustellen. Ferdl hat immer seinen Freund Franz im Schlepptau, der ihm aber manchmal ganz schön auf die Nerven geht. ',
+      'Unser Ferdl ist sehr mutig und wagt es sogar, sich „Onkel Karl“ entgegenzustellen. Ferdl hat immer seinen Freund Franz im Schlepptau, der ihm aber manchmal ganz schön auf die Nerven geht. ',
   },
   {
     name: 'Gitti',
@@ -126,13 +126,13 @@ const alpakas: Alpaka[] = [
     nickname: 'Die Stolze',
     birthYear: 2011,
     description:
-      'Uschi, Grande Dame der Herde, zeigt den „jungen Wilden“ wo es lang geht. Sie führt die Wanderungen an und kann es absolut nicht leiden, von ihrem Gefolge überholt zu werden.  <br/> Unsere liebe Uschi ist am 31.01.2023 im Stall bei ihrer Herde für immer eingeschlafen. Wir vermissen sie sehr!',
+      'Uschi, Grande Dame der Herde, zeigt den „jungen Wilden“ wo es lang geht. Sie führt die Wanderungen an und kann es absolut nicht leiden, von ihrem Gefolge überholt zu werden. \A Unsere liebe Uschi ist am 31.01.2023 im Stall bei ihrer Herde für immer eingeschlafen. Wir vermissen sie sehr!',
   },
   {
     name: 'Karl',
     nickname: 'Der Macho',
     birthYear: 2018,
     description:
-      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels.  \A Unser Raufbold Karl ist umgezogen. Wir waren schon lange auf der Suche nach einer großen Herde, wo sich unserem Quertreiber auch mal jemand entgegenstellt. Zum Glück konnten wir unseren Karl guten Gewissens auf den Winklhof bringen. Einen besseren Platz hätten wir uns nicht vorstellen können, auch wenn es uns sehr schwer gefallen ist. Karl hat sich super eingelebt und zeigt auch mal Respekt vor den stattlichen Lamas.',
+      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels. \A Unser Raufbold ist umgezogen. Wir waren schon lange auf der Suche nach einer großen Herde, wo sich unserem Quertreiber auch mal jemand entgegenstellt. Zum Glück konnten wir unseren Karl guten Gewissens auf den Winklhof bringen. Einen besseren Platz hätten wir uns nicht vorstellen können, auch wenn es uns sehr schwer gefallen ist. Er hat sich super eingelebt und zeigt auch mal Respekt vor den stattlichen Lamas.',
   },
 ]
