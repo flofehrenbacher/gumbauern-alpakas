@@ -101,6 +101,27 @@ const alpakas: Alpaka[] = [
       'Unser Jüngster ist sehr mutig und wagt es sogar, sich „Onkel Karl“ entgegenzustellen. Ferdl hat immer seinen Freund Franz im Schlepptau, der ihm aber manchmal ganz schön auf die Nerven geht. ',
   },
   {
+    name: 'Gitti',
+    nickname: 'Die Sanftmütige',
+    birthYear: 2021,
+    description:
+      'Gitti ist ein wahrer Schatz und bei den Wanderungen eine treue und zuverlässige Begleiterin. Sie versteht sich mit allen Tieren der Herde und wer ihr in die schönen Augen sieht, um den ist es geschehen. ',
+  },
+  {
+    name: 'Gustl',
+    nickname: 'Der Mutige',
+    birthYear: 2022,
+    description:
+      'Obwohl Gustl noch sehr jung ist, hegt er schon Ambitionen auf den Chefsessel. Die Zurechtweisungen der "Alten" sind ihm völlig egal, er macht einfach - immer gut gelaunt - was er will und ist unser Herzbub.',
+  },
+  {
+    name: 'Annelies',
+    nickname: 'Die Freche',
+    birthYear: 2022,
+    description:
+      'Süß, süßer, Annelies ... doch der Schein trügt, die kleine Dame kann auch anders. Unsere Jüngste ist auch unser temperamentvollstes Alpaka. Bei kleinsten Pflegemaßnahmen und am Futtertrog stellt sie ihren Charakter eindrucksvoll zur Schau.  ',
+  },
+  {
     name: 'Uschi',
     nickname: 'Die Stolze',
     birthYear: 2011,
@@ -112,6 +133,6 @@ const alpakas: Alpaka[] = [
     nickname: 'Der Macho',
     birthYear: 2018,
     description:
-      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels. Unser Raufbold Karl ist umgezogen. Wir waren schon lange auf der Suche nach einer gro´ßen Herde, wo sich unserem Quertreiber auch mal jemand entgegenstellt. Zum Glück konnten wir unseren Karl guten Gewissens auf den Winklhof bringen. Einen besseren Platz hätten wir uns nicht vorstellen können, auch wenn es uns sehr schwer gefallen ist. Karl hat sich super eingelebt und zeigt auch mal Respekt vor den stattlichen Lamas.',
+      'Karl muss immer der Erste sein, wenn es ums Fressen geht. Er macht gerne auf „dicke Hose“, aber wenn es ernst wird, versteckt er sich dann doch lieber hinter den Mädels. Unser Raufbold Karl ist umgezogen. Wir waren schon lange auf der Suche nach einer großen Herde, wo sich unserem Quertreiber auch mal jemand entgegenstellt. Zum Glück konnten wir unseren Karl guten Gewissens auf den Winklhof bringen. Einen besseren Platz hätten wir uns nicht vorstellen können, auch wenn es uns sehr schwer gefallen ist. Karl hat sich super eingelebt und zeigt auch mal Respekt vor den stattlichen Lamas.',
   },
 ]
