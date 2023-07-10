@@ -52,6 +52,12 @@ export default function AboutUs() {
             Coach für lama-/alpakagestützte Aktivitäten auf der Orenda-Ranch
           </li>
           <li>
+            Ernährung/Krankheiten/Parasiten bei Kameliden bei Prof. Dr. Dr. Gauly, Eventhof Kisselmühle
+          </li>
+          <li>
+            "Lama und Mensch" bei den Erlenwald Lamas
+          </li>
+          <li>
             Alpaka-Sachkundenachweis nach § 11 Abs. 2 Nr. 1 TierSchG bei den
             Alpakas vom Silberberg
           </li>
