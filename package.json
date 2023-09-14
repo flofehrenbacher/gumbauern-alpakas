@@ -25,7 +25,7 @@
     "react-responsive-carousel": "3.2.23"
   },
   "devDependencies": {
-    "@babel/core": "7.22.17",
+    "@babel/core": "7.22.19",
     "@emotion/babel-preset-css-prop": "11.11.0",
     "@next/eslint-plugin-next": "12.3.4",
     "@types/lozad": "1.16.2",
