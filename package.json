@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@emotion/react": "11.11.1",
-    "@sentry/nextjs": "7.78.0",
+    "@sentry/nextjs": "7.79.0",
     "axios": "1.6.1",
     "@reach/visually-hidden": "0.18.0",
     "emotion-reset": "3.0.1",
