@@ -33,7 +33,7 @@
     "@types/react": "18.2.67",
     "@types/react-burger-menu": "2.8.7",
     "@types/react-dom": "18.2.22",
-    "@types/react-hot-loader": "4.1.0",
+    "@types/react-hot-loader": "4.1.1",
     "@types/react-leaflet": "2.8.3",
     "@types/webpack-env": "1.18.4",
     "eslint": "8.57.0",
