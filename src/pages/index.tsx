@@ -40,8 +40,8 @@ function LinkContainer({ links }: { links: LinkType[] }) {
   return (
     <ul css={styles.linkContainer}>
       {links.map((link) => (
-        <Link key={link.to} href={link.to} passHref>
-          <a css={styles.link}>{link.text}</a>
+        <Link key={link.to} href={link.to} css={styles.link}>
+          {link.text}
         </Link>
       ))}
     </ul>

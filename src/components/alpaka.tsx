@@ -48,7 +48,7 @@ export function SingleAlpaka({
         </dt>
         <dd css={alpakaStyles.description}>{description}</dd>
       </dl>
-      {isLast ? null : <tr css={alpakaStyles.trenner} />}
+      {isLast ? null : <div css={alpakaStyles.trenner} />}
     </div>
   )
 }
