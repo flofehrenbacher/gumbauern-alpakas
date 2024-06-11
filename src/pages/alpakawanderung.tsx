@@ -90,18 +90,6 @@ export default function Alpakawanderung() {
             ihre Kinder
           </li>
         </ul>
-        <SecondaryHeadline> Alpaka-Kräuterwanderungen am 17.05.2024 und 13.09.2024</SecondaryHeadline>
-        <p css={internalStyles.textBelowHeadline}>
-          Wir freuen uns, dass sich Gerlinde und Richard Weidinger von der
-          Grünkraft-Kräuterschule mit uns auf den Weg machen. <br/>
-          Sie bringen uns eine Kräuter-Brotzeit mit, die wir uns im Anschluss
-          an die Wanderung im Gumbauern-Stüberl schmecken lassen. <br/>
-          Dauer: ca. 2.5 Std. <br/>
-          Kosten (inkl. Brotzeit und Getränk): <br/>
-          - pro AlpakaführerIn 40€ <br/>
-          - pro Begleitperson ohne Alpaka 28€ <br/>
-          <strong> Separate Termine für Alpaka-Kräuterwanderungen nach Absprache ab acht Teilnehmern </strong>
-        </p>
       </TextBlock>
     </>
   )
