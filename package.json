@@ -23,7 +23,7 @@
     "@babel/core": "7.25.2",
     "@emotion/babel-preset-css-prop": "11.12.0",
     "@types/leaflet": "1.9.12",
-    "@types/node": "18.19.48",
+    "@types/node": "18.19.49",
     "@types/react": "18.3.5",
     "@types/react-burger-menu": "2.8.7",
     "@types/react-dom": "18.3.0",
