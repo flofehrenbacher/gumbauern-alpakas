@@ -22,7 +22,7 @@
   "devDependencies": {
     "@babel/core": "7.25.9",
     "@emotion/babel-preset-css-prop": "11.12.0",
-    "@types/leaflet": "1.9.13",
+    "@types/leaflet": "1.9.14",
     "@types/node": "18.19.58",
     "@types/react": "18.3.11",
     "@types/react-burger-menu": "2.8.7",
