@@ -1,4 +1,3 @@
-import { VisuallyHidden } from '@reach/visually-hidden'
 import { css } from '@emotion/react'
 import React from 'react'
 import { Alpaka } from '../pages/unsere-tiere'
@@ -35,17 +34,8 @@ export function SingleAlpaka({
         />
       </CustomCarousel>
       <dl css={alpakaStyles.aboutContainer}>
-        <dt>
-          <VisuallyHidden>Spitzname</VisuallyHidden>
-        </dt>
         <dd css={alpakaStyles.nickname}>{nickname}</dd>
-        <dt>
-          <VisuallyHidden>geboren</VisuallyHidden>
-        </dt>
         <dd css={alpakaStyles.birthYear}>*{birthYear}</dd>
-        <dt>
-          <VisuallyHidden>Beschreibung</VisuallyHidden>
-        </dt>
         <dd css={alpakaStyles.description}>{description}</dd>
       </dl>
       {isLast ? null : <div css={alpakaStyles.trenner} />}
