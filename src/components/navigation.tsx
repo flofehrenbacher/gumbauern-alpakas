@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import { css, Global } from '@emotion/react'
+import { css } from '@emotion/react'
 import Link from 'next/link'
-import React from 'react'
-import { push as Menu } from 'react-burger-menu'
+import React, { useEffect } from 'react'
 import { Logo } from './logo'
 import { SocialIcons } from './social'
 
@@ -18,6 +17,14 @@ export function Navigation() {
     { text: 'Kontakt', id: 'kontakt', to: '/kontakt' },
   ]
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('no-scroll')
+    } else {
+      document.body.classList.remove('no-scroll')
+    }
+  }, [isOpen])
+
   return (
     <div
       css={css`
@@ -28,7 +35,6 @@ export function Navigation() {
       `}
     >
       <nav css={styles.navigation}>
-        <Global styles={menuStylesGlobal} />
         <Link href="/">
           <Logo
             css={css`
@@ -38,13 +44,66 @@ export function Navigation() {
             `}
           />
         </Link>
-        <Menu
-          disableAutoFocus
-          right
-          width="100%"
-          isOpen={isOpen}
-          onStateChange={(state) => setIsOpen(state.isOpen)}
+        <button
+          css={[styles.buttonReset, styles.mobileOnly]}
+          onClick={() => setIsOpen(true)}
         >
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M28 6H4V8H28V6Z" fill="#373a47" />
+            <path d="M28 15H4V17H28V15Z" fill="#373a47" />
+            <path d="M28 24H4V26H28V24Z" fill="#373a47" />
+          </svg>
+        </button>
+        <div
+          css={css`
+            isolation: isolate;
+            position: fixed;
+            overflow: scroll;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #596e79;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            transform: ${isOpen ? 'translateX(0)' : 'translateX(100%)'};
+            z-index: 10000;
+            padding-bottom: 80px;
+          `}
+        >
+          <button
+            css={[
+              styles.buttonReset,
+              css({
+                path: { fill: 'white' },
+                display: 'block',
+                marginLeft: 'auto',
+                padding: '20px',
+              }),
+            ]}
+            onClick={() => setIsOpen(false)}
+          >
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.71 6.71004L25.29 5.29004L16 14.58L6.71004 5.29004L5.29004 6.71004L14.58 16L5.29004 25.29L6.71004 26.71L16 17.42L25.29 26.71L26.71 25.29L17.42 16L26.71 6.71004Z"
+                fill="#29293A"
+              />
+            </svg>
+          </button>
           {links.map((link) => (
             <Link
               href={link.to}
@@ -57,7 +116,7 @@ export function Navigation() {
             </Link>
           ))}
           <SocialIcons />
-        </Menu>
+        </div>
         <div css={styles.desktopLinks}>
           {links.map((link) => (
             <Link href={link.to} css={styles.desktopLink} key={link.id}>
@@ -70,84 +129,16 @@ export function Navigation() {
   )
 }
 
-const menuStylesGlobal = css`
-  /* Position and sizing of burger button */
-  .bm-burger-button {
-    position: absolute;
-    width: 36px;
-    height: 30px;
-    right: 25px;
-    top: 25px;
-
+const styles = {
+  buttonReset: css`
+    background: none;
+    border: none;
+  `,
+  mobileOnly: css`
     @media screen and (min-width: 800px) {
       display: none;
     }
-  }
-
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: #373a47;
-  }
-
-  /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: #a90000;
-  }
-
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-    transform: scale(3);
-    transform-origin: right top;
-  }
-
-  /* Color/shape of close button cross */
-  .bm-cross {
-    background: #bdc3c7;
-  }
-
-  /*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
-  .bm-menu-wrap {
-    position: absolute;
-    height: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  /* General sidebar styles */
-  .bm-menu {
-    background: #596e79;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
-
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #394e59;
-  }
-
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #394e59;
-    padding: 0.8em;
-  }
-
-  /* Individual item */
-  .bm-item {
-    display: inline-block;
-  }
-
-  /* Styling of overlay */
-  .bm-overlay {
-    display: none;
-  }
-`
-
-const styles = {
+  `,
   navigation: css`
     width: 100%;
     height: 80px;

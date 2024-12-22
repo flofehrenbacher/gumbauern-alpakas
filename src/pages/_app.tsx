@@ -42,6 +42,10 @@ export default function MyApp({
           .carousel .slide {
             background: none !important;
           }
+
+          .no-scroll {
+            overflow: hidden;
+          }
         `}
       />
       <Navigation />
