@@ -22,9 +22,9 @@ export function ResponsiveImage({
         <img
           alt=""
           src={`${baseSrc}_800.jpg`}
-          className={css`
-            max-width: 100%;
-          `}
+          className={css({
+            maxWidth: '100%',
+          })}
           loading={lazy ? 'lazy' : 'eager'}
           {...props}
         />
@@ -33,20 +33,20 @@ export function ResponsiveImage({
   )
 }
 
-const styles = css`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 3000ms ease-in 0s;
-  opacity: 1;
-`
+const styles = css({
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+  transition: 'opacity 3000ms ease-in 0s',
+  opacity: 1,
+})
 
-const imageRatioContainerStyles = css`
-  overflow: hidden;
-  height: 0;
-  padding-top: ${(9 / 16) * 100}%;
-  background: #f0ece2;
-  position: relative;
-`
+const imageRatioContainerStyles = css({
+  overflow: 'hidden',
+  height: 0,
+  paddingTop: `${(9 / 16) * 100}%`,
+  background: '#f0ece2',
+  position: 'relative',
+})

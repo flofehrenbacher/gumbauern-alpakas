@@ -6,9 +6,9 @@ export default function AboutAlpakas() {
   return (
     <Contact
       as="h1"
-      className={css`
-        margin: 30px;
-      `}
+      className={css({
+        margin: '30px',
+      })}
     />
   )
 }

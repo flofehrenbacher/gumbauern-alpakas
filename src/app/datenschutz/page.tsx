@@ -242,9 +242,9 @@ export default function DataProtection() {
 function TextBlock({ children }: { children: React.ReactNode }) {
   return (
     <div
-      className={css`
-        margin-top: 20px;
-      `}
+      className={css({
+        marginTop: '20px',
+      })}
     >
       {children}
     </div>

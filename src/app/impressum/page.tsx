@@ -2,22 +2,21 @@ import { H1 } from 'components/shared'
 import { css } from '@pigment-css/react'
 import React from 'react'
 
+const styles = {
+  container: css({
+    margin: '30px',
+  }),
+  paragraph: css({
+    marginTop: '30px',
+  }),
+}
+
 export default function Impressum() {
   return (
     <>
-      <div
-        className={css`
-          margin: 30px;
-        `}
-      >
+      <div className={styles.container}>
         <H1>Impressum</H1>
-        <p
-          className={css`
-            margin-top: 30px;
-          `}
-        >
-          Angaben gemäß § 5 TMG
-        </p>
+        <p className={styles.paragraph}>Angaben gemäß § 5 TMG</p>
         <p>
           Andreas Olbrich <br />
           Finkenweg 9<br />

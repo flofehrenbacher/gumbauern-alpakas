@@ -44,32 +44,32 @@ export function SingleAlpaka({
 }
 
 export const alpakaStyles = {
-  container: css`
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  `,
-  aboutContainer: css`
-    margin: 30px ${marginLeftRight}px 0;
-  `,
-  nickname: css`
-    font-size: 20px;
-    text-align: center;
-    margin-top: 0;
-  `,
-  birthYear: css`
-    text-align: center;
-    margin-top: 20px;
-  `,
-  description: css`
-    margin-top: 20px;
-    line-height: 1.4;
-  `,
-  trenner: css`
-    width: 60%;
-    margin-top: 50px;
-    border-bottom: 1px solid #373a47;
-    opacity: 0.5;
-  `,
+  container: css({
+    marginTop: '40px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  }),
+  aboutContainer: css({
+    margin: `30px ${marginLeftRight}px 0`,
+  }),
+  nickname: css({
+    fontSize: '20px',
+    textAlign: 'center',
+    marginTop: '0',
+  }),
+  birthYear: css({
+    textAlign: 'center',
+    marginTop: '20px',
+  }),
+  description: css({
+    marginTop: '20px',
+    lineHeight: '1.4',
+  }),
+  trenner: css({
+    width: '60%',
+    marginTop: '50px',
+    borderBottom: '1px solid #373a47',
+    opacity: '0.5',
+  }),
 }

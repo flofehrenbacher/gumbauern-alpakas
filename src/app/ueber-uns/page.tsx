@@ -8,9 +8,9 @@ export default function AboutUs() {
     <>
       <H1>Über uns</H1>
       <div
-        className={css`
-          margin-top: 30px;
-        `}
+        className={css({
+          marginTop: '30px',
+        })}
       >
         <ResponsiveImage
           baseSrc={`/img/ueber_uns/ueber_uns`}
@@ -74,13 +74,13 @@ export default function AboutUs() {
 }
 
 const internalStyles = {
-  list: css`
-    list-style: circle;
-    li {
-      line-height: 1.4;
-    }
-  `,
-  textBelowHeadline: css`
-    margin-top: 10px;
-  `,
+  list: css({
+    listStyle: 'circle',
+    li: {
+      lineHeight: 1.4,
+    },
+  }),
+  textBelowHeadline: css({
+    marginTop: '10px',
+  }),
 }

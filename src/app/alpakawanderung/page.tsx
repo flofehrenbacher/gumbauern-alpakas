@@ -99,17 +99,17 @@ export default function Alpakawanderung() {
 }
 
 const internalStyles = {
-  secondaryHeadline: css`
-    margin-top: 20px;
-    margin-bottom: 20px;
-  `,
-  list: css`
-    list-style: circle;
-    li {
-      line-height: 1.4;
-    }
-  `,
-  textBelowHeadline: css`
-    margin-top: 10px;
-  `,
+  secondaryHeadline: css({
+    marginTop: '20px',
+    marginBottom: '20px',
+  }),
+  list: css({
+    listStyle: 'circle',
+    li: {
+      lineHeight: '1.4',
+    },
+  }),
+  textBelowHeadline: css({
+    marginTop: '10px',
+  }),
 }

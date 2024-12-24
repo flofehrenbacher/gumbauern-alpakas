@@ -8,9 +8,9 @@ export default function AboutAlpakas() {
     <>
       <H1>Über Alpakas</H1>
       <div
-        className={css`
-          margin-top: 30px;
-        `}
+        className={css({
+          marginTop: '30px',
+        })}
       >
         <ResponsiveImage
           baseSrc={`/img/wolle/wolle`}

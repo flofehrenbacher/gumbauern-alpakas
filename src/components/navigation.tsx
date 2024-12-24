@@ -15,21 +15,21 @@ export function Navigation() {
 
   return (
     <div
-      className={css`
-        background-color: #dfd3c3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      `}
+      className={css({
+        backgroundColor: '#dfd3c3',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      })}
     >
       <nav className={styles.navigation}>
         <Link href="/">
           <Logo
-            className={css`
-              height: 80px;
-              width: 80px;
-              margin-left: 5px;
-            `}
+            className={css({
+              height: '80px',
+              width: '80px',
+              marginLeft: '5px',
+            })}
           />
         </Link>
         <BurgerMenu links={links} />
@@ -46,41 +46,38 @@ export function Navigation() {
 }
 
 const styles = {
-  buttonReset: css`
-    background: none;
-    border: none;
-  `,
-  navigation: css`
-    width: 100%;
-    height: 80px;
-    background-color: #dfd3c3;
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-  `,
-  desktopLink: css`
-    display: none;
-
-    @media screen and (min-width: 800px) {
-      color: #373a47;
-      margin-right: 20px;
-      font-size: 20px;
-      text-decoration: none;
-      display: flex;
-      white-space: nowrap;
-
-      &:hover {
-        color: #373a4790;
-      }
-    }
-  `,
-  desktopLinks: css`
-    display: none;
-
-    @media screen and (min-width: 800px) {
-      display: flex;
-      height: 100%;
-      align-items: center;
-    }
-  `,
+  buttonReset: css({
+    background: 'none',
+    border: 'none',
+  }),
+  navigation: css({
+    width: '100%',
+    height: '80px',
+    backgroundColor: '#dfd3c3',
+    display: 'flex',
+    justifyContent: 'space-between',
+    maxWidth: '800px',
+  }),
+  desktopLink: css({
+    display: 'none',
+    '@media screen and (min-width: 800px)': {
+      color: '#373a47',
+      marginRight: '20px',
+      fontSize: '20px',
+      textDecoration: 'none',
+      display: 'flex',
+      whiteSpace: 'nowrap',
+      '&:hover': {
+        color: '#373a4790',
+      },
+    },
+  }),
+  desktopLinks: css({
+    display: 'none',
+    '@media screen and (min-width: 800px)': {
+      display: 'flex',
+      height: '100%',
+      alignItems: 'center',
+    },
+  }),
 }

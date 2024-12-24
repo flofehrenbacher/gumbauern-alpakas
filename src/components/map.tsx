@@ -8,7 +8,6 @@ import { ErrorBoundary } from 'react-error-boundary'
 const position: LatLngTuple = [49.15636, 11.3629]
 
 export default function Map() {
-  // TODO: use react 19 for fixing error Map container is already initialized.
   return (
     <ErrorBoundary fallback={null}>
       <MapContainer
