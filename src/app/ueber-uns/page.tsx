@@ -1,16 +1,16 @@
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1, TextBlock } from 'components/shared'
 import React from 'react'
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 
 export default function AboutUs() {
   return (
     <>
       <H1>Über uns</H1>
       <div
-        css={css`
-          margin-top: 30px;
-        `}
+        className={css({
+          marginTop: '30px',
+        })}
       >
         <ResponsiveImage
           baseSrc={`/img/ueber_uns/ueber_uns`}
@@ -31,16 +31,18 @@ export default function AboutUs() {
         <p>
           Obwohl wir in der Landwirtschaft groß geworden sind, haben uns die
           Tiere von Anfang an immer wieder überrascht und herausgefordert. Nach
-          einiger Zeit waren wir aber ein eingespieltes Team. 
+          einiger Zeit waren wir aber ein eingespieltes Team.
         </p>
         <p>
-          Gundula & Co. sind ein nicht mehr wegzudenkender Bestandteil unserer Familie
-          geworden und wir können und möchten uns ein Leben ohne sie nicht mehr
-          vorstellen.
+          Gundula & Co. sind ein nicht mehr wegzudenkender Bestandteil unserer
+          Familie geworden und wir können und möchten uns ein Leben ohne sie
+          nicht mehr vorstellen.
         </p>
         <br />
         <p>Folgende Seminare und Kurse haben wir besucht:</p>
-        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+        <ul
+          className={`${internalStyles.list} ${internalStyles.textBelowHeadline}`}
+        >
           <li>Alpaka-Einsteigerkurs bei den Lindforst-Alpakas</li>
           <li>AELAS, Kurs A</li>
           <li>
@@ -52,11 +54,10 @@ export default function AboutUs() {
             Coach für lama-/alpakagestützte Aktivitäten auf der Orenda-Ranch
           </li>
           <li>
-            Ernährung/Krankheiten/Parasiten bei Kameliden bei Prof. Dr. Dr. Gauly, Eventhof Kisselmühle
+            Ernährung/Krankheiten/Parasiten bei Kameliden bei Prof. Dr. Dr.
+            Gauly, Eventhof Kisselmühle
           </li>
-          <li>
-            "Lama und Mensch" bei den Erlenwald Lamas
-          </li>
+          <li>"Lama und Mensch" bei den Erlenwald Lamas</li>
           <li>
             Alpaka-Sachkundenachweis nach § 11 Abs. 2 Nr. 1 TierSchG bei den
             Alpakas vom Silberberg
@@ -65,7 +66,7 @@ export default function AboutUs() {
         <br />
         <p>
           Selbstverständlich wurde unsere Alpakahaltung vom zuständigen
-            Veterinäramt abgenommen.
+          Veterinäramt abgenommen.
         </p>
       </TextBlock>
     </>
@@ -73,13 +74,13 @@ export default function AboutUs() {
 }
 
 const internalStyles = {
-  list: css`
-    list-style: circle;
-    li {
-      line-height: 1.4;
-    }
-  `,
-  textBelowHeadline: css`
-    margin-top: 10px;
-  `,
+  list: css({
+    listStyle: 'circle',
+    li: {
+      lineHeight: 1.4,
+    },
+  }),
+  textBelowHeadline: css({
+    marginTop: '10px',
+  }),
 }

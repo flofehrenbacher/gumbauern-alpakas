@@ -1,17 +1,17 @@
 import React from 'react'
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 import { FacebookIcon } from './facebook'
 import { InstagramIcon } from './instagram'
 
 export function SocialIcons() {
   return (
     <div
-      css={css`
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-      `}
+      className={css({
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '20px',
+      })}
     >
       <a href="https://www.facebook.com/Gumbauern-Alpakas-102612168229373/">
         <FacebookIcon />

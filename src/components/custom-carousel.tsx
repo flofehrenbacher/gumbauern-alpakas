@@ -1,4 +1,5 @@
-import { css } from '@emotion/react'
+'use client'
+import { css } from '@pigment-css/react'
 import React, { ReactNode } from 'react'
 import { Carousel, CarouselProps } from 'react-responsive-carousel'
 
@@ -15,10 +16,11 @@ export function CustomCarousel({
       dynamicHeight
       useKeyboardArrows
       showThumbs={false}
-      css={css`
-        margin-top: 30px;
-        width: 100%;
-      `}
+      // TODO: check why only object style works
+      className={css({
+        marginTop: '30px',
+        width: '100%',
+      })}
     >
       {children}
     </Carousel>

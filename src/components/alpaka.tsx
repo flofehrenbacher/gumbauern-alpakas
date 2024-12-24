@@ -1,9 +1,9 @@
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 import React from 'react'
-import { Alpaka } from '../pages/unsere-tiere'
 import { CustomCarousel } from './custom-carousel'
 import { ResponsiveImage } from './responsive-image'
 import { marginLeftRight, SecondaryHeadline } from './shared'
+import { Alpaka } from 'app/unsere-tiere/page'
 
 export function SingleAlpaka({
   name,
@@ -14,7 +14,7 @@ export function SingleAlpaka({
   isFirst,
 }: Alpaka) {
   return (
-    <div css={alpakaStyles.container}>
+    <div className={alpakaStyles.container}>
       <SecondaryHeadline>{name}</SecondaryHeadline>
       <CustomCarousel>
         <ResponsiveImage
@@ -33,43 +33,43 @@ export function SingleAlpaka({
           lazy
         />
       </CustomCarousel>
-      <dl css={alpakaStyles.aboutContainer}>
-        <dd css={alpakaStyles.nickname}>{nickname}</dd>
-        <dd css={alpakaStyles.birthYear}>*{birthYear}</dd>
-        <dd css={alpakaStyles.description}>{description}</dd>
+      <dl className={alpakaStyles.aboutContainer}>
+        <dd className={alpakaStyles.nickname}>{nickname}</dd>
+        <dd className={alpakaStyles.birthYear}>*{birthYear}</dd>
+        <dd className={alpakaStyles.description}>{description}</dd>
       </dl>
-      {isLast ? null : <div css={alpakaStyles.trenner} />}
+      {isLast ? null : <div className={alpakaStyles.trenner} />}
     </div>
   )
 }
 
 export const alpakaStyles = {
-  container: css`
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  `,
-  aboutContainer: css`
-    margin: 30px ${marginLeftRight}px 0;
-  `,
-  nickname: css`
-    font-size: 20px;
-    text-align: center;
-    margin-top: 0;
-  `,
-  birthYear: css`
-    text-align: center;
-    margin-top: 20px;
-  `,
-  description: css`
-    margin-top: 20px;
-    line-height: 1.4;
-  `,
-  trenner: css`
-    width: 60%;
-    margin-top: 50px;
-    border-bottom: 1px solid #373a47;
-    opacity: 0.5;
-  `,
+  container: css({
+    marginTop: '40px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  }),
+  aboutContainer: css({
+    margin: `30px ${marginLeftRight}px 0`,
+  }),
+  nickname: css({
+    fontSize: '20px',
+    textAlign: 'center',
+    marginTop: '0',
+  }),
+  birthYear: css({
+    textAlign: 'center',
+    marginTop: '20px',
+  }),
+  description: css({
+    marginTop: '20px',
+    lineHeight: '1.4',
+  }),
+  trenner: css({
+    width: '60%',
+    marginTop: '50px',
+    borderBottom: '1px solid #373a47',
+    opacity: '0.5',
+  }),
 }
