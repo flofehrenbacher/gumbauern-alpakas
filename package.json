@@ -8,7 +8,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@pigment-css/react": "0.0.28",
+    "@pigment-css/react": "0.0.29",
     "leaflet": "1.9.4",
     "next": "15.1.2",
     "react": "19.0.0",
