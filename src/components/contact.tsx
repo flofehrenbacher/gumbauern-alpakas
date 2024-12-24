@@ -1,9 +1,12 @@
+'use client'
 import { css } from '@pigment-css/react'
 import React, { HTMLAttributes } from 'react'
 import { H1 } from './shared'
 import { SocialIcons } from './social'
 import { layoutStyles } from 'app/layout-styles'
-import { Map } from 'components/map'
+import dynamic from 'next/dynamic'
+
+const Map = dynamic(() => import('components/map'), { ssr: false })
 
 export function Contact(
   props: HTMLAttributes<HTMLDivElement> & { as: 'h1' | 'h2' }
@@ -51,14 +54,14 @@ export function Contact(
 }
 
 const styles = {
-  addressLine: css`
-    margin-top: 7px;
-    display: flex;
-  `,
-  phone: css`
-    margin-left: 10px;
-  `,
-  addressContainer: css`
-    margin-top: 30px;
-  `,
+  addressLine: css({
+    marginTop: '7px',
+    display: 'flex',
+  }),
+  phone: css({
+    marginLeft: '10px',
+  }),
+  addressContainer: css({
+    marginTop: '30px',
+  }),
 }

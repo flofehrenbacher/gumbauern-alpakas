@@ -1,23 +1,23 @@
 import { css } from '@pigment-css/react'
 
 export const layoutStyles = {
-  contentStyles: css`
-    flex-grow: 1;
-  `,
-  mainContainer: css`
-    max-width: 100%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  `,
-  secondaryHeadline: css`
-    font-weight: 600;
-    font-size: 20px;
-  `,
-  mainHeadline: css`
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  `,
+  contentStyles: css({
+    flexGrow: 1,
+  }),
+  mainContainer: css({
+    maxWidth: '100%',
+    padding: '30px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  }),
+  secondaryHeadline: css({
+    fontWeight: 600,
+    fontSize: '20px',
+  }),
+  mainHeadline: css({
+    fontSize: '24px',
+    fontWeight: 600,
+    marginBottom: '20px',
+  }),
 }
