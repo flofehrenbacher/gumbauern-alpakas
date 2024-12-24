@@ -1,9 +1,9 @@
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 import React from 'react'
-import { Alpaka } from '../pages/unsere-tiere'
 import { CustomCarousel } from './custom-carousel'
 import { ResponsiveImage } from './responsive-image'
 import { marginLeftRight, SecondaryHeadline } from './shared'
+import { Alpaka } from 'app/unsere-tiere/page'
 
 export function SingleAlpaka({
   name,
@@ -14,7 +14,7 @@ export function SingleAlpaka({
   isFirst,
 }: Alpaka) {
   return (
-    <div css={alpakaStyles.container}>
+    <div className={alpakaStyles.container}>
       <SecondaryHeadline>{name}</SecondaryHeadline>
       <CustomCarousel>
         <ResponsiveImage
@@ -33,12 +33,12 @@ export function SingleAlpaka({
           lazy
         />
       </CustomCarousel>
-      <dl css={alpakaStyles.aboutContainer}>
-        <dd css={alpakaStyles.nickname}>{nickname}</dd>
-        <dd css={alpakaStyles.birthYear}>*{birthYear}</dd>
-        <dd css={alpakaStyles.description}>{description}</dd>
+      <dl className={alpakaStyles.aboutContainer}>
+        <dd className={alpakaStyles.nickname}>{nickname}</dd>
+        <dd className={alpakaStyles.birthYear}>*{birthYear}</dd>
+        <dd className={alpakaStyles.description}>{description}</dd>
       </dl>
-      {isLast ? null : <div css={alpakaStyles.trenner} />}
+      {isLast ? null : <div className={alpakaStyles.trenner} />}
     </div>
   )
 }

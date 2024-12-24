@@ -1,18 +1,18 @@
 import { H1 } from 'components/shared'
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 import React from 'react'
 
 export default function Impressum() {
   return (
     <>
       <div
-        css={css`
+        className={css`
           margin: 30px;
         `}
       >
         <H1>Impressum</H1>
         <p
-          css={css`
+          className={css`
             margin-top: 30px;
           `}
         >

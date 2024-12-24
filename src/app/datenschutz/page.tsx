@@ -1,11 +1,11 @@
 import React from 'react'
-import { layoutStyles } from './unsere-tiere'
 import { H1 } from 'components/shared'
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
+import { layoutStyles } from 'app/layout-styles'
 
 export default function DataProtection() {
   return (
-    <main css={layoutStyles.mainContainer}>
+    <main className={layoutStyles.mainContainer}>
       <H1>Datenschutzerklärung</H1>
       <TextBlock>
         <p>
@@ -242,7 +242,7 @@ export default function DataProtection() {
 function TextBlock({ children }: { children: React.ReactNode }) {
   return (
     <div
-      css={css`
+      className={css`
         margin-top: 20px;
       `}
     >

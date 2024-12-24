@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 import React from 'react'
 
 export function Footer() {
   return (
-    <div css={styles.navigation}>
-      <Link href="/impressum" css={styles.link}>
+    <div className={styles.navigation}>
+      <Link href="/impressum" className={styles.link}>
         Impressum
       </Link>
-      <Link href="/datenschutz" css={styles.link}>
+      <Link href="/datenschutz" className={styles.link}>
         Datenschutz
       </Link>
     </div>

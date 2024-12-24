@@ -1,5 +1,5 @@
 import React, { ImgHTMLAttributes } from 'react'
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 
 type ResponsiveImageProps = {
   baseSrc: string
@@ -12,8 +12,8 @@ export function ResponsiveImage({
   ...props
 }: ResponsiveImageProps) {
   return (
-    <div css={imageRatioContainerStyles}>
-      <picture css={styles} {...props}>
+    <div className={imageRatioContainerStyles}>
+      <picture className={styles} {...props}>
         <source
           type="image/webp"
           srcSet={`${baseSrc}_800.webp 800w, ${baseSrc}_1600.webp 1600w`}
@@ -22,7 +22,7 @@ export function ResponsiveImage({
         <img
           alt=""
           src={`${baseSrc}_800.jpg`}
-          css={css`
+          className={css`
             max-width: 100%;
           `}
           loading={lazy ? 'lazy' : 'eager'}

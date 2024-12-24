@@ -1,7 +1,7 @@
 import { CustomCarousel } from 'components/custom-carousel'
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1, SecondaryHeadline, TextBlock } from 'components/shared'
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 import React from 'react'
 
 export default function Alpakawanderung() {
@@ -31,7 +31,7 @@ export default function Alpakawanderung() {
       </CustomCarousel>
       <TextBlock>
         <SecondaryHeadline>Ablauf der Wanderung</SecondaryHeadline>
-        <p css={internalStyles.textBelowHeadline}>
+        <p className={internalStyles.textBelowHeadline}>
           Wir begrüßen Euch im Stall, wo Ihr erste Bekanntschaft mit den Alpakas
           schließt. Dazu gibt es Wissenswertes rund um ihre Herkunft und ihre
           Bedürfnisse. Anschließend werden die Tiere gehalftert und wir wandern
@@ -42,37 +42,40 @@ export default function Alpakawanderung() {
           einer kleinen Belohnung auf die Weide.
         </p>
         <SecondaryHeadline>Dauer & Termine</SecondaryHeadline>
-        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+        <ul
+          className={`${internalStyles.list} ${internalStyles.textBelowHeadline}`}
+        >
           <li>Gesamtdauer: ca. 1,5 Std.</li>
           <li>
             Dauer der Wanderung: ca. 1 Stunde, je nach Lust und Laune der
             Alpakas
           </li>
           <li>
-            Termine: Samstag/Sonntag 14 Uhr (Anmeldung erforderlich), für separate Gruppen (mindestens 6 Tiere) nach Absprache auch an anderen Tagen
+            Termine: Samstag/Sonntag 14 Uhr (Anmeldung erforderlich), für
+            separate Gruppen (mindestens 6 Tiere) nach Absprache auch an anderen
+            Tagen
           </li>
           <li>
-            Um unseren Tieren den Spaß an den Spaziergängen zu erhalten, wandern wir nur zwei- bis dreimal pro Woche
+            Um unseren Tieren den Spaß an den Spaziergängen zu erhalten, wandern
+            wir nur zwei- bis dreimal pro Woche
           </li>
         </ul>
         <SecondaryHeadline>Preise</SecondaryHeadline>
-        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+        <ul
+          className={`${internalStyles.list} ${internalStyles.textBelowHeadline}`}
+        >
           <li>pro AlpakaführerIn 23€</li>
           <li>pro Begleitperson ohne Alpaka 10€</li>
           <li>Kinder bis 11 Jahre sind frei</li>
           <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
-          <li>
-            Gerne könnt Ihr auch einen Geschenkgutschein erwerben
-          </li>
-          <li>
-            Kleinere Gruppen werden zusammengelegt
-          </li>
-          <li>
-            Separate Wanderungen ab einer Buchung von sechs Alpakas
-          </li>
+          <li>Gerne könnt Ihr auch einen Geschenkgutschein erwerben</li>
+          <li>Kleinere Gruppen werden zusammengelegt</li>
+          <li>Separate Wanderungen ab einer Buchung von sechs Alpakas</li>
         </ul>
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
-        <ul css={[internalStyles.list, internalStyles.textBelowHeadline]}>
+        <ul
+          className={`${internalStyles.list} ${internalStyles.textBelowHeadline}`}
+        >
           <li>
             Bitte denkt an wetterfeste Kleidung und Schuhe (keine Regenschirme)
           </li>

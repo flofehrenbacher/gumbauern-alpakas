@@ -3,9 +3,8 @@ import { Contact } from 'components/contact'
 import { CustomCarousel } from 'components/custom-carousel'
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1 } from 'components/shared'
-import { css } from '@emotion/react'
+import { css } from '@pigment-css/react'
 import React from 'react'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { SocialIcons } from 'components/social'
 
 export default function HomePage() {
@@ -30,7 +29,7 @@ export default function HomePage() {
       </CustomCarousel>
       <LinkContainer links={links} />
       <SocialIcons />
-      <Contact as="h2" css={styles.contactLayout} />
+      <Contact as="h2" className={styles.contactLayout} />
     </>
   )
 }
@@ -38,9 +37,9 @@ export default function HomePage() {
 type LinkType = { to: string; text: string }
 function LinkContainer({ links }: { links: LinkType[] }) {
   return (
-    <ul css={styles.linkContainer}>
+    <ul className={styles.linkContainer}>
       {links.map((link) => (
-        <Link key={link.to} href={link.to} css={styles.link}>
+        <Link key={link.to} href={link.to} className={styles.link}>
           {link.text}
         </Link>
       ))}
