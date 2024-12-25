@@ -2,15 +2,6 @@ import { H1 } from 'components/shared'
 import { css } from '@pigment-css/react'
 import React from 'react'
 
-const styles = {
-  container: css({
-    margin: '30px',
-  }),
-  paragraph: css({
-    marginTop: '30px',
-  }),
-}
-
 export default function Impressum() {
   return (
     <>
@@ -111,4 +102,13 @@ export default function Impressum() {
       </div>
     </>
   )
+}
+
+const styles = {
+  container: css({
+    margin: '30px',
+  }),
+  paragraph: css({
+    marginTop: '30px',
+  }),
 }

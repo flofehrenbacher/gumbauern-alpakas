@@ -71,8 +71,4 @@ html {
 .no-scroll {
   overflow: hidden;
 }
-
-.gumbauern-alpakas-map-container {
-  height: 300px;
-  margin: 20px auto;}
 `
