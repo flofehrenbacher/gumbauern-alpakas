@@ -7,6 +7,7 @@ import '@pigment-css/react/styles.css'
 
 import 'leaflet/dist/leaflet.css'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { SanityLive } from 'sanity-live'
 
 export default function RootLayout({
   children,
@@ -29,6 +30,7 @@ export default function RootLayout({
           <ContentWrapper>{children}</ContentWrapper>
           <Footer />
         </AppWrapper>
+        <SanityLive />
       </body>
     </html>
   )
