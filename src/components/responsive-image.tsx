@@ -1,5 +1,6 @@
 import React, { ImgHTMLAttributes } from 'react'
 import { css } from '@pigment-css/react'
+import Image from 'next/image'
 
 type ResponsiveImageProps = {
   baseSrc: string
@@ -13,35 +14,10 @@ export function ResponsiveImage({
 }: ResponsiveImageProps) {
   return (
     <div className={imageRatioContainerStyles}>
-      <picture className={styles} {...props}>
-        <source
-          type="image/webp"
-          srcSet={`${baseSrc}_800.webp 800w, ${baseSrc}_1600.webp 1600w`}
-        />
-        <source type="image/jpeg" srcSet={`${baseSrc}_800.jpg`} />
-        <img
-          alt=""
-          src={`${baseSrc}_800.jpg`}
-          className={css({
-            maxWidth: '100%',
-          })}
-          loading={lazy ? 'lazy' : 'eager'}
-          {...props}
-        />
-      </picture>
+      <Image alt={props.alt ?? ''} src={`${baseSrc}_1600.jpg`} fill />
     </div>
   )
 }
-
-const styles = css({
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  width: '100%',
-  height: '100%',
-  transition: 'opacity 3000ms ease-in 0s',
-  opacity: 1,
-})
 
 const imageRatioContainerStyles = css({
   overflow: 'hidden',

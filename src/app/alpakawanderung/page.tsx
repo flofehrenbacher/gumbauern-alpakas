@@ -17,15 +17,15 @@ export default function Alpakawanderung() {
       <CustomCarousel>
         <ResponsiveImage
           lazy={false}
-          baseSrc={`img/wandern/wandern_1`}
+          baseSrc={`/img/wandern/wandern_1`}
           alt={'Alpakawanderung in Kleinberghausen'}
         />
         <ResponsiveImage
-          baseSrc={`img/wandern/wandern_2`}
+          baseSrc={`/img/wandern/wandern_2`}
           alt={'Alpakawanderung in Freystadt'}
         />
         <ResponsiveImage
-          baseSrc={`img/wandern/wandern_3`}
+          baseSrc={`/img/wandern/wandern_3`}
           alt={'Alpakawanderung in Neumarkt'}
         />
       </CustomCarousel>
