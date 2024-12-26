@@ -18,6 +18,7 @@ export function ResponsiveImage({
         alt={props.alt ?? ''}
         src={`${baseSrc}_1600.jpg`}
         priority={!lazy}
+        fill
       />
     </div>
   )
