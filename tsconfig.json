@@ -17,7 +17,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "allowJs": false,
-    "baseUrl": "./src",
     "typeRoots": [
       "./node_modules/@types",
       "./src/typings"

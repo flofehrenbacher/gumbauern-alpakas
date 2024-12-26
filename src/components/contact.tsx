@@ -3,10 +3,10 @@ import { css } from '@pigment-css/react'
 import React, { HTMLAttributes } from 'react'
 import { H1 } from './shared'
 import { SocialIcons } from './social'
-import { layoutStyles } from 'app/layout-styles'
+import { layoutStyles } from '../app/layout-styles'
 import dynamic from 'next/dynamic'
 
-const Map = dynamic(() => import('components/map'), { ssr: false })
+const Map = dynamic(() => import('../components/map'), { ssr: false })
 
 export function Contact(
   props: HTMLAttributes<HTMLDivElement> & { as: 'h1' | 'h2' }

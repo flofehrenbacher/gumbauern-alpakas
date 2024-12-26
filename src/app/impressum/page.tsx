@@ -1,4 +1,4 @@
-import { H1 } from 'components/shared'
+import { H1 } from '../../components/shared'
 import { css } from '@pigment-css/react'
 import React from 'react'
 

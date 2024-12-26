@@ -1,7 +1,7 @@
 import React from 'react'
-import { H1 } from 'components/shared'
+import { H1 } from '../../components/shared'
 import { css } from '@pigment-css/react'
-import { layoutStyles } from 'app/layout-styles'
+import { layoutStyles } from '../../app/layout-styles'
 
 export default function DataProtection() {
   return (

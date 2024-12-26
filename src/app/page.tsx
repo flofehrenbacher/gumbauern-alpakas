@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { Contact } from 'components/contact'
-import { CustomCarousel } from 'components/custom-carousel'
-import { ResponsiveImage } from 'components/responsive-image'
-import { H1 } from 'components/shared'
+import { Contact } from '../components/contact'
+import { CustomCarousel } from '../components/custom-carousel'
+import { ResponsiveImage } from '../components/responsive-image'
+import { H1 } from '../components/shared'
 import { css } from '@pigment-css/react'
 import React from 'react'
-import { SocialIcons } from 'components/social'
+import { SocialIcons } from '../components/social'
 
 export default function HomePage() {
   const links = [

@@ -3,7 +3,8 @@ import React from 'react'
 import { CustomCarousel } from './custom-carousel'
 import { ResponsiveImage } from './responsive-image'
 import { marginLeftRight, SecondaryHeadline } from './shared'
-import { Alpaka } from 'app/unsere-tiere/page'
+import { Alpaka } from '../app/unsere-tiere/page'
+import { PortableText } from '@portabletext/react'
 
 export function SingleAlpaka({
   name,
@@ -36,7 +37,9 @@ export function SingleAlpaka({
       <dl className={alpakaStyles.aboutContainer}>
         <dd className={alpakaStyles.nickname}>{nickname}</dd>
         <dd className={alpakaStyles.birthYear}>*{birthYear}</dd>
-        <dd className={alpakaStyles.description}>{description}</dd>
+        <dd className={alpakaStyles.description}>
+          <PortableText value={description} />
+        </dd>
       </dl>
       {isLast ? null : <div className={alpakaStyles.trenner} />}
     </div>
@@ -65,6 +68,9 @@ export const alpakaStyles = {
   description: css({
     marginTop: '20px',
     lineHeight: '1.4',
+    strong: {
+      fontWeight: 'bold',
+    },
   }),
   trenner: css({
     width: '60%',

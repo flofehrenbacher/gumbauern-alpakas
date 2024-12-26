@@ -1,6 +1,6 @@
-import { CustomCarousel } from 'components/custom-carousel'
-import { ResponsiveImage } from 'components/responsive-image'
-import { H1, SecondaryHeadline, TextBlock } from 'components/shared'
+import { CustomCarousel } from '../../components/custom-carousel'
+import { ResponsiveImage } from '../../components/responsive-image'
+import { H1, SecondaryHeadline, TextBlock } from '../../components/shared'
 import { css } from '@pigment-css/react'
 import React from 'react'
 
