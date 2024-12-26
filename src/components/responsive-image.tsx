@@ -14,7 +14,11 @@ export function ResponsiveImage({
 }: ResponsiveImageProps) {
   return (
     <div className={imageRatioContainerStyles}>
-      <Image alt={props.alt ?? ''} src={`${baseSrc}_1600.jpg`} fill />
+      <Image
+        alt={props.alt ?? ''}
+        src={`${baseSrc}_1600.jpg`}
+        priority={!lazy}
+      />
     </div>
   )
 }
