@@ -3,7 +3,7 @@ import React from 'react'
 import { CustomCarousel } from './custom-carousel'
 import { ResponsiveImage } from './responsive-image'
 import { contentWidth, marginLeftRight, SecondaryHeadline } from './shared'
-import { Alpaka } from '../app/(gumbauern-alpakas)/unsere-tiere/page'
+import { Alpaka } from '../app/(frontend)/unsere-tiere/page'
 import { PortableText } from '@portabletext/react'
 import { urlFor } from '../sanity/lib/image'
 
