@@ -15,8 +15,8 @@ export function SingleAlpaka({
   isLast,
   isFirst,
   images,
-}: Alpaka) {
-  const imageUrls = images
+}: Partial<Alpaka>) {
+  const imageUrls = (images ?? [])
     .map((image) =>
       urlFor(image)
         ?.width(contentWidth * 2)
@@ -41,7 +41,7 @@ export function SingleAlpaka({
         <dd className={alpakaStyles.nickname}>{nickname}</dd>
         <dd className={alpakaStyles.birthYear}>*{birthYear}</dd>
         <dd className={alpakaStyles.description}>
-          <PortableText value={description} />
+          {description && <PortableText value={description} />}
         </dd>
       </dl>
       {isLast ? null : <div className={alpakaStyles.trenner} />}

@@ -1,4 +1,4 @@
-export const ourAnimalsType = 'ourAnimals'
+export const ourAnimalsTypeIdentifier = 'ourAnimals'
 
 // Define the actions that should be available for singleton documents
 export const singletonActions = new Set([
@@ -8,4 +8,4 @@ export const singletonActions = new Set([
 ])
 
 // Define the singleton document types
-export const singletonTypes = new Set([ourAnimalsType])
+export const singletonTypes = new Set([ourAnimalsTypeIdentifier])

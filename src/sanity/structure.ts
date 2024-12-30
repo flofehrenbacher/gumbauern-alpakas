@@ -1,6 +1,6 @@
 import { SunIcon } from '@sanity/icons'
 import type { StructureResolver } from 'sanity/structure'
-import { ourAnimalsType } from './singletons'
+import { ourAnimalsTypeIdentifier } from './singletons'
 
 // https://www.sanity.io/docs/structure-builder-cheat-sheet
 export const structure: StructureResolver = (S) =>
@@ -10,8 +10,10 @@ export const structure: StructureResolver = (S) =>
       S.listItem()
         .title('Unsere Tiere')
         .icon(SunIcon)
-        .id(ourAnimalsType)
+        .id(ourAnimalsTypeIdentifier)
         .child(
-          S.document().schemaType(ourAnimalsType).documentId(ourAnimalsType)
+          S.document()
+            .schemaType(ourAnimalsTypeIdentifier)
+            .documentId(ourAnimalsTypeIdentifier)
         ),
     ])
