@@ -12,6 +12,7 @@ import { structureTool } from 'sanity/structure'
 import { apiVersion, dataset, projectId } from './src/sanity/env'
 import { schema } from './src/sanity/schema-types'
 import { structure } from './src/sanity/structure'
+import { document } from './src/sanity/document'
 
 export default defineConfig({
   basePath: '/studio',
@@ -25,4 +26,5 @@ export default defineConfig({
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({ defaultApiVersion: apiVersion }),
   ],
+  document,
 })
