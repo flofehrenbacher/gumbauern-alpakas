@@ -1,6 +1,4 @@
 import './global-css'
-import { draftMode } from 'next/headers'
-import { VisualEditing } from 'next-sanity'
 import { Footer } from '../../components/footer'
 import { Navigation } from '../../components/navigation'
 import { AppWrapper, ContentWrapper } from '../../components/shared'
@@ -9,9 +7,8 @@ import '@pigment-css/react/styles.css'
 import 'leaflet/dist/leaflet.css'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { SanityLive } from '../../sanity/lib/live'
-import { DisableDraftMode } from '../../components/disable-draft-mode'
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
@@ -33,12 +30,6 @@ export default async function RootLayout({
           <Footer />
         </AppWrapper>
         <SanityLive />
-        {(await draftMode()).isEnabled && (
-          <>
-            <DisableDraftMode />
-            <VisualEditing />
-          </>
-        )}
       </body>
     </html>
   )

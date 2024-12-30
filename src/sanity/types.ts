@@ -251,7 +251,7 @@ export type AllSanitySchemaTypes =
   | SanityAssetSourceData
   | SanityImageMetadata
 export declare const internalGroqTypeReferenceTo: unique symbol
-// Source: ./src/app/(frontend)/unsere-tiere/query.ts
+// Source: ./src/app/(gumbauern-alpakas)/unsere-tiere/query.ts
 // Variable: OUR_ANIMALS_QUERY
 // Query: *[_id == "ourAnimals"][0]
 export type OUR_ANIMALS_QUERYResult =
