@@ -1,5 +1,5 @@
-import { ResponsiveImage } from '../../components/responsive-image'
-import { H1, TextBlock } from '../../components/shared'
+import { ResponsiveImage } from '../../../components/responsive-image'
+import { H1, TextBlock } from '../../../components/shared'
 import React from 'react'
 import { css } from '@pigment-css/react'
 import wolleImage from './wolle_1600.webp'

@@ -1,8 +1,8 @@
-import { SingleAlpaka } from '../../components/alpaka'
-import { H1, TextBlock } from '../../components/shared'
+import { SingleAlpaka } from '../../../components/alpaka'
+import { H1, TextBlock } from '../../../components/shared'
 import { defineQuery, PortableTextProps } from 'next-sanity'
 import { SanityImageSource } from '@sanity/image-url/lib/types/types'
-import { sanityFetch } from '../../sanity/lib/live'
+import { sanityFetch } from '../../../sanity/lib/live'
 
 export type Alpaka = {
   name: string
