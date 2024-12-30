@@ -3,6 +3,9 @@ import { ResponsiveImage } from '../../components/responsive-image'
 import { H1, SecondaryHeadline, TextBlock } from '../../components/shared'
 import { css } from '@pigment-css/react'
 import React from 'react'
+import image1 from './wandern_1_1600.webp'
+import image2 from './wandern_2_1600.webp'
+import image3 from './wandern_3_1600.webp'
 
 export default function Alpakawanderung() {
   return (
@@ -17,17 +20,11 @@ export default function Alpakawanderung() {
       <CustomCarousel>
         <ResponsiveImage
           lazy={false}
-          baseSrc={`/img/wandern/wandern_1`}
+          src={image1}
           alt={'Alpakawanderung in Kleinberghausen'}
         />
-        <ResponsiveImage
-          baseSrc={`/img/wandern/wandern_2`}
-          alt={'Alpakawanderung in Freystadt'}
-        />
-        <ResponsiveImage
-          baseSrc={`/img/wandern/wandern_3`}
-          alt={'Alpakawanderung in Neumarkt'}
-        />
+        <ResponsiveImage src={image2} alt={'Alpakawanderung in Freystadt'} />
+        <ResponsiveImage src={image3} alt={'Alpakawanderung in Neumarkt'} />
       </CustomCarousel>
       <TextBlock>
         <SecondaryHeadline>Ablauf der Wanderung</SecondaryHeadline>

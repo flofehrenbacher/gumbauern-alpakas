@@ -2,6 +2,7 @@ import { ResponsiveImage } from '../../components/responsive-image'
 import { H1, TextBlock } from '../../components/shared'
 import React from 'react'
 import { css } from '@pigment-css/react'
+import wolleImage from './wolle_1600.webp'
 
 export default function AboutAlpakas() {
   return (
@@ -12,11 +13,7 @@ export default function AboutAlpakas() {
           marginTop: '30px',
         })}
       >
-        <ResponsiveImage
-          baseSrc={`/img/wolle/wolle`}
-          alt={'Alpakawolle'}
-          lazy={false}
-        />
+        <ResponsiveImage src={wolleImage} alt={'Alpakawolle'} lazy={false} />
       </div>
       <TextBlock>
         <p>

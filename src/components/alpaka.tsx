@@ -2,9 +2,10 @@ import { css } from '@pigment-css/react'
 import React from 'react'
 import { CustomCarousel } from './custom-carousel'
 import { ResponsiveImage } from './responsive-image'
-import { marginLeftRight, SecondaryHeadline } from './shared'
+import { contentWidth, marginLeftRight, SecondaryHeadline } from './shared'
 import { Alpaka } from '../app/unsere-tiere/page'
 import { PortableText } from '@portabletext/react'
+import { urlForSanityImageSource } from '../sanity/url-for-sanity-image-source'
 
 export function SingleAlpaka({
   name,
@@ -13,26 +14,28 @@ export function SingleAlpaka({
   description,
   isLast,
   isFirst,
+  images,
 }: Alpaka) {
+  const imageUrls = images
+    .map((image) =>
+      urlForSanityImageSource(image)
+        ?.width(contentWidth * 2)
+        .url()
+    )
+    .filter((url) => !!url) as string[]
+
   return (
     <div className={alpakaStyles.container}>
       <SecondaryHeadline>{name}</SecondaryHeadline>
       <CustomCarousel>
-        <ResponsiveImage
-          baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_1`}
-          alt={name}
-          lazy={!isFirst}
-        />
-        <ResponsiveImage
-          baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_2`}
-          alt={name}
-          lazy
-        />
-        <ResponsiveImage
-          baseSrc={`/img/${name.toLowerCase()}/${name.toLowerCase()}_3`}
-          alt={name}
-          lazy
-        />
+        {imageUrls.map((src, i) => (
+          <ResponsiveImage
+            key={src + i}
+            src={src}
+            alt={name}
+            lazy={!(isFirst && i === 0)}
+          />
+        ))}
       </CustomCarousel>
       <dl className={alpakaStyles.aboutContainer}>
         <dd className={alpakaStyles.nickname}>{nickname}</dd>

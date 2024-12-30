@@ -22,6 +22,7 @@ export function SecondaryHeadline({ children }: { children: React.ReactNode }) {
 }
 
 export const marginLeftRight = 30
+export const contentWidth = 600
 
 const styles = {
   mainHeadline: css({
@@ -40,7 +41,7 @@ const styles = {
   }),
   contentWrapper: css({
     width: '100%',
-    maxWidth: '600px',
+    maxWidth: `${contentWidth}px`,
     flexGrow: 1,
     margin: '0 auto',
     paddingBottom: '30px',

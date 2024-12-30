@@ -1,25 +1,22 @@
 import React, { ImgHTMLAttributes } from 'react'
 import { css } from '@pigment-css/react'
 import Image from 'next/image'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 type ResponsiveImageProps = {
-  baseSrc: string
+  src: string | StaticImport
   lazy?: boolean
-} & ImgHTMLAttributes<HTMLImageElement>
+  alt?: string
+}
 
 export function ResponsiveImage({
-  baseSrc,
   lazy = false,
-  ...props
+  alt = '',
+  src,
 }: ResponsiveImageProps) {
   return (
     <div className={imageRatioContainerStyles}>
-      <Image
-        alt={props.alt ?? ''}
-        src={`${baseSrc}_1600.jpg`}
-        priority={!lazy}
-        fill
-      />
+      <Image alt={alt ?? ''} src={src} priority={!lazy} fill />
     </div>
   )
 }

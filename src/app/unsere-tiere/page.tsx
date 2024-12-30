@@ -2,25 +2,28 @@ import { SingleAlpaka } from '../../components/alpaka'
 import { H1, TextBlock } from '../../components/shared'
 import { defineQuery, PortableTextProps } from 'next-sanity'
 import { sanityFetch } from '../../sanity/sanity-live'
+import { SanityImageSource } from '@sanity/image-url/lib/types/types'
 
 export type Alpaka = {
   name: string
   nickname: string
   birthYear: number
   description: PortableTextProps['value']
+  images: SanityImageSource[]
   isLast?: boolean
   isFirst?: boolean
 }
 
 const ALPAKA_QUERY = defineQuery(`*[
   _type == "alpaka"
-]{_id, name, nickname, birthYear, description}`)
+]{_id, name, nickname, birthYear, description, images}`)
 
 type AlpakaQueryResult = {
   _id: string
   name: string
   nickname: string
   birthYear: number
+  images: SanityImageSource[]
   description: PortableTextProps['value']
 }
 
@@ -45,6 +48,7 @@ export default async function OurAnimals() {
           birthYear={alpaka.birthYear}
           description={alpaka.description}
           name={alpaka.name}
+          images={alpaka.images}
           nickname={alpaka.nickname}
         />
       ))}

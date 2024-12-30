@@ -6,6 +6,9 @@ import { H1 } from '../components/shared'
 import { css } from '@pigment-css/react'
 import React from 'react'
 import { SocialIcons } from '../components/social'
+import titleImage1 from './titel_1_1600.webp'
+import titleImage2 from './titel_2_1600.webp'
+import titleImage3 from './titel_3_1600.webp'
 
 export default function HomePage() {
   const links = [
@@ -21,11 +24,11 @@ export default function HomePage() {
       <CustomCarousel>
         <ResponsiveImage
           lazy={false}
-          baseSrc="/img/titel/titel_1"
+          src={titleImage1}
           alt="Alpakawanderungen"
         />
-        <ResponsiveImage baseSrc="/img/titel/titel_2" alt="Alpakatouren" />
-        <ResponsiveImage baseSrc="/img/titel/titel_3" alt="Alpakatrekking" />
+        <ResponsiveImage src={titleImage2} alt="Alpakatouren" />
+        <ResponsiveImage src={titleImage3} alt="Alpakatrekking" />
       </CustomCarousel>
       <LinkContainer links={links} />
       <SocialIcons />

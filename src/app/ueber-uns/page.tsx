@@ -2,6 +2,7 @@ import { ResponsiveImage } from '../../components/responsive-image'
 import { H1, TextBlock } from '../../components/shared'
 import React from 'react'
 import { css } from '@pigment-css/react'
+import image from './ueber_uns_1600.webp'
 
 export default function AboutUs() {
   return (
@@ -12,11 +13,7 @@ export default function AboutUs() {
           marginTop: '30px',
         })}
       >
-        <ResponsiveImage
-          baseSrc={`/img/ueber_uns/ueber_uns`}
-          alt={'Über uns'}
-          lazy={false}
-        />
+        <ResponsiveImage src={image} alt={'Über uns'} lazy={false} />
       </div>
       <TextBlock>
         <p>
