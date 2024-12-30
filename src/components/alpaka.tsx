@@ -5,7 +5,7 @@ import { ResponsiveImage } from './responsive-image'
 import { contentWidth, marginLeftRight, SecondaryHeadline } from './shared'
 import { Alpaka } from '../app/unsere-tiere/page'
 import { PortableText } from '@portabletext/react'
-import { urlForSanityImageSource } from '../sanity/url-for-sanity-image-source'
+import { urlFor } from '../sanity/lib/image'
 
 export function SingleAlpaka({
   name,
@@ -18,7 +18,7 @@ export function SingleAlpaka({
 }: Alpaka) {
   const imageUrls = images
     .map((image) =>
-      urlForSanityImageSource(image)
+      urlFor(image)
         ?.width(contentWidth * 2)
         .url()
     )
