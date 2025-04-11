@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Gumbauern-Alpakas - Alpakawanderung im Landkreis Neumarkt</title>
+        <meta name="theme-color" content="#dfd3c3" />
         <style
           dangerouslySetInnerHTML={{
             __html: `@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');`,
