@@ -18,7 +18,7 @@
     "react-responsive-carousel": "3.2.23"
   },
   "devDependencies": {
-    "@pigment-css/nextjs-plugin": "0.0.29",
+    "@pigment-css/nextjs-plugin": "0.0.30",
     "@types/leaflet": "1.9.17",
     "@types/node": "22.14.0",
     "@types/react": "19.1.1",
