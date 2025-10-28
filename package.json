@@ -20,13 +20,13 @@
   "devDependencies": {
     "@pigment-css/nextjs-plugin": "0.0.30",
     "@types/leaflet": "1.9.21",
-    "@types/node": "22.18.12",
+    "@types/node": "22.18.13",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "typescript": "5.9.3"
   },
   "volta": {
-    "node": "22.21.0",
+    "node": "22.21.1",
     "npm": "11.6.2"
   }
 }
