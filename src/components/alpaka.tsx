@@ -1,4 +1,4 @@
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import React from 'react'
 import { CustomCarousel } from './custom-carousel'
 import { ResponsiveImage } from './responsive-image'

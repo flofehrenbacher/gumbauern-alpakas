@@ -3,7 +3,7 @@ import { Contact } from 'components/contact'
 import { CustomCarousel } from 'components/custom-carousel'
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1 } from 'components/shared'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import React from 'react'
 import { SocialIcons } from 'components/social'
 

@@ -1,6 +1,7 @@
 import { H1 } from 'components/shared'
-import { css } from '@pigment-css/react'
+import { css } from '../../../styled-system/css'
 import React from 'react'
+import { layoutStyles } from 'app/layout-styles'
 
 export default function Impressum() {
   return (
@@ -25,7 +26,10 @@ export default function Impressum() {
           Telefon: 01575-4205232
           <br />
           E-Mail:{' '}
-          <a href="mailto:info@gumbauern-alpakas.de">
+          <a
+            href="mailto:info@gumbauern-alpakas.de"
+            className={css(layoutStyles.highlightedLink)}
+          >
             info@gumbauern-alpakas.de
           </a>
           <br />
@@ -93,10 +97,17 @@ export default function Impressum() {
         </p>
         <br />
         Impressum vom{' '}
-        <a href="https://www.impressum-generator.de">
+        <a
+          href="https://www.impressum-generator.de"
+          className={css(layoutStyles.highlightedLink)}
+        >
           Impressum Generator
-        </a> der{' '}
-        <a href="https://www.kanzlei-hasselbach.de/">
+        </a>{' '}
+        der{' '}
+        <a
+          href="https://www.kanzlei-hasselbach.de/"
+          className={css(layoutStyles.highlightedLink)}
+        >
           Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht
         </a>
       </div>

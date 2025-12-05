@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import { FacebookIcon } from './facebook'
 import { InstagramIcon } from './instagram'
 

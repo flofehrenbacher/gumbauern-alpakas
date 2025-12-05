@@ -1,5 +1,5 @@
 'use client'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import React, { ReactNode } from 'react'
 import { Carousel, CarouselProps } from 'react-responsive-carousel'
 

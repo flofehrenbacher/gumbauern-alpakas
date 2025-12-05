@@ -30,7 +30,5 @@
     ".next/types/**/*.ts",
     "styled-system"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "dist"]
 }

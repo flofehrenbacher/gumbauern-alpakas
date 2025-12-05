@@ -1,4 +1,4 @@
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import Link from 'next/link'
 import { BurgerMenu } from './burger-menu'
 import { Logo } from './logo'

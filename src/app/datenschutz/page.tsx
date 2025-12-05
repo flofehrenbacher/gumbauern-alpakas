@@ -1,6 +1,6 @@
 import React from 'react'
 import { H1 } from 'components/shared'
-import { css } from '@pigment-css/react'
+import { css } from '../../../styled-system/css'
 import { layoutStyles } from 'app/layout-styles'
 
 export default function DataProtection() {
@@ -75,6 +75,7 @@ export default function DataProtection() {
           Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich)
           mit Anschrift finden Sie unter:{' '}
           <a
+            className={css(layoutStyles.highlightedLink)}
             href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
             target="_blank"
             rel="nofollow noopener noreferrer"
@@ -102,7 +103,10 @@ export default function DataProtection() {
         <p>
           Die Datenschutzrichtlinie des Bibliothekbetreibers Google finden Sie
           hier:{' '}
-          <a href="https://www.google.com/policies/privacy/">
+          <a
+            className={css(layoutStyles.highlightedLink)}
+            href="https://www.google.com/policies/privacy/"
+          >
             https://www.google.com/policies/privacy/
           </a>
         </p>
@@ -141,11 +145,17 @@ export default function DataProtection() {
       <TextBlock>
         <p>
           Weitere Informationen zu Google Web Fonts finden Sie unter{' '}
-          <a href="https://developers.google.com/fonts/faq">
+          <a
+            className={css(layoutStyles.highlightedLink)}
+            href="https://developers.google.com/fonts/faq"
+          >
             https://developers.google.com/fonts/faq
           </a>{' '}
           und in der Datenschutzerklärung von Google:{' '}
-          <a href="https://www.google.com/policies/privacy/">
+          <a
+            className={css(layoutStyles.highlightedLink)}
+            href="https://www.google.com/policies/privacy/"
+          >
             https://www.google.com/policies/privacy/
           </a>
           .
@@ -158,7 +168,10 @@ export default function DataProtection() {
         <p>
           Google verarbeitet Ihre Daten in den USA und hat sich dem EU_US
           Privacy Shield unterworfen{' '}
-          <a href="https://www.privacyshield.gov/EU-US-Framework">
+          <a
+            className={css(layoutStyles.highlightedLink)}
+            href="https://www.privacyshield.gov/EU-US-Framework"
+          >
             https://www.privacyshield.gov/EU-US-Framework
           </a>
           .
@@ -225,6 +238,7 @@ export default function DataProtection() {
             Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt,
             den Experten für{' '}
             <a
+              className={css(layoutStyles.highlightedLink)}
               href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/"
               target="_blank"
               rel="noopener noreferrer"

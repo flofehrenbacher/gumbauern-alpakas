@@ -1,6 +1,6 @@
 import { Contact } from 'components/contact'
 import React from 'react'
-import { css } from '@pigment-css/react'
+import { css } from '../../../styled-system/css'
 
 export default function AboutAlpakas() {
   return (

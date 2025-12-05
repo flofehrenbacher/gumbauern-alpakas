@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import React from 'react'
 
 export function Footer() {

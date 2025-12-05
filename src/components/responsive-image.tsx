@@ -1,5 +1,5 @@
 import React, { ImgHTMLAttributes } from 'react'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import Image from 'next/image'
 
 type ResponsiveImageProps = {

@@ -2,7 +2,7 @@
 import React from 'react'
 import { Icon, LatLngTuple } from 'leaflet'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import { ErrorBoundary } from 'react-error-boundary'
 
 const position: LatLngTuple = [49.15636, 11.3629]

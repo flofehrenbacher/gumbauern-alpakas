@@ -1,7 +1,7 @@
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1, TextBlock } from 'components/shared'
-import React from 'react'
-import { css } from '@pigment-css/react'
+import React, { ReactNode } from 'react'
+import { css } from '../../../styled-system/css'
 
 export default function AboutUs() {
   return (
@@ -43,25 +43,27 @@ export default function AboutUs() {
         <ul
           className={`${internalStyles.list} ${internalStyles.textBelowHeadline}`}
         >
-          <li>Alpaka-Einsteigerkurs bei den Lindforst-Alpakas</li>
-          <li>AELAS, Kurs A</li>
-          <li>
+          <ListItem>Alpaka-Einsteigerkurs bei den Lindforst-Alpakas</ListItem>
+          <ListItem>AELAS, Kurs A</ListItem>
+          <ListItem>
             Alpakaseminar für Einsteiger und Tiermedizin bei den Tölzer Land
             Alpakas
-          </li>
-          <li>Camelidynamics mit Sibylle Klasing-Mann bei den Saar-Alpakas</li>
-          <li>
+          </ListItem>
+          <ListItem>
+            Camelidynamics mit Sibylle Klasing-Mann bei den Saar-Alpakas
+          </ListItem>
+          <ListItem>
             Coach für lama-/alpakagestützte Aktivitäten auf der Orenda-Ranch
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             Ernährung/Krankheiten/Parasiten bei Kameliden bei Prof. Dr. Dr.
             Gauly, Eventhof Kisselmühle
-          </li>
-          <li>"Lama und Mensch" bei den Erlenwald Lamas</li>
-          <li>
+          </ListItem>
+          <ListItem>"Lama und Mensch" bei den Erlenwald Lamas</ListItem>
+          <ListItem>
             Alpaka-Sachkundenachweis nach § 11 Abs. 2 Nr. 1 TierSchG bei den
             Alpakas vom Silberberg
-          </li>
+          </ListItem>
         </ul>
         <br />
         <p>
@@ -73,12 +75,13 @@ export default function AboutUs() {
   )
 }
 
+function ListItem({ children }: { children: ReactNode }) {
+  return <li>{children}</li>
+}
+
 const internalStyles = {
   list: css({
     listStyle: 'circle',
-    li: {
-      lineHeight: 1.4,
-    },
   }),
   textBelowHeadline: css({
     marginTop: '10px',

@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { SocialIcons } from './social'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import { useEffect, useState } from 'react'
 
 type Props = {
@@ -64,7 +64,6 @@ export function BurgerMenu({ links }: Props) {
           className={css({
             background: 'none',
             border: 'none',
-            path: { fill: 'white' },
             display: 'block',
             marginLeft: 'auto',
             padding: '20px',
@@ -80,7 +79,7 @@ export function BurgerMenu({ links }: Props) {
           >
             <path
               d="M26.71 6.71004L25.29 5.29004L16 14.58L6.71004 5.29004L5.29004 6.71004L14.58 16L5.29004 25.29L6.71004 26.71L16 17.42L25.29 26.71L26.71 25.29L17.42 16L26.71 6.71004Z"
-              fill="#29293A"
+              fill="white"
             />
           </svg>
         </button>

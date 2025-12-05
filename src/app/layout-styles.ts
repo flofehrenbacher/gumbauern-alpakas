@@ -20,4 +20,8 @@ export const layoutStyles = {
     fontWeight: 600,
     marginBottom: '20px',
   }),
+  highlightedLink: css.raw({
+    color: 'rgb(0, 0, 238)',
+    textDecoration: 'underline',
+  }),
 }

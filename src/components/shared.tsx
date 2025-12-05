@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 
 export function H1({ children }: { children: React.ReactNode }) {
   return <h1 className={styles.mainHeadline}>{children}</h1>

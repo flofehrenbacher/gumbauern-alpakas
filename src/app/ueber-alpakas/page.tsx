@@ -1,7 +1,7 @@
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1, TextBlock } from 'components/shared'
 import React from 'react'
-import { css } from '@pigment-css/react'
+import { css } from '../../../styled-system/css'
 
 export default function AboutAlpakas() {
   return (

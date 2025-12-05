@@ -1,8 +1,8 @@
 import { CustomCarousel } from 'components/custom-carousel'
 import { ResponsiveImage } from 'components/responsive-image'
 import { H1, SecondaryHeadline, TextBlock } from 'components/shared'
-import { css } from '@pigment-css/react'
-import React from 'react'
+import { css } from '../../../styled-system/css'
+import React, { ReactNode } from 'react'
 
 export default function Alpakawanderung() {
   return (
@@ -45,57 +45,67 @@ export default function Alpakawanderung() {
         <ul
           className={`${internalStyles.list} ${internalStyles.textBelowHeadline}`}
         >
-          <li>Gesamtdauer: ca. 1,5 Std.</li>
-          <li>
+          <ListItem>Gesamtdauer: ca. 1,5 Std.</ListItem>
+          <ListItem>
             Dauer der Wanderung: ca. 1 Stunde, je nach Lust und Laune der
             Alpakas
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             Termine: Samstag/Sonntag 14 Uhr (Anmeldung erforderlich), für
             separate Gruppen (mindestens 6 Tiere) nach Absprache auch an anderen
             Tagen
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             Um unseren Tieren den Spaß an den Spaziergängen zu erhalten, wandern
             wir nur zwei- bis dreimal pro Woche
-          </li>
+          </ListItem>
         </ul>
         <SecondaryHeadline>Preise</SecondaryHeadline>
         <ul
           className={`${internalStyles.list} ${internalStyles.textBelowHeadline}`}
         >
-          <li>pro AlpakaführerIn 23€</li>
-          <li>pro Begleitperson ohne Alpaka 10€</li>
-          <li>Kinder bis 11 Jahre sind frei</li>
-          <li>Kinder ab 12 Jahren dürfen alleine ein Tier führen</li>
-          <li>Gerne könnt Ihr auch einen Geschenkgutschein erwerben</li>
-          <li>Kleinere Gruppen werden zusammengelegt</li>
-          <li>Separate Wanderungen ab einer Buchung von sechs Alpakas</li>
+          <ListItem>pro AlpakaführerIn 23€</ListItem>
+          <ListItem>pro Begleitperson ohne Alpaka 10€</ListItem>
+          <ListItem>Kinder bis 11 Jahre sind frei</ListItem>
+          <ListItem>
+            Kinder ab 12 Jahren dürfen alleine ein Tier führen
+          </ListItem>
+          <ListItem>
+            Gerne könnt Ihr auch einen Geschenkgutschein erwerben
+          </ListItem>
+          <ListItem>Kleinere Gruppen werden zusammengelegt</ListItem>
+          <ListItem>
+            Separate Wanderungen ab einer Buchung von sechs Alpakas
+          </ListItem>
         </ul>
         <SecondaryHeadline>Zu beachten</SecondaryHeadline>
         <ul
           className={`${internalStyles.list} ${internalStyles.textBelowHeadline}`}
         >
-          <li>
+          <ListItem>
             Bitte denkt an wetterfeste Kleidung und Schuhe (keine Regenschirme)
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             Zum Wohl der Tiere behalten wir uns vor, den Termin bei Regen,
             Gewitter, Sturm zu verschieben
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             Bei Temperaturen ab 26° finden die Wanderungen in den Morgen- oder
             Abendstunden statt
-          </li>
-          <li>Hunde dürfen uns leider nicht begleiten</li>
-          <li>
+          </ListItem>
+          <ListItem>Hunde dürfen uns leider nicht begleiten</ListItem>
+          <ListItem>
             Eltern haften auf dem gesamten Hof und während der Wanderung für
             ihre Kinder
-          </li>
+          </ListItem>
         </ul>
       </TextBlock>
     </>
   )
+}
+
+function ListItem({ children }: { children: ReactNode }) {
+  return <li>{children}</li>
 }
 
 const internalStyles = {
@@ -105,9 +115,9 @@ const internalStyles = {
   }),
   list: css({
     listStyle: 'circle',
-    li: {
-      lineHeight: '1.4',
-    },
+  }),
+  listItem: css({
+    lineHeight: '1.4',
   }),
   textBelowHeadline: css({
     marginTop: '10px',

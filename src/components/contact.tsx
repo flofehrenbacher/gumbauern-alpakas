@@ -1,5 +1,5 @@
 'use client'
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 import React, { HTMLAttributes } from 'react'
 import { H1 } from './shared'
 import { SocialIcons } from './social'
@@ -31,19 +31,22 @@ export function Contact(
         </address>
         <span className={styles.addressLine}>
           Tel.:
-          <a className={styles.phone} href="tel:084622638">
+          <a className={styles.highlightedLink} href="tel:084622638">
             08462 2638
           </a>
         </span>
         <span className={styles.addressLine}>
           Mobil (WhatsApp):
-          <a className={styles.phone} href="tel:+49 1575 4205232">
+          <a className={styles.highlightedLink} href="tel:+49 1575 4205232">
             01575 4205232
           </a>
         </span>
         <span className={styles.addressLine}>
           E-Mail:
-          <a className={styles.phone} href="mailto:info@gumbauern-alpakas.de">
+          <a
+            className={styles.highlightedLink}
+            href="mailto:info@gumbauern-alpakas.de"
+          >
             info@gumbauern-alpakas.de
           </a>
         </span>
@@ -58,9 +61,12 @@ const styles = {
     marginTop: '7px',
     display: 'flex',
   }),
-  phone: css({
-    marginLeft: '10px',
-  }),
+  highlightedLink: css(
+    {
+      marginLeft: '10px',
+    },
+    layoutStyles.highlightedLink
+  ),
   addressContainer: css({
     marginTop: '30px',
   }),
