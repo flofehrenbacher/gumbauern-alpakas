@@ -1,4 +1,4 @@
-import { css } from '@pigment-css/react'
+import { css } from '../../styled-system/css'
 
 export const layoutStyles = {
   contentStyles: css({

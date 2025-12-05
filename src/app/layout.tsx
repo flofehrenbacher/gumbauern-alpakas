@@ -1,4 +1,4 @@
-import './global-css'
+import './globals.css'
 import { Footer } from 'components/footer'
 import { Navigation } from 'components/navigation'
 import { AppWrapper, ContentWrapper } from 'components/shared'

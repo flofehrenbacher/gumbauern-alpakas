@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,10 +14,7 @@
     "jsx": "preserve",
     "allowJs": false,
     "baseUrl": "./src",
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/typings"
-    ],
+    "typeRoots": ["./node_modules/@types", "./src/typings"],
     "incremental": true,
     "plugins": [
       {
@@ -34,7 +27,8 @@
     "**/*.tsx",
     "dist/types/**/*.ts",
     "next-env.d.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "styled-system"
   ],
   "exclude": [
     "node_modules"
