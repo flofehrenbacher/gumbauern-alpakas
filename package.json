@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "leaflet": "1.9.4",
-    "next": "16.0.7",
+    "next": "16.0.8",
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "react-error-boundary": "6.0.0",
