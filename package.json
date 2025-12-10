@@ -20,13 +20,13 @@
   "devDependencies": {
     "@pandacss/dev": "1.7.0",
     "@types/leaflet": "1.9.21",
-    "@types/node": "24.10.2",
+    "@types/node": "24.10.3",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "typescript": "5.9.3"
   },
   "volta": {
-    "node": "24.11.1",
+    "node": "24.12.0",
     "npm": "11.7.0"
   }
 }
