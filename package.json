@@ -18,7 +18,7 @@
     "react-responsive-carousel": "3.2.23"
   },
   "devDependencies": {
-    "@pandacss/dev": "1.12.1",
+    "@pandacss/dev": "2.0.1",
     "@types/leaflet": "1.9.22",
     "@types/node": "24.19.2",
     "@types/react": "19.3.0",
